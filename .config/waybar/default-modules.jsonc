@@ -1,0 +1,237 @@
+{
+    "layer": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 40,
+    "margin-top": 10,
+    "margin-left": 10,
+    "margin-right": 10,
+    "hyprland/window": {
+        "format": "{}",
+        "on-click-right": "hyprctl dispatch killactive",
+        "max-length": 200
+    },
+    "hyprland/workspaces": {
+        "disable-scroll": false,
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "all-outputs": true,
+        "on-click": "activate"
+    },
+    "hyprland/language": {
+        "format": " {}",
+        "format-en": "en",
+        "format-es": "es"
+    },
+    "custom/cava": {
+        "format": "{}",
+        "tooltip": false,
+        "exec": "~/.config/waybar/scripts/waybar-cava.sh",
+        "return-type": "text"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 0
+    },
+    "clock": {
+        "format": "{: %I:%M %p}",
+        "tooltip-format": "<big> {:%Y/%m/%d}</big>\n<tt><small>{calendar}</small></tt>"
+    }, 
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "󰃞",
+            "󰃟",
+            "󰃠"
+        ],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6,
+        "tooltip": false
+    },
+    "battery": {
+        "bat": "BAT1",
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "tooltip-format": "{} | {volume}%",
+        "tooltip": true,
+        "format-muted": "󰖁",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "format": " {temperatureC}°C",
+        "critical-threshold": 80,
+        "format-critical": " {temperatureC}°C"
+    },
+    "network": {
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": "󰈀 {ipaddr}",
+        "tooltip-format": "{essid} - {ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+    },
+    "bluetooth": {
+        "format": " on",
+        "format-disabled": "󰂲 off",
+        "format-connected": " {num_connections}",
+        "tooltip-format": "{device_alias}",
+        "tooltip-format-connected": " {device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}"
+    },
+    "custom/playerctl": {
+        "interval": 1,
+        "format": "{icon} {}",
+        "max-length": 40,
+        "exec": "~/.config/waybar/scripts/playerctl.sh",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "scroll-step": 10,
+        "return-type": "json",
+        "format-icons": {
+            "Playing": "󰎈",
+            "Paused": "󰏤"
+        }
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+    "backlight/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal",
+        "device": "intel_backlight"
+    },
+    "group/light": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "backlight",
+            "backlight/slider"
+        ]
+    },
+    //FOR POWER GROUP
+    "custom/arch": {
+        "format": "󰣇",
+        "tooltip": false,
+        "on-click": "wofi"
+    },
+    "custom/quit": {
+        "format": "󰍃",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit"
+    },
+    "custom/lock": {
+        "format": "󰌾",
+        "tooltip": false,
+        "on-click": "gtklock"
+    },
+    "custom/reboot": {
+        "format": "󰜉",
+        "tooltip": false,
+        "on-click": "(sleep 10 && reboot) & (notify-send --urgency=critical --expire-time=20000 --wait 'System Reboot' 'The system will reboot in 10 seconds, click to cancel' && pkill sleep)",
+        "on-click-right": "reboot"
+    },
+    "custom/shutdown": {
+        "format": "󰐥",
+        "tooltip": false,
+        "on-click": "(sleep 10 && shutdown now) & (notify-send --urgency=critical --expire-time=20000 --wait 'System Shutdown' 'The system will shutdown in 10 seconds, click to cancel' && pkill sleep)",
+        "on-click-right": "shutdown now"
+    },
+    "custom/sleep": {
+        "format": "󰒲",
+        "tooltip": false,
+        "on-click": "systemctl suspend"
+    },
+    //GROUP CONFIGURATIONS
+    "group/audioSpeaker": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "pulseaudio",
+            "pulseaudio/slider"
+        ]
+    },
+    "group/audio": {
+        "orientation": "inherit",
+        "modules": [
+            "group/audioSpeaker",
+            "pulseaudio#microphone"
+        ]
+    },
+    "group/power": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": true
+        },
+        "modules": [
+            "custom/arch",
+            "custom/quit",
+            "custom/lock",
+            "custom/sleep",
+            "custom/reboot",
+            "custom/shutdown"
+        ]
+    }
+}

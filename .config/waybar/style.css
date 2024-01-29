@@ -1,0 +1,196 @@
+@define-color LIME #a6e3a1;
+@define-color STRAWBERRY #FF3040;
+@define-color BLUEBERRY #89b4fa;
+@define-color BANANA #f9e2af;
+@define-color ORANGE #fab387;
+
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: mix(@theme_bg_color, transparent, 0.1);
+    color: @theme_fg_color;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+tooltip {
+    background: @theme_bg_color;
+    border-radius: 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @theme_selected_bg_color;
+    color: @theme_fg_color;
+}
+
+#workspaces button {
+    margin-right: 0px;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+    border-radius: 10px;
+}
+
+#workspaces button.active {
+    color: @theme_fg_color;
+}
+
+#workspaces button.focused {
+    color: @theme_fg_color;
+}
+
+#workspaces button.urgent {
+    color: @theme_fg_color;
+    background: @LIME;
+}
+
+#workspaces button:hover {
+  color: @theme_bg_color;
+  background-color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
+}
+
+#temperature {
+    color: mix(@STRAWBERRY, @theme_fg_color, 0.8);
+}
+
+#temperature.critical {
+    color: @STRAWBERRY;
+}
+
+#backlight {
+    color: mix(@BANANA, @theme_fg_color, 0.5);
+}
+
+#workspaces { 
+    padding: 0px;
+}
+
+#custom-playerctl {
+    color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
+}
+
+#custom-cava {
+    color: @theme_selected_bg_color;
+}
+
+#custom-power_profile {
+    color: mix(@LIME, @theme_fg_color, 0.5);
+}
+
+#window {
+    color: @theme_fg_color;
+}
+
+#clock {
+    color: mix(@ORANGE, @theme_fg_color, 0.3);
+}
+
+/*Cool background for groups and widgets*/
+#workspaces,
+#light,
+#audio {
+  background: mix(@theme_selected_bg_color, @theme_bg_color, 0.8);
+}
+
+#custom-arch {
+    color: @theme_selected_bg_color;
+}
+
+#custom-quit {
+    color: mix(@BANANA, @theme_fg_color, 0.6);
+}
+
+#custom-lock {
+    color: mix(@LIME, @theme_fg_color, 0.6);
+}
+
+#custom-sleep {
+    color: mix(@BLUEBERRY, @theme_fg_color, 0.6);
+}
+
+#custom-reboot {
+    color: mix(@ORANGE, @theme_fg_color, 0.6);
+}
+
+#custom-shutdown {
+    color: mix(@STRAWBERRY, @theme_fg_color, 0.6);
+}
+
+#network {
+    color: mix(@BANANA, @theme_fg_color, 0.4);
+}
+
+#bluetooth {
+    color: mix(@BLUEBERRY, @theme_fg_color, 0.3);
+}
+
+#pulseaudio:not(.microphone) {
+    color: mix(@BANANA, @theme_fg_color, 0.5);
+}
+
+#pulseaudio.microphone {
+    color: mix(@LIME, @theme_fg_color, 0.5);
+}
+
+#pulseaudio.bluetooth:not(.microphone) {
+    color: mix(@BLUEBERRY, @theme_fg_color, 0.5);
+}
+
+#pulseaudio.muted:not(.microphone) {
+    color: mix(@STRAWBERRY, @theme_fg_color, 0.5);
+}
+
+#pulseaudio.microphone.source-muted {
+    color: mix(@STRAWBERRY, @theme_fg_color, 0.5);
+}
+
+#battery {
+    color: mix(@LIME, @theme_fg_color, 0.5);
+}
+
+#custom-weather {
+    color: mix(@ORANGE, @theme_fg_color, 0.5);
+}
+
+#tray {
+    padding: 0;
+}
+
+/*GROUPS AND WIDGETS WITHOUT GROUP*/
+window#waybar > box > box > widget > *,
+window#waybar > box > box > box {
+    margin: 0 5px;
+    border-radius: 10px;
+    /*background: mix(@theme_bg_color, transparent, 0.1);*/
+}
+/*CONTENT OF ALL WIDGETS*/
+widget > * {
+    padding: 0 10px;
+}
+
+
+slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    background-color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
+}
+trough {
+    min-height: 20px;
+    min-width: 80px;
+    border-radius: 10px;
+    background: mix(@theme_bg_color, transparent, 0.1);
+}
+highlight {
+    min-height: 10px;
+    border-radius: 10px;
+}
+#light {
+  border-radius: 10px;
+}

@@ -1,0 +1,31 @@
+[global]
+font = jetbrains mono nerd font
+allow_markup = yes
+origin = top-right
+corner_radius = 8
+offset = 6x6
+width = (200, 480)
+frame_width = 1
+frame_color = "#e5b8c6"
+separator_color= frame
+alignment = center
+notification_limit = 6
+indicate_hidden = yes
+gap_size = 5
+mouse_left_click = close_current
+mouse_middle_click = do_action, close_current
+mouse_right_click = close_all
+fullscreen_show_everything
+
+[urgency_low]
+background = "#0d0f16"
+foreground = "#CDD6F4"
+
+[urgency_normal]
+background = "#0d0f16"
+foreground = "#CDD6F4"
+
+[urgency_critical]
+background = "#0d0f16"
+foreground = "#CDD6F4"
+frame_color = "#FAB387"

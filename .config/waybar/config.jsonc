@@ -1,0 +1,64 @@
+[
+    {
+        "output": ["DP-1"],
+        "position": "top",
+        "group/system": {
+            "orientation": "inherit",
+            "modules": [
+                "tray",
+                "temperature",
+                "network",
+                "bluetooth"
+            ]
+        },
+        "modules-left": [
+            "group/power",
+            "clock",
+            "hyprland/workspaces",
+            "custom/cava"
+        ],
+        "modules-center": [
+            "hyprland/window"
+        ],
+        "modules-right": [
+            "custom/playerctl",
+            "group/audio",
+            "group/system"
+        ],
+        "include": [
+            "~/.config/waybar/default-modules.jsonc"
+        ]
+    },
+    {
+        "output": ["eDP-1"],
+        "position": "top",
+        "group/system": {
+            "orientation": "inherit",
+            "modules": [
+                "group/light",
+                "tray",
+                "battery",
+                "network",
+                "bluetooth"
+            ]
+        },
+        "modules-left": [
+            "group/power",
+            "clock",
+            "hyprland/workspaces",
+            "custom/cava"
+        ],
+        "modules-center": [
+           
+        ],
+        "modules-right": [
+            "custom/playerctl",
+            "group/audio",
+            "group/system"
+        ],
+        "include": [
+            "~/.config/waybar/default-modules.jsonc"
+        ]
+    }
+]
+
