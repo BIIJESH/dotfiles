@@ -13,8 +13,7 @@ fi
 
 sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session blueman ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg neovim hyprland pipewire dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland gvfs ntfs-3g cliphist lxappearance xfce4-settings clang bluez bluez-utils pulseaudio-bluetooth gnome-disk-utility gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow zathura firewalld neovim 
 
-paru -S --noconfirm swaylock-effects catppuccin-gtk-theme-mocha visual-studio-code-bin 
-paru -S neovim-presence-git rpcpp
+paru -S --noconfirm swaylock-effects catppuccin-gtk-theme-mocha visual-studio-code-bin neovim-presence-git rpcpp catppuccin-gtk-theme-mocha 
 
   echo -e "Copying config files...\n"
   cp -R .config/btop ~/.config/
@@ -26,8 +25,6 @@ paru -S neovim-presence-git rpcpp
   cp -R .config/ranger ~/.config/
   cp -R .config/waybar ~/.config/
   cp -R .config/wofi ~/.config/
-  cp -R .config/BetterDiscord ~/.config/
-  cp -R .config/qbittorrent ~/.config/
   cp -R .config/Thunar ~/.config/
   cp -R .config/xfce4 ~/.config/
   cp -R .bashrc ~/

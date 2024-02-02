@@ -17,7 +17,7 @@ alias ln='ln -i'
 alias ll='ls -lah'
 alias lf='ls -1A | fzf'
 alias gh='history | grep'
-alias fm='thunar'
+alias fm='thunar &'
 alias cls='clear'
 # Your prompt configuration
 shopt -s autocd
