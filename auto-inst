@@ -3,6 +3,8 @@
 # This is a quick and dirty script there are no error checking
 
 #### Check for paru ####
+
+sudo sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 8\nILoveCandy/" /etc/pacman.conf
 ISAUR=/sbin/paru
 if [ -f "$ISAUR" ]; then 
     echo -e "paru was located, moving on.\n"   
@@ -10,6 +12,7 @@ else
     echo "installing paru..."
     ./inst-paru
 fi
+
 
 sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session blueman ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg neovim hyprland pipewire dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland gvfs ntfs-3g cliphist lxappearance xfce4-settings clang bluez bluez-utils pulseaudio-bluetooth gnome-disk-utility gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow zathura firewalld neovim 
 

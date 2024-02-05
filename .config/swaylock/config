@@ -2,7 +2,7 @@ daemonize
 show-failed-attempts
 clock
 #screenshot
-image=$HOME/.config/swaylock/girl.jpg
+image=$HOME/.config/swaylock/girl2.jpg
 effect-blur=9x5
 effect-vignette=0.5:0.5
 color=1f1d2e80
