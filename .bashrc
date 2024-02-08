@@ -19,9 +19,9 @@ alias gh='history | grep'
 alias fm='thunar &'
 alias cls='clear'
 # Your prompt configuration
+alias ls='exa --icons'
 alias ex='exit'
 alias xam='sudo /opt/lampp/lampp start'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 #neofetch
 alias pgadmin='source pgadmin4/bin/activate'
-
