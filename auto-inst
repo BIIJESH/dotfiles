@@ -31,9 +31,9 @@ paru -S --noconfirm swaylock-effects catppuccin-gtk-theme-mocha visual-studio-co
   cp -R .config/Thunar ~/.config/
   cp -R .config/xfce4 ~/.config/
   cp -R .bashrc ~/
-  cp -R .config/zathura ~/.config/
-  cp -R .config/nvim ~/.config/
-
+  cp -R .config/zathura ~/.config/zathura/
+  cp -R .bash_profile ~/
+  
 
   chmod +x ~/.config/hypr/scripts/batterynotify.sh
   chmod +x ~/.config/hypr/scripts/power.sh
