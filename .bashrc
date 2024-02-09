@@ -3,6 +3,7 @@
 if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
 fi
+
 export PS1='\n\[\e[36m\] \D{%Y-%m-%d %H:%M:%S} \[\e[39m\] \h \[\e[36m\]in \[\e[32m\]\w\n\[\e[37m\]\[\e[36m\] \[\e[32m\]❯\[\033[00m\] '
 # Aliases
 alias in='sudo pacman -S'
