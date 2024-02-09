@@ -14,7 +14,7 @@ else
 fi
 
 
-sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session blueman ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg neovim hyprland pipewire dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland gvfs ntfs-3g cliphist lxappearance xfce4-settings clang bluez bluez-utils pulseaudio-bluetooth gnome-disk-utility gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow zathura firewalld neovim 
+sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session blueman ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg neovim hyprland pipewire dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland gvfs ntfs-3g cliphist lxappearance xfce4-settings clang bluez bluez-utils pulseaudio-bluetooth gnome-disk-utility gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow zathura firewalld neovim exa
 
 paru -S --noconfirm swaylock-effects catppuccin-gtk-theme-mocha visual-studio-code-bin neovim-presence-git rpcpp catppuccin-gtk-theme-mocha 
 
