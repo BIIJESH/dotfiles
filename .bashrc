@@ -26,4 +26,4 @@ alias xam='sudo /opt/lampp/lampp start'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 #neofetch
 alias pgadmin='source pgadmin4/bin/activate'
-
+alias pmq='pacman -Q | fzf | wl-copy'

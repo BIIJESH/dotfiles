@@ -17,8 +17,8 @@ fi
 
 sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session  ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist  nwglook clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow zathura firewalld neovim exa ripgrep pavucontorl 
 
-paru -S --noconfirm swaylock-effects-git catppuccin-gtk-theme-mocha visual-studio-code-bin rpcpp catppuccin-gtk-theme-mocha tldr zathura-pdf-mupdf-git 
-
+paru -S --noconfirm swaylock-effects-git  visual-studio-code-bin rpcpp  tldr zathura-pdf-mupdf-git 
+sudo cp -r .config/themes/* /usr/share/themes/
   echo -e "Copying config files...\n"
   cp -R .config/dunst ~/.config/
   cp -R .config/hypr ~/.config/
