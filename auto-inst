@@ -4,22 +4,22 @@
 
 #### Check for paru ####
 
-sudo sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 8\nILoveCandy/" /etc/pacman.conf
+sudo sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15\nILoveCandy/" /etc/pacman.conf
 ISAUR=/sbin/paru
 if [ -f "$ISAUR" ]; then 
     echo -e "paru was located, moving on.\n"   
 else 
     echo "installing paru..."
+    chmod +x inst-paru
     ./inst-paru
 fi
 
 
-sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session blueman ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg neovim hyprland pipewire dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland gvfs ntfs-3g cliphist lxappearance xfce4-settings clang bluez bluez-utils pulseaudio-bluetooth gnome-disk-utility gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow zathura firewalld neovim exa
+sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session  ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist  nwglook clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow zathura firewalld neovim exa ripgrep pavucontorl 
 
-paru -S --noconfirm swaylock-effects catppuccin-gtk-theme-mocha visual-studio-code-bin neovim-presence-git rpcpp catppuccin-gtk-theme-mocha 
+paru -S --noconfirm swaylock-effects-git catppuccin-gtk-theme-mocha visual-studio-code-bin rpcpp catppuccin-gtk-theme-mocha tldr zathura-pdf-mupdf-git 
 
   echo -e "Copying config files...\n"
-  cp -R .config/btop ~/.config/
   cp -R .config/dunst ~/.config/
   cp -R .config/hypr ~/.config/
   cp -R .config/kitty ~/.config/
@@ -29,10 +29,10 @@ paru -S --noconfirm swaylock-effects catppuccin-gtk-theme-mocha visual-studio-co
   cp -R .config/waybar ~/.config/
   cp -R .config/wofi ~/.config/
   cp -R .config/Thunar ~/.config/
-  cp -R .config/xfce4 ~/.config/
   cp -R .bashrc ~/
   cp -R .config/zathura ~/.config/zathura/
   cp -R .bash_profile ~/
+  cp -R .config/swaylock ~/.config/
   
 
   chmod +x ~/.config/hypr/scripts/batterynotify.sh
@@ -44,9 +44,6 @@ paru -S --noconfirm swaylock-effects catppuccin-gtk-theme-mocha visual-studio-co
   
 
 
-
-systemctl enable --now bluetooth 
-systemctl enable --now NetworkManager
 
 ### Script is done ###
 echo -e "Script completed.\n"
