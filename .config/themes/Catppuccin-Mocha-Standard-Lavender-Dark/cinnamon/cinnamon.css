@@ -329,7 +329,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-combo-menu .popup-menu-content {
   padding: 6px;
   border-radius: 12px;
-  background-color: #1e1e2e;
+  background-color: #16161d;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-clip: border-box;
@@ -719,7 +719,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .about-scrollBox {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 6px;
-  background-color: #1e1e2e;
+  background-color: #16161d;
   padding: 4px;
   padding-right: 0;
   border-radius: 0;
@@ -742,7 +742,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #LookingGlassDialog {
-  background-color: #1e1e2e;
+  background-color: #16161d;
   spacing: 6px;
   padding: 6px;
   margin: 32px;
@@ -1117,7 +1117,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .switcher-list {
   color: #FFFFFF;
-  background-color: #1e1e2e;
+  background-color: #16161d;
   border: none;
   border-radius: 6px;
   padding: 20px;
@@ -1800,7 +1800,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 6px;
   spacing: 6px;
   border: none;
-  background-color: #1e1e2e;
+  background-color: #16161d;
   border-radius: 6px;
   color: #FFFFFF;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35), 0 3px 12px rgba(0, 0, 0, 0.16);
@@ -1817,7 +1817,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .grouped-window-list-thumbnail-menu {
   padding: 6px;
   margin: 6px;
-  background-color: #1e1e2e;
+  background-color: #16161d;
   border-radius: 12px;
   background-clip: border-box;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
