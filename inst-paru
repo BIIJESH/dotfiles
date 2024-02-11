@@ -3,7 +3,7 @@ sudo pacman -S --needed base-devel
 
 mkdir ~/Clone
 
-git clone https://aur.archlinux.org/paru.git ~/Clone/paru
+git clone https://aur.archlinux.org/paru-bin.git ~/Clone/paru
 
 cd ~/Clone/paru
 makepkg -si
