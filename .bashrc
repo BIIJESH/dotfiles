@@ -4,6 +4,8 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
 fi
 
+export VISUAL=nvim;
+export EDITOR=nvim;
 export PS1='\n\[\e[36m\] \D{%Y-%m-%d %H:%M:%S} \[\e[39m\] \h \[\e[36m\]in \[\e[32m\]\w\n\[\e[37m\]\[\e[36m\] \[\e[32m\]❯\[\033[00m\] '
 # Aliases
 alias in='sudo pacman -S'
@@ -24,6 +26,5 @@ alias ls='exa --icons'
 alias ex='exit'
 alias xam='sudo /opt/lampp/lampp start'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-#neofetch
 alias pgadmin='source pgadmin4/bin/activate'
 alias pmq='pacman -Q | fzf | wl-copy'
