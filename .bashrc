@@ -22,6 +22,7 @@ alias gh='history | grep'
 alias fm='thunar &'
 alias cls='clear'
 alias ls='exa --icons'
+alias phone='ssh -p 8022 S20@192.168.1.64'
 # Your prompt configuration
 alias ex='exit'
 alias xam='sudo /opt/lampp/lampp start'
