@@ -31,6 +31,7 @@ sudo cp -r .config/themes/* /usr/share/themes/
   cp -R .config/Thunar ~/.config/
   cp -R .bashrc ~/
   cp -R .config/zathura ~/.config/zathura/
+  cp -R .config/yazi ~/.config/yazi/
   cp -R .bash_profile ~/
   cp -R .config/swaylock ~/.config/
   
