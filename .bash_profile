@@ -7,3 +7,4 @@ fi
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 export PATH=$PATH:/home/papa/.spicetify
+export PATH=$PATH:$HOME/.emacs.d/bin

@@ -34,9 +34,39 @@
         "icon-size": 18,
         "spacing": 0
     },
+
+  "mpris": {
+    "interval": 1,
+  "format": "<span color='#cdd6f4'>{status_icon} {dynamic}</span>",
+  "format-paused": "<span color='#9da6c4'>{status_icon} <i>{dynamic}</i></span>",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "tooltip": false,
+    "status-icons": {
+      "playing": "󰎈",
+      "paused": "󰏥"
+    },
+    "max-length": 30
+  },
+
     "clock": {
         "format": "{: %I:%M %p}",
-        "tooltip-format": "<big> {:%Y/%m/%d}</big>\n<tt><small>{calendar}</small></tt>"
+"tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "format": {
+        "weekdays": "<span color='#a6da95'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b>{}</b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
     }, 
     "backlight": {
         "device": "intel_backlight",
@@ -130,21 +160,7 @@
         "tooltip-format-connected": " {device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}"
     },
-    "custom/playerctl": {
-        "interval": 1,
-        "format": "{icon} {}",
-        "max-length": 40,
-        "exec": "~/.config/waybar/scripts/playerctl.sh",
-        "on-click": "playerctl play-pause",
-        "on-scroll-up": "playerctl next",
-        "on-scroll-down": "playerctl previous",
-        "scroll-step": 10,
-        "return-type": "json",
-        "format-icons": {
-            "Playing": "󰎈",
-            "Paused": "󰏤"
-        }
-    },
+   
     "pulseaudio/slider": {
         "min": 0,
         "max": 100,

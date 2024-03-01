@@ -21,7 +21,7 @@
             "hyprland/window"
         ],
         "modules-right": [
-            "custom/playerctl",
+            "mpris",
             "group/audio",
             "group/system"
         ],
@@ -52,7 +52,7 @@
            
         ],
         "modules-right": [
-            "custom/playerctl",
+            "mpris",
             "group/audio",
             "group/system"
         ],
