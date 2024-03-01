@@ -17,7 +17,7 @@ fi
 
 sudo pacman -S pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session  ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist  nwglook clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow zathura firewalld neovim exa ripgrep pavucontorl 
 
-paru -S --noconfirm swaylock-effects-git  visual-studio-code-bin rpcpp  tldr zathura-pdf-mupdf-git 
+paru -S --noconfirm hyprlock  visual-studio-code-bin rpcpp  tldr zathura-pdf-mupdf-git 
 sudo cp -r .config/themes/* /usr/share/themes/
   echo -e "Copying config files...\n"
   cp -R .config/dunst ~/.config/
@@ -33,7 +33,6 @@ sudo cp -r .config/themes/* /usr/share/themes/
   cp -R .config/zathura ~/.config/zathura/
   cp -R .config/yazi ~/.config/yazi/
   cp -R .bash_profile ~/
-  cp -R .config/swaylock ~/.config/
   
 
   chmod +x ~/.config/hypr/scripts/batterynotify.sh
