@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+bemenu-run \
+  -H 28 \
+  -p 'Run' \
+  --ignorecase \
+  --monitor '1' \
+  --hp '6' \
+  --fn 'Terminus' \
+  --tb '#000000' \
+  --fb '#000000' \
+  --nb '#000000' \
+  --hb '#000000' \
+  --fbb '#000000' \
+  --ab '#000000' \
+  --sb '#000000' \
+  --tf '#33ccff' \
+  --sf '#33ccff' \
+  --hf '#33ccff'
