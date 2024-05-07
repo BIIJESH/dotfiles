@@ -28,7 +28,7 @@ local function setup_aerial()
 	})
 
 	-- Keymap to toggle aerial
-	vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+	vim.keymap.set("n", "<leader>a", "<cmd>AerialToggle<CR>")
 end
 
 -- Return all plugins at once
