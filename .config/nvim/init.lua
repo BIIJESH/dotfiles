@@ -1,0 +1,6 @@
+require("config.options")
+require("config.keymaps")
+require("config.lazy")
+require("config.autocmds")
+require("plugins.harpoon")
+require("config.cmp")
