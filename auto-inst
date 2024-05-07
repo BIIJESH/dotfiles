@@ -15,7 +15,7 @@ fi
 sudo pacman -S --noconfirm luarocks npm lua51 pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep
 sudo npm install -g liver-server   
 sudo luarocks --lua-version=5.1 install magick  
-paru -S --noconfirm nwg-look-bin zoxide-git hyprlock wlogout visual-studio-code-bin tldr zathura-pdf-mupdf-git pavucontorl
+paru -S --noconfirm nwg-look-bin zoxide hyprlock wlogout visual-studio-code-bin tldr zathura-pdf-mupdf-git pavucontrol
 sudo cp -r .config/themes/* /usr/share/themes/
 echo -e "Copying config files...\n"
 cp -R .config/dunst ~/.config/
@@ -32,7 +32,7 @@ cp -R .config/nvim ~/.config/
 cp -R .bashrc ~/
 cp -R .config/zathura ~/.config/zathura/
 cp -R .config/yazi ~/.config/yazi/
-cp -R .bash_profile ~/auto-inst
+cp -R .bash_profile ~/
 
 chmod +x ~/.config/hypr/scripts/batterynotify.sh
 chmod +x ~/.config/hypr/scripts/lookup.sh

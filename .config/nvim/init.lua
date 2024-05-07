@@ -4,3 +4,7 @@ require("config.lazy")
 require("config.autocmds")
 require("plugins.harpoon")
 require("config.cmp")
+require("plugins.neotree")
+require("plugins.aerial")
+require("config.snippets")
+

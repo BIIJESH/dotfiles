@@ -1,3 +1,4 @@
+require("config.snippets")
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 vim.opt.autoread = true
@@ -37,3 +38,4 @@ vim.opt.linebreak = true
 vim.filetype.add({
 	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
+vim.api.nvim_set_keymap('n', '<Leader>cl', '<cmd>call v:lua.insert_console_log()<CR>', { noremap = true, silent = true })
