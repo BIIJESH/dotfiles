@@ -132,7 +132,7 @@ return {
 				"        ⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁     ⢀⣠⣴ ",
 				" ⣿⣿⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿⣿⣿ ",
 				"",
-        "           N E O V I M "
+				"           N E O V I M ",
 			}
 
 			dashboard.section.buttons.val = {
@@ -171,6 +171,15 @@ return {
 			})
 
 			alpha.setup(dashboard.opts)
+		end,
+	},
+	{
+		"echasnovski/mini.animate",
+		event = "VeryLazy",
+		opts = function(_, opts)
+			opts.scroll = {
+				enable = true,
+			}
 		end,
 	},
 }

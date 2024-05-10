@@ -67,6 +67,7 @@ return {
       { "<leader>fc", "<cmd>Telescope commands<CR>",    desc = "Commands" },
       { "<leader>fC", "<cmd>Telescope colorscheme<CR>", desc = "Colorscheme" },
       { "<leader>fp", "<cmd>Telescope projects<CR>",    desc = "Projects" },
+      { "<leader>mm", "<cmd>Telescope marks<CR>",       desc = "Marks" },
     },
   },
   {
@@ -196,6 +197,14 @@ return {
           require("flash").jump()
         end,
         desc = "Flash",
+        {
+          "<c-s>",
+          mode = { "c" },
+          function()
+            require("flash").toggle()
+          end,
+          desc = "Toggle Flash Search",
+        },
       },
     },
   },

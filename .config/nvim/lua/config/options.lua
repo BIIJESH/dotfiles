@@ -34,6 +34,9 @@ vim.opt.clipboard:append("unnamedplus")
 -- Enable word wrapping
 vim.opt.wrap = true
 vim.opt.linebreak = true
+
+vim.api.nvim_set_option('number', true)       -- Show absolute line numbers
+vim.api.nvim_set_option('relativenumber', true)  -- Show relative line numbers
 -- vim.opt.showbreak = "↩"
 vim.filetype.add({
 	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
