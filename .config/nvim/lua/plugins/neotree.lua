@@ -10,7 +10,7 @@ return {
 		cmd = "Neotree",
 		opts = {
 			window = {
-				position = "right",
+				position = "left",
 				width = 25,
 				mappings = {
 					["P"] = { "toggle_preview", config = { use_float = false, use_image_nvim = true } },

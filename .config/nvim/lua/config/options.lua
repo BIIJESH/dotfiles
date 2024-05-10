@@ -39,3 +39,4 @@ vim.filetype.add({
 	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
 vim.api.nvim_set_keymap('n', '<Leader>cl', '<cmd>call v:lua.insert_console_log()<CR>', { noremap = true, silent = true })
+
