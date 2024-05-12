@@ -130,15 +130,10 @@ return {
 		opts = {},
 		config = function(_, opts)
 			require("inc_rename").setup(opts)
-
 			vim.keymap.set("n", "<leader>cn", function()
 				return ":IncRename " .. vim.fn.expand("<cword>")
 			end, { expr = true, desc = "Rename" })
 		end,
-	},
-	{
-		"IogaMaster/neocord",
-		event = "VeryLazy",
 	},
 	{
 		"olrtg/nvim-emmet",

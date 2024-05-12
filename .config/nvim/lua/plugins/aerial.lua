@@ -13,7 +13,7 @@ local function setup_aerial()
 			width = nil,
 			min_width = 10,
 		},
-		default_direction = "prefer_float",
+		default_direction = "float",
 		filter_kind = {
 			"Class",
 			"Constructor",
@@ -42,11 +42,4 @@ return {
 			"nvim-tree/nvim-web-devicons",
 		},
 	},
-	-- Add other plugins here as needed
-	-- {
-	--     "another/plugin",
-	--     config = function()
-	--         -- Plugin configuration
-	--     end,
-	-- },
 }

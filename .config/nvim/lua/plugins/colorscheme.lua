@@ -10,10 +10,6 @@ return {
 		end,
 	},
 	{
-		"ellisonleao/gruvbox.nvim",
-		opts = {},
-	},
-	{
 		"gbprod/nord.nvim",
 		opts = {},
 	},
