@@ -31,7 +31,10 @@ return {
 			-- Function to get the current recording key
 			local function get_recording_key()
 				local recording_register = vim.fn.reg_recording()
-				return recording_register ~= "" and ("Recording: " .. recording_register) or ""
+				return recording_register ~= "" and ("Recording:@" .. recording_register) or ""
+			end
+			local function totalines()
+				return vim.fn.line("$")
 			end
 
 			require("lualine").setup({
@@ -39,7 +42,7 @@ return {
 					theme = "tokyonight", -- Replace 'tokyonight' with your desired lualine theme
 					disabled_filetypes = {
 						"alpha",
-						"nvim-tree",
+						"neo-tree",
 						"Outline",
 						"spectre_panel",
 						"Trouble",
@@ -47,8 +50,11 @@ return {
 					},
 				},
 				sections = {
-					lualine_b = { -- Bottom section
+					lualine_a = { "mode" },
+					lualine_b = { "branch", "diff", "diagnostics" },
+					lualine_c = { -- Bottom section
 						get_recording_key, -- Include the custom function directly
+						-- totalines,
 					},
 				},
 			})

@@ -12,9 +12,9 @@ return {
 				"python",
 				"typescript",
 				"lua",
-        "html",
-        "css",
-        "javascript"
+				"html",
+				"css",
+				"javascript",
 			},
 			auto_install = false,
 			sync_install = false,
