@@ -77,6 +77,7 @@ return {
     config = function()
       -- default config
       require("image").setup({
+        event={"BufEnter"},
         backend = "kitty",
         integrations = {
           markdown = {

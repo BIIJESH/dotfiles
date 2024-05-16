@@ -1,6 +1,7 @@
 return {
 	"https://github.com/akinsho/toggleterm.nvim",
 	keys = { [[\\]] },
+  event = "VeryLazy",
 	opts = {
 		size = function(term)
 			if term.direction == "horizontal" then
