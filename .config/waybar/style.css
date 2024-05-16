@@ -3,7 +3,6 @@
 @define-color BLUEBERRY #89b4fa;
 @define-color BANANA #f9e2af;
 @define-color ORANGE #fab387;
-
 * {
     border: none;
     font-family: "JetBrainsMono Nerd Font";
@@ -13,7 +12,7 @@
 }
 
 window#waybar {
-    background: mix(@theme_bg_color, transparent, 0.4);
+    background: mix(@theme_bg_color, transparent, 0.8);
     color: @theme_fg_color;
     border-radius: 10px;
     padding: 0px;
@@ -31,7 +30,7 @@ tooltip {
 
 #workspaces button {
     margin-right: 0px;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+    color: mix(@theme_fg_color, @theme_bg_color, 0.4);
     border-radius: 10px;
 }
 
