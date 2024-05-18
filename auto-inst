@@ -33,6 +33,7 @@ cp -R .bashrc ~/
 cp -R .config/zathura ~/.config/zathura/
 cp -R .config/yazi ~/.config/yazi/
 cp -R .bash_profile ~/
+cp -R .tmux.conf ~/
 
 chmod +x ~/.config/hypr/scripts/batterynotify.sh
 chmod +x ~/.config/hypr/scripts/lookup.sh
