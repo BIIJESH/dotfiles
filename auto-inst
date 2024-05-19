@@ -1,7 +1,6 @@
 #!/bin/bash
 # This is a quick and dirty script there are no error checking
 #### Check for paru ####
-
 sudo sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15\nILoveCandy/" /etc/pacman.conf
 ISAUR=/sbin/paru
 if [ -f "$ISAUR" ]; then
@@ -15,8 +14,9 @@ fi
 sudo pacman -S --noconfirm luarocks npm lua51 pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep
 sudo npm install -g liver-server   
 sudo luarocks --lua-version=5.1 install magick  
-paru -S --noconfirm nwg-displays nwg-look-bin zoxide hyprlock wlogout visual-studio-code-bin tldr zathura-pdf-mupdf-git pavucontrol
+paru -S --noconfirm ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout visual-studio-code-bin tldr zathura-pdf-mupdf-git pavucontrol
 sudo cp -r .config/themes/* /usr/share/themes/
+sudo cp -ru .config/ncmpcpp/bindings /usr/share/doc/ncmpcpp/
 echo -e "Copying config files...\n"
 cp -R .config/dunst ~/.config/
 cp -R .config/xfce4 ~/.config/
@@ -29,11 +29,13 @@ cp -R .config/waybar ~/.config/
 cp -R .config/wofi ~/.config/
 cp -R .config/Thunar ~/.config/
 cp -R .config/nvim ~/.config/
-cp -R .bashrc ~/
-cp -R .config/zathura ~/.config/zathura/
-cp -R .config/yazi ~/.config/yazi/
+cp -R .config/zathura ~/.config/
+cp -R .config/ncmpcpp ~/.config/ 
+cp -R .config/mpd ~/.config/
+cp -R .config/yazi ~/.config/
 cp -R .bash_profile ~/
 cp -R .tmux.conf ~/
+cp -R .bashrc ~/
 
 chmod +x ~/.config/hypr/scripts/batterynotify.sh
 chmod +x ~/.config/hypr/scripts/lookup.sh

@@ -1,0 +1,7 @@
+May 19 16:24 : output: Failed to play on "pulse audio" (pulse): suspended
+May 19 16:24 : player: played "Ankit Shrestha/Anaginti Aatma/Anaginti Aatma.mp3"
+May 19 16:25 : player: played "Ankit Shrestha/Anaginti Aatma/Anaginti Aatma.mp3"
+May 19 16:31 : player: played "Ankit Shrestha/Anaginti Aatma/Anaginti Aatma.mp3"
+May 19 16:33 : player: played "Ankit Shrestha/Anaginti Aatma/Anaginti Aatma.mp3"
+May 19 16:50 : player: played "Pink Floyd  /1979 - The Wall/1 - 01 - In The Flesh.mp3"
+May 19 16:52 : exception: Failed to create /home/papa/.mpd/mpdstate: No such file or directory
