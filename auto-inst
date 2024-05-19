@@ -15,7 +15,7 @@ fi
 sudo pacman -S --noconfirm luarocks npm lua51 pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty imagemagick pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep
 sudo npm install -g liver-server   
 sudo luarocks --lua-version=5.1 install magick  
-paru -S --noconfirm nwg-look-bin zoxide hyprlock wlogout visual-studio-code-bin tldr zathura-pdf-mupdf-git pavucontrol
+paru -S --noconfirm nwg-displays nwg-look-bin zoxide hyprlock wlogout visual-studio-code-bin tldr zathura-pdf-mupdf-git pavucontrol
 sudo cp -r .config/themes/* /usr/share/themes/
 echo -e "Copying config files...\n"
 cp -R .config/dunst ~/.config/

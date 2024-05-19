@@ -1,18 +1,14 @@
 return {
-	-- {{{ Define the Harpoon lazy.vim specificaiton.
 
 	"ThePrimeagen/harpoon",
 	enabled = true,
-  lazy=true,
-  event="VeryLazy",
+	lazy = true,
+	event = "VeryLazy",
 	branch = "harpoon2",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope.nvim",
 	},
-
-	-- ----------------------------------------------------------------------- }}}
-	-- {{{ Define events to load Harpoon.
 
 	keys = function()
 		local harpoon = require("harpoon")
@@ -36,7 +32,6 @@ return {
 		end
 
 		return {
-			-- Harpoon marked files 1 through 4
 			{
 				"<a-1>",
 				function()
