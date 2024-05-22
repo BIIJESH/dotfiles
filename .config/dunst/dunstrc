@@ -1,7 +1,7 @@
 [global]
 font = jetbrains mono nerd font
 allow_markup = yes
-origin = top-right
+origin = bottom-left
 corner_radius = 8
 offset = 6x6
 width = (200, 480)
