@@ -17,6 +17,7 @@ sudo luarocks --lua-version=5.1 install magick
 paru -S --noconfirm wlsunset mpd-mpris-bin ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout visual-studio-code-bin tldr zathura-pdf-mupdf-git pavucontrol
 sudo cp -r .config/themes/* /usr/share/themes/
 sudo cp -ru .config/ncmpcpp/bindings /usr/share/doc/ncmpcpp/
+sudo cp -r .config/hypr/scripts/tmuxsession /usr/local/bin/
 echo -e "Copying config files...\n"
 cp -R .config/dunst ~/.config/
 cp -R .config/xfce4 ~/.config/
@@ -39,6 +40,7 @@ cp -R .bashrc ~/
 
 chmod +x ~/.config/hypr/scripts/batterynotify.sh
 chmod +x ~/.config/hypr/scripts/lookup.sh
+chmod +x ~/.config/hypr/scripts/tmuxsession 
 
 echo -e "Script completed.\n"
 echo -e "You can start Hyprland by typing Hyprland.\n"

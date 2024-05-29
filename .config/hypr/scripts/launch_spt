@@ -1,5 +1,0 @@
-if [ ! $(pgrep "spotifyd") ]; then
-  spotifyd
-fi
-spt
-
