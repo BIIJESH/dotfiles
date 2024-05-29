@@ -21,6 +21,10 @@ alias ln='ln -i'
 alias ll='ls -lah'
 alias lf='ls -1A | fzf'
 alias gh='history | grep'
+alias t='tmux'
+alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
+alias ts='tmuxsession'
+
 alias fm='thunar &'
 alias cls='clear'
 alias ls='exa --icons'
@@ -34,6 +38,9 @@ alias em='emacsclient -t'
 alias record='wf-recorder --file=screen.mp4' 
 eval "$(zoxide init bash)"
 
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=$PATH:/home/papa/.spicetify
