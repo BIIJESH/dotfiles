@@ -3,8 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    # selected=$(find ~/mern/ ~/java/ ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
-    selected=$(find ~/mern/ ~/java/ ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/mern/ ~/java/ ~/.config/ ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
@@ -12,15 +11,16 @@ if [[ -z $selected ]]; then
 fi
 
 selected_name=$(basename "$selected" | tr . _)
-tmux_running=$(pgrep tmux)
 
-if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+if [[ -z $TMUX ]]; then
+    # No tmux session running, start a new session
     tmux new-session -s $selected_name -c $selected
-    exit 0
+else
+    # Inside an existing tmux session
+    if ! tmux has-session -t=$selected_name 2> /dev/null; then
+        # Create a new detached session
+        tmux new-session -ds $selected_name -c $selected
+    fi
+    # Switch to the new session
+    tmux switch-client -t $selected_name
 fi
-
-if ! tmux has-session -t=$selected_name 2> /dev/null; then
-    tmux new-session -ds $selected_name -c $selected
-fi
-
-tmux switch-client -t $selected_name
