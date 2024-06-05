@@ -10,7 +10,6 @@ vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.title = true
 vim.opt.backspace = "2"
-
 -- Lazy mapping to convert JSON to Go struct
 vim.opt.hlsearch = true
 vim.opt.ignorecase = false
@@ -36,8 +35,7 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.wrap = true
 vim.opt.linebreak = true
 
-vim.api.nvim_set_option("number", true) -- Show absolute line numbers
-vim.api.nvim_set_option("relativenumber", true) -- Show relative line numbers
+vim.opt.relativenumber = true
 -- vim.opt.showbreak = "↩"
 vim.filetype.add({
 	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
