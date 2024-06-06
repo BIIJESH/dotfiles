@@ -3,6 +3,7 @@
 export VISUAL=nvim
 export EDITOR=nvim
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+export PATH="$PATH:/home/papa/.local/share/bob/nvim-bin"
 # Set prompt
 export PS1='%F{cyan}%D{%Y-%m-%d}%f  %m in %F{green}%~%f
  %F{cyan}❯%f '
@@ -10,6 +11,16 @@ export PS1='%F{cyan}%D{%Y-%m-%d}%f  %m in %F{green}%~%f
 # Aliases
 alias in='paru -S'
 alias gcl='git clone'
+alias addup='git add -u'
+alias pull='git pull'
+alias addall='git add .'
+alias branch='git branch'
+alias checkout='git checkout'
+alias commit='git commit -a -m'
+alias fetch='git fetch'
+alias pull='git pull'
+alias status='git status'
+
 alias un='sudo pacman -Rns'
 alias dbl='bluetoothctl disconnect'
 alias prun='pacman -Qtdq | sudo pacman -Rns -'
@@ -17,18 +28,24 @@ alias up='sudo pacman -Syu'
 alias vi='nvim'
 alias mv='mv -i'
 alias cp='cp -i'
-alias ln='ln -i'
-alias ll='ls -lah'
-alias lf='ls -1A | fzf'
 alias gh='history | grep'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 alias t='tmux'
 alias ts='tmuxsession'
 alias tks='tmux kill-session'
 alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
 
+fcd(){
+  cd "$(find ~/ -type d | fzf)"
+}
+
 alias fm='thunar &'
 alias cls='clear'
-alias ls='exa --icons'
+alias ls='exa --icons --color=always --group-directories-first'
+alias la='exa -a --icons --color=always --group-directories-first'
+alias ll='exa -l --icons --color=always --group-directories-first'
 alias :q='exit'
 alias xam='sudo /opt/lampp/lampp start'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
