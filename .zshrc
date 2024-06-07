@@ -18,7 +18,7 @@ alias branch='git branch'
 alias checkout='git checkout'
 alias commit='git commit -a -m'
 alias fetch='git fetch'
-alias pull='git pull'
+alias push='git push'
 alias status='git status'
 
 alias un='sudo pacman -Rns'
