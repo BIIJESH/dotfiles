@@ -1,26 +1,57 @@
-#!/bin/sh
 
-# Feed script a url or file location.
-# If an image, it will view in sxiv,
-# if a video or gif, it will view in mpv
-# if a music file or pdf, it will download,
-# otherwise it opens link in browser.
+#!/bin/bash
 
-if [ -z "$1" ]; then
-	url="$(xclip)"
-else
-	url="$1"
-fi
+# Function to extract the base filename from URL
+extract_filename() {
+  local url="$1"
+  local base_filename=$(basename "$url" | cut -d'?' -f1)
+  echo "$base_filename"
+}
+
+# Function to download and open image with imv
+download_and_open_image() {
+  local url="$1"
+  local filename=$(extract_filename "$url")
+
+  echo "Downloading image from URL: $url"
+
+  # Download the image and stream to imv
+  curl -sL "$url" | imv - >/dev/null 2>&1 &
+
+  if [ $? -ne 0 ]; then
+    echo "Failed to download or open image: $url"
+  fi
+}
+
+# Function to open video URLs or local files
+open_video_or_file() {
+  local url="$1"
+  case "$url" in
+    *mkv*|*webm*|*mp4*|*rumble.com*|*youtube.com/watch*|*youtube.com/playlist*|*youtube.com/shorts*|*youtu.be*|*hooktube.com*|*bitchute.com*|*videos.lukesmith.xyz*|*odysee.com*)
+   setsid -f mpv -quiet "$url" >/dev/null 2>&1 ;;  
+    *)
+      if [ -f "$url" ]; then
+        setsid -f "$TERMINAL" -e "$EDITOR" "$url" >/dev/null 2>&1
+      else
+        setsid -f "$BROWSER" "$url" >/dev/null 2>&1
+      fi
+      ;;
+  esac
+}
+
+# Debugging: Print the URL being processed
+echo "Processing URL: $1"
+
+# Determine file type and handle accordingly
+url="$1"
 
 case "$url" in
-	*mkv|*webm|*mp4|*rumble.com*|*youtube.com/watch*|*youtube.com/playlist*|*youtube.com/shorts*|*youtu.be*|*hooktube.com*|*bitchute.com*|*videos.lukesmith.xyz*|*odysee.com*)
-		setsid -f mpv -quiet "$url" >/dev/null 2>&1 ;;
-	*png|*jpg|*jpe|*jpeg|*gif)
-		curl -sL "$url" > "/tmp/$(echo "$url" | sed "s/.*\///;s/%20/ /g")" && sxiv -a "/tmp/$(echo "$url" | sed "s/.*\///;s/%20/ /g")"  >/dev/null 2>&1 & ;;
-	*pdf|*cbz|*cbr)
-		curl -sL "$url" > "/tmp/$(echo "$url" | sed "s/.*\///;s/%20/ /g")" && zathura "/tmp/$(echo "$url" | sed "s/.*\///;s/%20/ /g")"  >/dev/null 2>&1 & ;;
-	*mp3|*flac|*opus|*mp3?source*)
-		qndl "$url" 'curl -LO'  >/dev/null 2>&1 ;;
-	*)
-		[ -f "$url" ] && setsid -f "$TERMINAL" -e "$EDITOR" "$url" >/dev/null 2>&1 || setsid -f "$BROWSER" "$url" >/dev/null 2>&1
+  # Images with any prefix in the URL
+  *png*|*jpg*|*jpe*|*jpeg*|*gif*)
+    download_and_open_image "$url"
+    ;;
+  # Video URLs or local files
+  *)
+    open_video_or_file "$url"
+    ;;
 esac
