@@ -1,13 +1,18 @@
 
 # Set default editor
 export VISUAL=nvim
+export BROWSER="/usr/bin/firefox"
 export EDITOR=nvim
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$PATH:/home/papa/.local/share/bob/nvim-bin"
+source ~/.zsh-autopair/autopair.zsh
 # Set prompt
 export PS1='%F{cyan}%D{%Y-%m-%d}%f  %m in %F{green}%~%f
  %F{cyan}❯%f '
-
+#
+# export PS1="%F{cyan}%D{%Y-%m-%d}%f    %m  in  %F{green}%~%f\n ❯ "
+precmd() { print "" }
+setopt autocd	
 # Aliases
 alias in='paru -S'
 alias gcl='git clone'
@@ -18,14 +23,16 @@ alias branch='git branch'
 alias checkout='git checkout'
 alias commit='git commit -a -m'
 alias fetch='git fetch'
-alias pull='git pull'
+alias push='git push'
 alias status='git status'
 
+alias cat="bat --theme Dracula"
 alias un='sudo pacman -Rns'
+alias nb='newsboat'
 alias dbl='bluetoothctl disconnect'
 alias prun='pacman -Qtdq | sudo pacman -Rns -'
 alias up='sudo pacman -Syu'
-alias vi='nvim'
+alias v='nvim'
 alias mv='mv -i'
 alias cp='cp -i'
 alias gh='history | grep'

@@ -15,7 +15,7 @@ sudo pacman -S --noconfirm luarocks npm lua51 pipewire pipewire-alsa pipewire-au
 
 sudo luarocks --lua-version=5.1 install magick  
 
-paru -S --noconfirm wlsunset mpd-mpris-bin ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout tldr zathura-pdf-mupdf-git pavucontrol newsboat xclip urlview sxiv
+paru -S --noconfirm wlsunset mpd-mpris-bin ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout tldr zathura-pdf-mupdf-git pavucontrol newsboat xclip urlview  bat
 echo -e "Copying config files...\n"
 sudo cp -r .config/themes/* /usr/share/themes/
 sudo cp -r .config/hypr/scripts/linkhandler /usr/local/bin
