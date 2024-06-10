@@ -43,7 +43,7 @@ alias tks='tmux kill-session'
 alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
 
 fcd(){
-  cd "$(find ~/ -type d | fzf)"
+    cd "$(find ~/ -type d -not -path '*/.git*' | fzf)"
 }
 
 alias fm='thunar &'
@@ -71,7 +71,9 @@ fzf_preview() {
   local selected_file
   selected_file=$(find "$current_dir" -type f -not -path '*/.git/*' | fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")
   if [[ -n "$selected_file" ]]; then
-    nvim "$selected_file"
+    local selected_dir=$(dirname "$selected_file")
+    cd "$selected_dir"
+    nvim "$(basename "$selected_file")"
   fi
 }
 
