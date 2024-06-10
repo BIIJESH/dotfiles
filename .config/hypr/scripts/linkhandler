@@ -1,29 +1,23 @@
-
 #!/bin/bash
 
-# Function to extract the base filename from URL
 extract_filename() {
   local url="$1"
   local base_filename=$(basename "$url" | cut -d'?' -f1)
   echo "$base_filename"
 }
 
-# Function to download and open image with imv
 download_and_open_image() {
   local url="$1"
   local filename=$(extract_filename "$url")
 
   echo "Downloading image from URL: $url"
 
-  # Download the image and stream to imv
   curl -sL "$url" | imv - >/dev/null 2>&1 &
 
   if [ $? -ne 0 ]; then
     echo "Failed to download or open image: $url"
   fi
 }
-
-# Function to open video URLs or local files
 open_video_or_file() {
   local url="$1"
   case "$url" in
@@ -39,18 +33,14 @@ open_video_or_file() {
   esac
 }
 
-# Debugging: Print the URL being processed
 echo "Processing URL: $1"
 
-# Determine file type and handle accordingly
 url="$1"
 
 case "$url" in
-  # Images with any prefix in the URL
   *png*|*jpg*|*jpe*|*jpeg*|*gif*)
     download_and_open_image "$url"
     ;;
-  # Video URLs or local files
   *)
     open_video_or_file "$url"
     ;;

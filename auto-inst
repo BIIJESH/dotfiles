@@ -22,9 +22,9 @@ sudo cp -r .config/hypr/scripts/linkhandler /usr/local/bin
 sudo cp -ru .config/ncmpcpp/bindings /usr/share/doc/ncmpcpp/
 sudo cp -r .config/hypr/scripts/tmuxsession /usr/local/bin/
 sudo cp -r .config/hypr/scripts/tmuxcht.sh /usr/local/bin
-cp -R tmux/.tmux-cht-command ~/  
-cp -R tmux/.tmux-cht-languages ~/  
-cp -R tmux/.tmux.conf ~/
+cp -R tmux/.tmux-cht-command ~/tmux/
+cp -R tmux/.tmux-cht-languages ~/tmux/ 
+cp -R tmux/.tmux.conf ~/tmux/
 cp -R .config/dunst ~/.config/
 cp -R .config/xfce4 ~/.config/
 cp -R .config/hypr ~/.config/
