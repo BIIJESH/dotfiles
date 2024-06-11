@@ -15,7 +15,6 @@ return {
     opts = {
       servers = {
         pyright = {},
-        rust_analyzer = {},
         tsserver = {
           completion = {
             callSnippet = "Replace",
