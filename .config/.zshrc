@@ -42,9 +42,6 @@ alias ts='tmuxsession'
 alias tks='tmux kill-session'
 alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
 
-fcd(){
-    cd "$(find ~/ -type d -not -path '*/.git*' | fzf)"
-}
 
 alias fm='thunar &'
 alias cls='clear'
@@ -69,16 +66,14 @@ setopt appendhistory
 fzf_preview() {
   local current_dir=$(pwd)
   local selected_file
-  selected_file=$(find "$current_dir" -type f -not -path '*/.git/*' | fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")
+  selected_file=$(find "$current_dir" -type f -not -path '*/.git/*'| fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")
   if [[ -n "$selected_file" ]]; then
     local selected_dir=$(dirname "$selected_file")
     cd "$selected_dir"
     nvim "$(basename "$selected_file")"
   fi
 }
-
 zle -N fzf_preview
-
 bindkey '^F' fzf_preview
 
 if [ "$(tty)" = "/dev/tty1" ];then
