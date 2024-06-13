@@ -1,6 +1,7 @@
 require("config.snippets")
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.opt.scrolloff = 4
 vim.opt.autoread = true
 vim.opt.autowriteall = false
 vim.opt.showcmd = false
