@@ -51,7 +51,7 @@ return {
 				},
 				sections = {
 					lualine_a = { "mode" },
-					lualine_b = { "branch", "diff", "diagnostics" },
+					lualine_b = { "diff", "diagnostics" },
 					lualine_c = { -- Bottom section
 						get_recording_key, -- Include the custom function directly
 						-- totalines,

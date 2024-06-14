@@ -1,8 +1,10 @@
-@define-color LIME #a6e3a1;
-@define-color STRAWBERRY #FF3040;
-@define-color BLUEBERRY #89b4fa;
-@define-color BANANA #f9e2af;
-@define-color ORANGE #fab387;
+
+@define-color LIME #73daca; /* green */
+@define-color STRAWBERRY #f7768e; /* red */
+@define-color BLUEBERRY #7aa2f7; /* blue */
+@define-color BANANA #e0af68; /* yellow */
+@define-color ORANGE #ff9e64; /* orange */
+
 * {
     border: none;
     font-family: "JetBrainsMono Nerd Font";
@@ -12,11 +14,12 @@
 }
 
 window#waybar {
-    background: mix(@theme_bg_color, transparent, 0.8);
+    background: rgba(26, 27, 38, 0.9); /* theme_bg_color with opacity */
     color: @theme_fg_color;
     border-radius: 10px;
     padding: 0px;
     transition-duration: 1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* adds a shadow for depth */
 }
 
 tooltip {
@@ -48,8 +51,8 @@ tooltip {
 }
 
 #workspaces button:hover {
-  color: @theme_bg_color;
-  background-color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
+    color: @theme_bg_color;
+    background-color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
 }
 
 #temperature {
@@ -64,13 +67,13 @@ tooltip {
     color: mix(@BANANA, @theme_fg_color, 0.5);
 }
 
-#workspaces { 
+#workspaces {
     padding: 0px;
 }
 
 #mpris {
     color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
-} 
+}
 
 #custom-cava {
     color: @theme_selected_bg_color;
@@ -92,7 +95,7 @@ tooltip {
 #workspaces,
 #light,
 #audio {
-  background: mix(@theme_selected_bg_color, @theme_bg_color, 0.8);
+    background: mix(@theme_selected_bg_color, @theme_bg_color, 0.8);
 }
 
 #custom-arch {
@@ -150,8 +153,9 @@ tooltip {
 #battery {
     color: mix(@LIME, @theme_fg_color, 0.5);
 }
-battery.bat2{
-  color: mix(@LIME, @theme_fg_color, 0.5)
+
+battery.bat2 {
+    color: mix(@LIME, @theme_fg_color, 0.5);
 }
 
 #custom-weather {
@@ -169,11 +173,11 @@ window#waybar > box > box > box {
     border-radius: 10px;
     /*background: mix(@theme_bg_color, transparent, 0.1);*/
 }
+
 /*CONTENT OF ALL WIDGETS*/
 widget > * {
     padding: 0 10px;
 }
-
 
 slider {
     min-height: 0px;
@@ -184,16 +188,19 @@ slider {
     box-shadow: none;
     background-color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
 }
+
 trough {
     min-height: 20px;
     min-width: 80px;
     border-radius: 10px;
     background: mix(@theme_bg_color, transparent, 0.1);
 }
+
 highlight {
     min-height: 10px;
     border-radius: 10px;
 }
+
 #light {
-  border-radius: 10px;
+    border-radius: 10px;
 }
