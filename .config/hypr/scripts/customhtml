@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Change directory to your startpage directory
+cd ~/startpage
+
+# Start Python HTTP server on port 8000 in the background
+python3 -m http.server 8000 > /dev/null 2>&1 &
+
+echo "Startpage server started at http://localhost:8000"

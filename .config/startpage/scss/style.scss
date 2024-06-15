@@ -1,0 +1,83 @@
+@import "theme.scss";
+
+html {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  color: $themeFg;
+  background: $themeBg;
+  font-family: $fontFace;
+  margin-right: 9em;
+  padding: 1em;
+}
+
+img {
+  height: 600px;
+  width: 350px;
+  margin-right: 2em;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav {
+  display: grid;
+  grid-row-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+  min-width: 24em;
+  grid-auto-rows: max-content;
+}
+
+h1 {
+  font-size: $fontH1Size;
+  font-weight: $fontWeight;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: $fontH2Size;
+  font-weight: $fontWeight;
+  color: $themeFgAlt;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 2.3em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+li {
+  line-height: 1.4em;
+  margin-left: 4.8em;
+}
+li:first-child {
+  display: inline-block;
+  color: $themeAccent;
+  font-size: $fontLiFCSize;
+  font-weight: $fontWeight;
+  text-align: center;
+  line-height: 2em;
+  margin-left: 2.5em;
+}
+
+a {
+  color: $themeFgAlt;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+a:hover {
+  color: $themeHover;
+  font-style: $fontHoverStyle;
+}
