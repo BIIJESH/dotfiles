@@ -1,5 +1,4 @@
-!/bin/bash
-# This is a quick and dirty script there are no error checking
+#!/bin/bash
 #### Check for paru ####
 sudo sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15\nILoveCandy/" /etc/pacman.conf
 ISAUR=/sbin/paru
@@ -44,11 +43,11 @@ cp -R .config/bat ~/.config/
 cp -R .bash_profile ~/
 cp -R .bashrc ~/
 
+chmod +x ~/.config/hypr/scirpts/linkhandler
 chmod +x ~/.config/hypr/scripts/batterynotify.sh
 chmod +x ~/.config/hypr/scripts/lookup.sh
 chmod +x ~/.config/hypr/scripts/tmuxsession 
 chmod +x ~/.config/hypr/scripts/tmuxcht.sh
-chmod +x ~/.config/hypr/scirpts/linkhandler
 
 echo -e "Script completed.\n"
 echo -e "You can start Hyprland by typing Hyprland.\n"
