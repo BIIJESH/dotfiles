@@ -81,10 +81,10 @@ return {
 		cmd = { "Trouble", "TroubleToggle" },
 		opts = {},
 		keys = {
-			{ "<leader>xx", "<cmd>TroubleToggle document_diagnostics<CR>", desc = "Document diagnostics" },
-			{ "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<CR>", desc = "Workspace diagnostics" },
-			{ "<leader>xl", "<cmd>TroubleToggle loclist<CR>", desc = "Location list" },
-			{ "<leader>xq", "<cmd>TroubleToggle quickfix<CR>", desc = "Quickfix list" },
+			{ "<leader>xx", "<cmd>Trouble diagnostics toggle <CR>", desc = "Diagnostics (Trouble)" },
+      { "<leader>xw", "<cmd>Trouble diagnostics toggle filter.buf =0<CR>", desc = "Buffer Diagnostics (Trouble)" },
+			{ "<leader>xl", "<cmd>Trouble loclist toggle<CR>", desc = "Location list (Trouble)" },
+			{ "<leader>xq", "<cmd>Trouble qflist toggle<CR>", desc = "Quickfix list (Trouble)" },
 		},
 	},
 	{
@@ -108,7 +108,7 @@ return {
 				end,
 				desc = "Previous todo comment",
 			},
-			{ "<leader>xt", "<cmd>TodoTrouble<CR>", desc = "Todo (Trouble)" },
+			{ "<leader>xt", "<cmd>TodoTrouble toggle<CR>", desc = "Todo (Trouble)" },
 			{ "<leader>xT", "<cmd>TodoTrouble keywords=TODO,FIX,FIXME<CR>", desc = "Todo/Fix/Fixme (Trouble)" },
 			{ "<leader>ft", "<cmd>TodoTelescope<CR>", desc = "Todo" },
 			{ "<leader>fT", "<cmd>TodoTelescope keywords=TODO,FIX,FIXME<CR>", desc = "Todo/Fix/Fixme" },
@@ -171,5 +171,4 @@ return {
 			require("nvim-surround").setup({})
 		end,
 	},
-
 }
