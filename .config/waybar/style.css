@@ -14,7 +14,7 @@
 }
 
 window#waybar {
-    background: rgba(26, 27, 38, 0.9); /* theme_bg_color with opacity */
+    background: rgba(26, 27, 38, 0.7); /* theme_bg_color with opacity */
     color: @theme_fg_color;
     border-radius: 10px;
     padding: 0px;
