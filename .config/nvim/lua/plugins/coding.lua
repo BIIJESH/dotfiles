@@ -15,7 +15,6 @@ return {
 				"html",
 				"css",
 				"javascript",
-				"java",
 			},
 			auto_install = false,
 			sync_install = false,
@@ -136,7 +135,6 @@ return {
 			end, { expr = true, desc = "Rename" })
 		end,
 	},
-	{ "mfussenegger/nvim-jdtls"},
 	{
 		"olrtg/nvim-emmet",
 		config = function()

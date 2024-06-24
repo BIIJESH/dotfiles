@@ -1,23 +1,29 @@
--- local config = {
---     cmd = {vim.fn.expand('~/.local/share/nvim/mason/bin/jdtls')},
---     root_dir = vim.fs.dirname(vim.fs.find({'gradlew', '.git', 'mvnw'}, { upward = true })[1]),
--- }
--- require('jdtls').start_or_attach(config)
+local lsp = require("plugins.lspconfig")
+local capabilities = require("plugins.lspconfig").capabilities
 
--- Ensure jdtls is available
-local jdtls = require('jdtls')
+local workspace_dir = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 
--- Define the jdtls configuration
 local config = {
-    cmd = {vim.fn.expand('~/.local/share/nvim/mason/bin/jdtls')},  -- Adjust the path if necessary
-    root_dir = vim.fs.dirname(vim.fs.find({'gradlew', '.git', 'mvnw'}, { upward = true })[1]),  -- Find the project root
-    settings = {
-        java = {}
-    },
-    init_options = {
-        bundles = {}
-    },
-}
+  capabilities = capabilities,
+  flags = { debounce_text_changes = 500 },
+  cmd = {
+    "/usr/bin/java",
+    "-Declipse.application=org.eclipse.jdt.ls.core.id1",
+    "-Dosgi.bundles.defaultStartLevel=4",
+    "-Declipse.product=org.eclipse.jdt.ls.core.product",
+    "-noverify",
+    "-Xms1G",
+    "-jar",
+    "/usr/share/java/jdtls/plugins/org.eclipse.equinox.launcher_1.6.300.v20210813-1054.jar",
+    "-configuration",
+    "/home/Java/myapp/",
+    "-data",
+    "/home/dnehrig/code/work/" .. workspace_dir,
+  },
 
--- Start or attach the jdtls server
-jdtls.start_or_attach(config)
+  root_dir = require("jdtls.setup").find_root({ ".git", "pom.xml" }),
+  on_attach = function(client, bufnr)
+    lsp:on_attach(client, bufnr)
+  end,
+}
+require("jdtls").start_or_attach(config)
