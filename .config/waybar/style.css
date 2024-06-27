@@ -1,4 +1,3 @@
-
 @define-color LIME #73daca; /* green */
 @define-color STRAWBERRY #f7768e; /* red */
 @define-color BLUEBERRY #7aa2f7; /* blue */
@@ -14,20 +13,20 @@
 }
 
 window#waybar {
-    background: rgba(26, 27, 38, 0.7); /* theme_bg_color with opacity */
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
     color: @theme_fg_color;
     border-radius: 10px;
     padding: 0px;
     transition-duration: 1s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* adds a shadow for depth */
+    box-shadow: none; /* remove shadow for full transparency */
 }
 
 tooltip {
-    background: @theme_bg_color;
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
     border-radius: 0px;
     border-width: 2px;
     border-style: solid;
-    border-color: @theme_selected_bg_color;
+    border-color: rgba(26, 27, 38, 0.0); /* transparent border */
     color: @theme_fg_color;
 }
 
@@ -35,6 +34,7 @@ tooltip {
     margin-right: 0px;
     color: mix(@theme_fg_color, @theme_bg_color, 0.4);
     border-radius: 10px;
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 #workspaces button.active {
@@ -47,12 +47,12 @@ tooltip {
 
 #workspaces button.urgent {
     color: @theme_fg_color;
-    background: @LIME;
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 #workspaces button:hover {
     color: @theme_bg_color;
-    background-color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
+    background-color: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 #temperature {
@@ -69,6 +69,7 @@ tooltip {
 
 #workspaces {
     padding: 0px;
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 #mpris {
@@ -91,11 +92,10 @@ tooltip {
     color: mix(@ORANGE, @theme_fg_color, 0.3);
 }
 
-/*Cool background for groups and widgets*/
 #workspaces,
 #light,
 #audio {
-    background: mix(@theme_selected_bg_color, @theme_bg_color, 0.8);
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 #custom-arch {
@@ -166,17 +166,16 @@ battery.bat2 {
     padding: 0;
 }
 
-/*GROUPS AND WIDGETS WITHOUT GROUP*/
 window#waybar > box > box > widget > *,
 window#waybar > box > box > box {
     margin: 0 5px;
     border-radius: 10px;
-    /*background: mix(@theme_bg_color, transparent, 0.1);*/
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
-/*CONTENT OF ALL WIDGETS*/
 widget > * {
     padding: 0 10px;
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 slider {
@@ -186,21 +185,23 @@ slider {
     background-image: none;
     border: none;
     box-shadow: none;
-    background-color: mix(@theme_selected_bg_color, @theme_fg_color, 0.5);
+    background-color: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 trough {
     min-height: 20px;
     min-width: 80px;
     border-radius: 10px;
-    background: mix(@theme_bg_color, transparent, 0.1);
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 highlight {
     min-height: 10px;
     border-radius: 10px;
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
 
 #light {
     border-radius: 10px;
+    background: rgba(26, 27, 38, 0.0); /* transparent background */
 }
