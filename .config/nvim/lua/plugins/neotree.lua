@@ -16,6 +16,11 @@ return {
 					["P"] = { "toggle_preview", config = { use_float = false, use_image_nvim = true } },
 				},
 			},
+			filesystem = {
+				filtered_items = {
+					hide_by_pattern = { "*.class" }, -- Hide .class files
+				},
+			},
 		},
 		keys = {
 			{ "<leader>te", "<cmd>Neotree toggle reveal<CR>", desc = "Neotree" },
@@ -48,7 +53,7 @@ return {
 		config = function(_, opts)
 			require("telescope").setup({
 				defaults = {
-					file_ignore_patterns = { "%.class", "node_modules/.*", "venv/.*"  },
+					file_ignore_patterns = { "%.class", "node_modules/.*", "venv/.*" },
 					selection_caret = "󱞩 ",
 					prompt_prefix = "   ",
 					layout_strategy = "vertical",
