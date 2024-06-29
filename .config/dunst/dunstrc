@@ -2,12 +2,12 @@
 font = jetbrains mono nerd font
 allow_markup = yes
 origin = bottom-right
-corner_radius = 8
+corner_radius = 0
 offset = 6x6
-width = (200, 480)
+width = (300, 580)
 frame_width = 1
-frame_color = "#e5b8c6"
-separator_color= frame
+frame_color = "#cba6f7"  
+separator_color = frame
 alignment = center
 notification_limit = 6
 indicate_hidden = yes
@@ -18,14 +18,14 @@ mouse_right_click = close_all
 fullscreen_show_everything
 
 [urgency_low]
-background = "#0d0f16"
-foreground = "#CDD6F4"
+background = "#1a1b26"  
+foreground = "#c0caf5" 
 
 [urgency_normal]
-background = "#0d0f16"
-foreground = "#CDD6F4"
+background = "#1a1b26"
+foreground = "#c0caf5"
 
 [urgency_critical]
-background = "#0d0f16"
-foreground = "#CDD6F4"
-frame_color = "#FAB387"
+background = "#1a1b26"
+foreground = "#f7768e" 
+frame_color = "#ff9e64"

@@ -48,6 +48,7 @@ return {
 		config = function(_, opts)
 			require("telescope").setup({
 				defaults = {
+					file_ignore_patterns = { "%.class", "node_modules/.*", "venv/.*"  },
 					selection_caret = "󱞩 ",
 					prompt_prefix = "   ",
 					layout_strategy = "vertical",
