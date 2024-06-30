@@ -1,8 +1,10 @@
 # Set default editor
 export VISUAL=nvim
+export PATH="$HOME/.nix-profile/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export BAT_THEME=tokyonight_night
-export BROWSER="/usr/bin/firefox"
-export EDITOR=nvim
+export BROWSER="/usr/bin/brave"
+export EDITOR=nvie
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$PATH:/home/papa/.local/share/bob/nvim-bin"
 source ~/.zsh-autopair/autopair.zsh
@@ -22,7 +24,7 @@ alias checkout='git checkout'
 alias commit='git commit -a -m'
 alias fetch='git fetch'
 alias push='git push'
-alias status='git status'
+alias stats='git status'
 
 alias cat="bat --theme tokyonight_night"
 alias un='sudo pacman -Rns'
@@ -41,8 +43,6 @@ alias t='tmux'
 alias ts='tmuxsession'
 alias tks='tmux kill-session'
 alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
-
-
 alias fm='thunar &'
 alias cls='clear'
 alias ls='exa --icons --color=always --group-directories-first'
@@ -51,7 +51,9 @@ alias ll='exa -l --icons --color=always --group-directories-first'
 alias :q='exit'
 alias xam='sudo /opt/lampp/lampp start'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-alias pgadmin='source pgadmin4/bin/activate'
+alias wo="pomodoro 'work'"
+alias br="pomodoro 'break'"
+# alias pgadmin='source pgadmin4/bin/activate'
 alias pmq='pacman -Q | fzf | wl-copy'
 alias em='emacsclient -t'
 alias record='wf-recorder --file=screen.mp4'
@@ -79,3 +81,60 @@ bindkey '^F' fzf_preview
 if [ "$(tty)" = "/dev/tty1" ];then
   exec Hyprland
 fi
+
+if [ -e /home/papa/.nix-profile/etc/profile.d/nix.sh ]; then . /home/papa/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+setopt prompt_subst
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' actionformats \
+    '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
+zstyle ':vcs_info:*' formats       \
+    '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{5}]%f '
+zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
+
+zstyle ':vcs_info:*' enable git cvs svn
+
+# or use pre_cmd, see man zshcontrib
+vcs_info_wrapper() {
+  vcs_info
+  if [ -n "$vcs_info_msg_0_" ]; then
+    echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}$del"
+  fi
+}
+RPROMPT=$'$(vcs_info_wrapper)'
+declare -A pomo_options
+pomo_options["work"]="45"
+pomo_options["break"]="10"
+
+# Function for work session
+work_session() {
+  echo "Starting work session"
+  timer "${pomo_options["work"]}m"
+  notify-send "'work' session done"
+}
+
+# Function for break session
+break_session() {
+  echo "Starting break session"
+  timer "${pomo_options["break"]}m"
+  notify-send "'break' session done"
+}
+
+# Pomodoro function
+pomodoro() {
+  if [ -n "$1" ] && [ -n "${pomo_options["$1"]}" ]; then
+    local val="$1"
+    case "$val" in
+      "work")
+        work_session
+        break_session  # Start break session after work session
+        ;;
+      "break")
+        break_session
+        ;;
+      *)
+        echo "Invalid session type"
+        ;;
+    esac
+  fi
+}
