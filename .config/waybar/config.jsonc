@@ -14,8 +14,7 @@
         "modules-left": [
             "group/power",
             "clock",
-            "hyprland/workspaces",
-            "custom/cava"
+            "hyprland/workspaces"
         ],
         "modules-center": [
             "hyprland/window"
@@ -46,10 +45,10 @@
             "group/power",
             "clock",
             "hyprland/workspaces",
-            "custom/cava"
+          "custom/cava"
         ],
         "modules-center": [
-           
+            "custom/euro"
         ],
         "modules-right": [
             "mpris",

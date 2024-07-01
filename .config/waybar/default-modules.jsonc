@@ -30,6 +30,12 @@
         "exec": "~/.config/waybar/scripts/waybar-cava.sh",
         "return-type": "text"
     },
+    "custom/euro": {
+      "exec" : "/home/papa/WaybarFixtures/myenv/bin/python /home/papa/WaybarFixtures/main.py",
+      "interval" : 2,
+      "tooltip" :true,
+      "return-type": "json"
+    },
     "tray": {
         "icon-size": 18,
         "spacing": 0
