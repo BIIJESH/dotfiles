@@ -21,7 +21,7 @@ return {
 
     navbuddy.setup({
       window = {
-        border = "rounded",
+        border = "none",
         size = "80%",
       },
 

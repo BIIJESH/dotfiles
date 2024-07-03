@@ -56,14 +56,17 @@ return {
 					file_ignore_patterns = { "%.class", "node_modules/.*", "venv/.*" },
 					selection_caret = "󱞩 ",
 					prompt_prefix = "   ",
-					layout_strategy = "vertical",
+					layout_strategy = "horizontal",
 					layout_config = {
-						vertical = {
-							width = 0.9,
-							height = 0.9,
-							preview_height = 0.7,
+						preview_width = 0.65,
+						horizontal = {
+							size = {
+								width = "95%",
+								height = "95%",
+							},
 						},
 					},
+					border = false,
 				},
 			})
 			require("telescope").load_extension("fzf")
