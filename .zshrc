@@ -1,5 +1,7 @@
-# Set default editor
 export VISUAL=nvim
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS="--bind=tab:up,shift-tab:down"
 export PATH="$HOME/.nix-profile/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export BAT_THEME=tokyonight_night
