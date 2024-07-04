@@ -1,8 +1,9 @@
+
 window {
   margin: 0px;
-  border: 5px solid #111019;
-  background-color: rgba(11, 10, 16, 0.9);
-  border-radius: 15px;
+  border: 0 solid #1a1b26;
+  background-color: rgba(26, 27, 38, 0.9);
+  border-radius: 0;
 }
 
 #input {
@@ -11,9 +12,9 @@ window {
   padding: 4px 10px;
   margin: 4px;
   border: none;
-  color: #e2e0ec;
+  color: #c0caf5;
   font-weight: bold;
-  background-color: #161420;
+  background-color: #1a1b26;
   outline: none;
   border-radius: 15px;
   margin: 10px;
@@ -24,15 +25,15 @@ window {
   margin: 4px;
   padding: 10px;
   font-weight: bold;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 #outer-box {
   margin: 0px;
   padding: 3px;
   border: none;
-  border-radius: 15px;
-  border: 5px solid #111019;
+  border-radius: 0px;
+  border: 5px solid #1a1b26;
 }
 
 #scroll {
@@ -43,7 +44,7 @@ window {
 }
 
 #text:selected {
-  color: #f1f0f5;
+  color: #c0caf5;
   margin: 0px 0px;
   border: none;
   border-radius: 15px;
@@ -52,13 +53,13 @@ window {
 #entry {
   margin: 0px 0px;
   border: none;
-  border-radius: 15px;
+  border-radius: 0px;
   background-color: transparent;
 }
 
 #entry:selected {
   margin: 0px 0px;
   border: none;
-  border-radius: 15px;
-  background: linear-gradient(90deg, #ca9ee6 0%, #c6a0f6 100%);
+  border-radius: 0px;
+  background: linear-gradient(90deg, #7aa2f7 0%, #bb9af7 100%);
 }

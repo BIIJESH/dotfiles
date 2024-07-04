@@ -70,7 +70,8 @@ setopt appendhistory
 fzf_preview() {
   local current_dir=$(pwd)
   local selected_file
-  selected_file=$(find "$current_dir" -type f -not -path '*/.git/*'| fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")
+
+selected_file=$(find "$current_dir" -type f \( ! -iname "*.jpg" -a ! -iname "*.jpeg" -a ! -iname "*.png" -a ! -iname "*.webp" \) -not -path '*/.git/*' -not -path "$current_dir" | fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")
   if [[ -n "$selected_file" ]]; then
     local selected_dir=$(dirname "$selected_file")
     cd "$selected_dir"
