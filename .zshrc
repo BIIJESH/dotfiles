@@ -5,8 +5,8 @@ export FZF_DEFAULT_OPTS="--bind=tab:up,shift-tab:down"
 export PATH="$HOME/.nix-profile/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export BAT_THEME=tokyonight_night
-export BROWSER="/usr/bin/brave"
-export EDITOR=nvie
+export BROWSER="/usr/bin/firefox"
+export EDITOR=nvim
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$PATH:/home/papa/.local/share/bob/nvim-bin"
 source ~/.zsh-autopair/autopair.zsh
@@ -27,6 +27,8 @@ alias commit='git commit -a -m'
 alias fetch='git fetch'
 alias push='git push'
 alias stats='git status'
+alias fsb='~/tmux/fsb.sh'
+alias fshow='~/tmux/fshow.sh'
 
 alias cat="bat --theme tokyonight_night"
 alias un='sudo pacman -Rns'
@@ -44,7 +46,6 @@ alias fgrep='fgrep --color=auto'
 alias t='tmux'
 alias ts='tmuxsession'
 alias tks='tmux kill-session'
-alias ncmpcpp='ncmpcpp -b .config/ncmpcpp/bindings'
 alias fm='thunar &'
 alias cls='clear'
 alias ls='exa --icons --color=always --group-directories-first'
