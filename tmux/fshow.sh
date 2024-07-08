@@ -5,8 +5,7 @@ function fshow() {
     'echo {} | grep -o "[a-f0-9]\{7\}" | xargs -I % sh -c "git show % | bat --color=always --paging=always -l rs"' \
     --header "Enter to view diff, Ctrl-O to checkout" \
     --bind "q:abort,ctrl-f:preview-page-down,ctrl-b:preview-page-up" \
-    --bind "ctrl-o:execute:
-      (echo {} | grep -o '[a-f0-9]\{7\}' | head -1 | xargs git checkout && pkill -f fzf)" \
+      --bind "ctrl-o:become:(echo {} | grep -o '[a-f0-9]\{7\}' | head -1 | xargs git checkout)" \
     --bind "enter:execute:
       (echo {} | grep -o '[a-f0-9]\{7\}' | head -1 | xargs -I % sh -c 'git diff %^! | bat --paging=always --color=always -l rs') << 'FZF-EOF'
       {}
