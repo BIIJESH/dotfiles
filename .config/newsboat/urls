@@ -1,10 +1,28 @@
 
 "--BLOG--"
 https://lukesmith.xyz/index.xml
+https://truecrime.blog/rss
+https://www.jackfranklin.co.uk/feed.xml
+https://blog.sanctum.geek.nz/feed/
+https://www.cyberciti.biz/atom/atom.xml              "~NixCraft"
+https://itsfoss.com/rss/
+https://cp-algorithms.com/feed_rss_created.xml
+
 "--NEWS--"
 https://english.onlinekhabar.com/feed
 https://decodehindumythology.blogspot.com/rss.xml
-"--Youtube"
+https://rss.nytimes.com/services/xml/rss/nyt/World.xml        "~World"
+https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml       "~Sports"
+https://rss.nytimes.com/services/xml/rss/nyt/Soccer.xml       "~Football"
+"--Youtube--"
+https://odysee.com/$/rss/@ElectroBOOM:9
+https://www.youtube.com/feeds/videos.xml?channel_id=UCQHX6ViZmPsWiYSFAyS0a3Q                          "~Gotham Chess"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCweCc7bSMX5J4jEH7HFImng      "~Hikaru Nakamura" 
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUyeluBRhGPCW4rPe_UvBZQ      "~ThePrimeAgen"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCd3dNckv1Za2coSaHGHl5aA      "~Tj Devires"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCo71RUe6DX4w-Vd47rFLXPg      "~Typecraft"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCylGUf9BvQooEFjgdNudoQg      "~The linux cast"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfpCQ89W9wjkHc8J_6eTbBg
 https://odysee.com/$/rss/@BrodieRobertson:5             "~Brody Robertson"
 https://odysee.com/$/rss/@rossmanngroup:a               "~Louis Rossmann"
 https://odysee.com/$/rss/@Luke:7                        "~Luke Smith"
@@ -13,5 +31,6 @@ https://odysee.com/$/rss/@christitustech:5              "~Chris Titus Tech"
 https://odysee.com/$/rss/@bugswriter:8                      "~Bugswriter"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw  "~Linus Tech Tips"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCWFKCr40YwOZQx8FHU_ZqqQ  "~JerryRigsEverything"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNQ6FEtztATuaVhZKCY28Yw  
 "--Philosophy--"
-https://www.philosophybro.com/archive?format=rss  "PhilosophyBro"
+https://www.philosophybro.com/archive?format=rss  "~PhilosophyBro"
