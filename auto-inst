@@ -1,17 +1,22 @@
 #!/bin/bash
+
+ISAUR=/sbin/paru
+if [ -f "$ISAUR" ]; then
+	echo -e "Paru was located moving on .\n"
+else
+	echo "installing paru..."
+	chmod +x paru-inst
+	./paru-inst
+fi
+
 sudo sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15\nILoveCandy/" /etc/pacman.conf
 
-sudo pacman -S --noconfirm npm paru-bin pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep perl-image-exiftool duf fzf
+sudo pacman -S --noconfirm npm pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep perl-image-exiftool duf fzf
 
 paru -S --noconfirm wlsunset mpd-mpris-bin ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout tldr pavucontrol newsboat xclip urlview  bat sioyek timer-bin
 
-git clone https://github.com/hlissner/zsh-autopair ~/.zsh-autopair
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git
-cd pokemon-colorscripts
-sudo ./install.sh
-
 echo -e "Copying config files...\n"
+mkdir ~/tmux/
 sudo cp -r .config/themes/* /usr/share/themes/
 sudo cp -r .config/hypr/scripts/linkhandler /usr/local/bin
 sudo cp -ru .config/ncmpcpp/bindings /usr/share/doc/ncmpcpp/
@@ -20,6 +25,8 @@ sudo cp -r .config/hypr/scripts/tmuxcht.sh /usr/local/bin
 cp -R tmux/.tmux-cht-command ~/tmux/
 cp -R tmux/.tmux-cht-languages ~/tmux/ 
 cp -R tmux/.tmux.conf ~/tmux/
+cp -R tmux/fshow.sh ~/tmux/
+cp -R tmux/fsb.sh ~/tmux/
 cp -R .config/dunst ~/.config/
 cp -R .config/xfce4 ~/.config/
 cp -R .config/hypr ~/.config/
@@ -36,11 +43,9 @@ cp -R .config/ncmpcpp ~/.config/
 cp -R .config/mpd ~/.config/
 cp -R .config/yazi ~/.config/
 cp -R .config/bat ~/.config/
-cp -R .bash_profile ~/
-cp -R .bashrc ~/
+cp -R .zshrc ~/
 
-chmod +x ~/.config/hypr/scirpts/linkhandler
-chmod +x ~/.config/hypr/scripts/batterynotify.sh
+chmod +x ~/.config/hypr/scripts/linkhandler
 chmod +x ~/.config/hypr/scripts/lookup.sh
 chmod +x ~/.config/hypr/scripts/tmuxsession 
 chmod +x ~/.config/hypr/scripts/tmuxcht.sh
