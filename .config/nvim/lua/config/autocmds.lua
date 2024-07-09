@@ -13,8 +13,7 @@ vim.api.nvim_create_autocmd("RecordingEnter", {
 -- Hyprlang LSP
 vim.api.nvim_create_autocmd({'BufEnter', 'BufWinEnter'}, {
 		pattern = {"*.hl", "hypr*.conf"},
-		callback = function(event)
-				print(string.format("starting hyprls for %s", vim.inspect(event)))
+		callback = function()
 				vim.lsp.start {
 						name = "hyprlang",
 						cmd = {"hyprls"},
