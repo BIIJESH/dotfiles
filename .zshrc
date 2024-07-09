@@ -1,6 +1,7 @@
 export VISUAL=nvim
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS='--height 40% --tmux bottom,40% --layout reverse --border top'
 export FZF_DEFAULT_OPTS="--bind=tab:up,shift-tab:down"
 export PATH="$HOME/.nix-profile/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -142,3 +143,4 @@ pomodoro() {
     esac
   fi
 }
+pokemon-colorscripts --no-title -r 1,3,6

@@ -1,18 +1,16 @@
 #!/bin/bash
-#### Check for paru ####
 sudo sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15\nILoveCandy/" /etc/pacman.conf
-ISAUR=/sbin/paru
-if [ -f "$ISAUR" ]; then
-  echo -e "paru was located, moving on.\n"
-else
-  echo "installing paru..."
-  chmod +x inst-paru
-  ./inst-paru
-fi
 
-sudo pacman -S --noconfirm npm paru-bin pipewire pipewire-alsa pipewire-audio pipewire-jack wireplumber ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep perl-image-exiftool duf
+sudo pacman -S --noconfirm npm paru-bin pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep perl-image-exiftool duf fzf
 
 paru -S --noconfirm wlsunset mpd-mpris-bin ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout tldr pavucontrol newsboat xclip urlview  bat sioyek
+
+git clone https://github.com/hlissner/zsh-autopair ~/.zsh-autopair
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git
+cd pokemon-colorscripts
+sudo ./install.sh
+
 echo -e "Copying config files...\n"
 sudo cp -r .config/themes/* /usr/share/themes/
 sudo cp -r .config/hypr/scripts/linkhandler /usr/local/bin
