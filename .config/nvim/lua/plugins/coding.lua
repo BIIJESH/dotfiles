@@ -32,9 +32,8 @@ return {
 			textobjects = {
 				select = {
 					enable = true,
-					lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
+					lookahead = true,
 					keymaps = {
-						-- You can use the capture groups defined in textobjects.scm
 						["aa"] = "@parameter.outer",
 						["ia"] = "@parameter.inner",
 						["af"] = "@function.outer",
@@ -148,6 +147,7 @@ return {
 	},
 	{
 		"olrtg/nvim-emmet",
+    event = "InsertEnter",
 		config = function()
 			vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
 		end,

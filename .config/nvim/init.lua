@@ -6,6 +6,4 @@ require("plugins.harpoon")
 require("config.cmp")
 require("plugins.neotree")
 require("config.snippets")
-require("plugins.navbuddy")
-require("config.cord")
 

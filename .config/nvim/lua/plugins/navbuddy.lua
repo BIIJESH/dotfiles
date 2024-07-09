@@ -1,12 +1,12 @@
 return {
   "SmiteshP/nvim-navbuddy",
-  event = { "BufEnter" },
+  event = { "InsertEnter" },
   dependencies = {
     "neovim/nvim-lspconfig",
     "SmiteshP/nvim-navic",
     "MunifTanjim/nui.nvim",
   },
-  lazy = false,
+  lazy = true,
   keys = {
     {
       "<leader>nv",
