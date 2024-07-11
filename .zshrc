@@ -40,7 +40,7 @@ alias up='sudo pacman -Syu'
 alias v='nvim'
 alias mv='mv -i'
 alias cp='cp -i'
-alias gh='history | grep'
+alias gh="cliphist list | fzf | cliphist decode | wl-copy"
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
