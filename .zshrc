@@ -12,7 +12,6 @@ export EDITOR=nvim
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$PATH:/home/papa/.local/share/bob/nvim-bin"
 source ~/.zsh-autopair/autopair.zsh
-precmd() { print "" }
 setopt autocd	
 
 # Aliases
@@ -124,5 +123,3 @@ pomodoro() {
     esac
   fi
 }
-pokemon-colorscripts --no-title -r 1,3,6
-export PATH=$HOME/.local/bin:$PATH
