@@ -82,7 +82,11 @@ return {
 		opts = {},
 		keys = {
 			{ "<leader>xx", "<cmd>Trouble diagnostics toggle <CR>", desc = "Diagnostics (Trouble)" },
-      { "<leader>xw", "<cmd>Trouble diagnostics toggle filter.buf =0<CR>", desc = "Buffer Diagnostics (Trouble)" },
+			{
+				"<leader>xw",
+				"<cmd>Trouble diagnostics toggle filter.buf =0<CR>",
+				desc = "Buffer Diagnostics (Trouble)",
+			},
 			{ "<leader>xl", "<cmd>Trouble loclist toggle<CR>", desc = "Location list (Trouble)" },
 			{ "<leader>xq", "<cmd>Trouble qflist toggle<CR>", desc = "Quickfix list (Trouble)" },
 		},
@@ -139,29 +143,45 @@ return {
 	},
 	{
 		"folke/which-key.nvim",
-		event = "BufReadPre",
+		event = "VeryLazy",
+		dependencies = {
+			"echasnovski/mini.icons",
+		},
+		opts_extend = { "spec" },
 		opts = {
-			defaults = {
-				mode = { "n", "v" },
-				["]"] = { name = "+next" },
-				["["] = { name = "+previous" },
-				["g"] = { name = "+goto" },
-				["<leader>b"] = { name = "+buffer" },
-				["<leader>c"] = { name = "+code" },
-				["<leader>f"] = { name = "+find" },
-				["<leader>g"] = { name = "+git" },
-				["<leader>gt"] = { name = "+toggle" },
-				["<leader>n"] = { name = "+noice" },
-				["<leader>q"] = { name = "+session" },
-				["<leader>t"] = { name = "+toggle" },
-				["<leader>x"] = { name = "+diagnostics/quickfix" },
+			defaults = {},
+			spec = {
+				{
+					mode = { "n", "v" },
+					{ "<leader>b", group = "buffer" },
+					{ "<leader>c", group = "code" },
+					{ "<leader>f", group = "find" },
+					{ "<leader>g", group = "git" },
+					{ "<leader>gt", group = "toggle" },
+					{ "<leader>n", group = "noice" },
+					{ "<leader>q", group = "session" },
+					{ "<leader>t", group = "toggle" },
+					{ "<leader>x", group = "diagnostics/quickfix" },
+					{ "]", group = "next" },
+					{ "[", group = "previous" },
+					{ "g", group = "goto" },
+					{ "z", group = "fold" },
+				},
 			},
 		},
 		config = function(_, opts)
 			local wk = require("which-key")
 			wk.setup(opts)
-			wk.register(opts.defaults)
 		end,
+		keys = {
+			{
+				"<leader>?",
+				function()
+					require("which-key").show({ global = false })
+				end,
+				desc = "Buffer local keymaps (which-key)",
+			},
+		},
 	},
 	{
 		"kylechui/nvim-surround",
