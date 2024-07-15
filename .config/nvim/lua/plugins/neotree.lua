@@ -15,6 +15,7 @@ return {
 			filesystem = {
 				filtered_items = {
 					hide_by_pattern = { "*.class" }, -- Hide .class files
+					hide_dotfiles = false,
 				},
 			},
 		},
@@ -49,7 +50,7 @@ return {
 		config = function(_, opts)
 			require("telescope").setup({
 				defaults = {
-					file_ignore_patterns = { "%.class","%.png","%.jpg", "node_modules/.*", "venv/.*" },
+					file_ignore_patterns = { "%.class", "%.png", "%.jpg", "node_modules/.*", "venv/.*" },
 					selection_caret = "󱞩 ",
 					prompt_prefix = "   ",
 					layout_strategy = "horizontal",
