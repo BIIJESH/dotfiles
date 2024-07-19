@@ -6,4 +6,4 @@ sudo modprobe -r thinkpad_acpi
 sudo modprobe thinkpad_acpi
 
 # Set the fan to disengaged
-echo level disengaged | sudo tee /proc/acpi/ibm/fan
+sudo tee /proc/acpi/ibm/fan |  echo level disengaged

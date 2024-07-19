@@ -1,8 +1,8 @@
 export VISUAL=nvim
-
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --tmux bottom,40% --layout reverse --border top'
-eval "$(starship init zsh)"
 export FZF_DEFAULT_OPTS="--bind=tab:up,shift-tab:down"
 export PATH="$HOME/.nix-profile/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -81,9 +81,6 @@ selected_file=$(find "$current_dir" -type f \( ! -iname "*.jpg" -a ! -iname "*.j
 zle -N fzf_preview
 bindkey '^F' fzf_preview
 
-if [ "$(tty)" = "/dev/tty1" ];then
-  exec Hyprland
-fi
 
 if [ -e /home/papa/.nix-profile/etc/profile.d/nix.sh ]; then . /home/papa/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
@@ -123,3 +120,8 @@ pomodoro() {
     esac
   fi
 }
+
+
+if [[ ! -d ~/.zsh-autopair ]]; then
+  git clone https://github.com/hlissner/zsh-autopair ~/.zsh-autopair
+fi
