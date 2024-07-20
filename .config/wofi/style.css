@@ -1,8 +1,9 @@
+@import "/home/papa/.cache/wal/colors-waybar.css";
 window {
   margin: 0px;
-  border: 0 solid #1a1b26;
-  background-color: rgba(26, 27, 38, 0.9);
+  background-color: @background;
   border-radius: 0;
+  background: transparent;
 }
 
 #input {
@@ -13,7 +14,7 @@ window {
   border: none;
   color: #c0caf5;
   font-weight: bold;
-  background-color: #1a1b26;
+  background-color: @background;
   outline: none;
   border-radius: 15px;
   margin: 10px;
@@ -32,7 +33,8 @@ window {
   padding: 3px;
   border: none;
   border-radius: 0px;
-  border: 5px solid #1a1b26;
+  border: @foreground;
+  background-color: @background;
 }
 
 #scroll {
@@ -60,5 +62,5 @@ window {
   margin: 0px 0px;
   border: none;
   border-radius: 0px;
-  background: linear-gradient(90deg, #7aa2f7 0%, #bb9af7 100%);
+  background: @background;
 }
