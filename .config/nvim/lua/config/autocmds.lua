@@ -30,3 +30,4 @@ local function clear_all_recorded_registers()
 	vim.fn.execute('let @*=""') -- Clipboard register
 end
 clear_all_recorded_registers()
+

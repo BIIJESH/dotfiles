@@ -35,7 +35,7 @@ return {
 
 			require("lualine").setup({
 				options = {
-					theme = "tokyonight",
+					theme = "moonfly",
 					disabled_filetypes = {
 						"alpha",
 						"neo-tree",

@@ -43,6 +43,7 @@ cp -R .config/ncmpcpp ~/.config/
 cp -R .config/mpd ~/.config/
 cp -R .config/yazi ~/.config/
 cp -R .config/bat ~/.config/
+cp -R .config/newsboat ~/.config/
 cp -R .zshrc ~/
 
 chmod +x ~/.config/hypr/scripts/linkhandler

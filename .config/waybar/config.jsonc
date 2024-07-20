@@ -43,12 +43,10 @@
         },
         "modules-left": [
             "group/power",
-            "clock"
-          // "custom/cava",
+            "clock",
+            "hyprland/workspaces"
         ],
         "modules-center": [
-            "custom/euro",
-            "hyprland/workspaces"
 
         ],
         "modules-right": [
