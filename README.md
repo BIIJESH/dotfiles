@@ -5,6 +5,6 @@
 </p>
 
 <p align="center">
-![alt text](https://github.com/BIIJESH/dotfiles/blob/main/.config/hypr/img/rice2.png)
-![alt text](https://github.com/BIIJESH/dotfiles/blob/main/.config/hypr/img/rice.png)
-    </p>
+  <img src="https://github.com/BIIJESH/dotfiles/blob/main/.config/hypr/img/rice2.png" alt="rice2" />
+  <img src="https://github.com/BIIJESH/dotfiles/blob/main/.config/hypr/img/rice.png" alt="rice" />
+</p>
