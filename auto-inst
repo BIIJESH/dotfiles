@@ -23,6 +23,7 @@ sudo cp -ru .config/ncmpcpp/bindings /usr/share/doc/ncmpcpp/
 sudo cp -r .config/hypr/scripts/tmuxsession /usr/local/bin/
 sudo cp -r .config/hypr/scripts/tmuxcht.sh /usr/local/bin
 cp -R tmux/.tmux-cht-command ~/tmux/
+cp -R .config/btop ~/.config/
 cp -R tmux/.tmux-cht-languages ~/tmux/ 
 cp -R tmux/.tmux.conf ~/tmux/
 cp -R tmux/fshow.sh ~/tmux/

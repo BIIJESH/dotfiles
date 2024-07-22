@@ -1,4 +1,5 @@
 @import "/home/papa/.cache/wal/colors-waybar.css";
+
 * {
   border: none;
   font-family: "JetBrainsMono Nerd Font";
@@ -34,11 +35,11 @@ tooltip {
 }
 
 #workspaces button.active {
-  color: @foreground;
+  color: @color6;
 }
 
 #workspaces button.focused {
-  color: @foreground;
+  color: @color6;
 }
 
 #workspaces button.urgent {
@@ -47,8 +48,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-  color: @background;
-  background-color: rgba(26, 27, 38, 0); /* transparent background */
+  color: @color3;
 }
 
 #temperature {
@@ -65,11 +65,11 @@ tooltip {
 
 #workspaces {
   padding: 0px;
-  background-color: @background;
+  background-color: @foreground;
 }
 
 #mpris {
-  color: mix(@color4, @foreground, 0.5);
+  color: mix(@color7, @foreground, 0.5);
 }
 
 #custom-cava {

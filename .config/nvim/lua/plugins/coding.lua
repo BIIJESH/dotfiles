@@ -89,7 +89,8 @@ return {
 		},
 		opts = function()
 			local cmp = require("cmp")
-
+			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 			return {
 				snippet = {
 					expand = function(args)
@@ -147,7 +148,7 @@ return {
 	},
 	{
 		"olrtg/nvim-emmet",
-    event = "InsertEnter",
+		event = "InsertEnter",
 		config = function()
 			vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
 		end,
