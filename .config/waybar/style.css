@@ -14,16 +14,16 @@ window#waybar {
   border-radius: 10px;
   padding: 0px;
   transition-duration: 1s;
-  box-shadow: none; /* remove shadow for full transparency */
+  box-shadow: none; 
   background: transparent;
 }
 
 tooltip {
-  background-color: @background; /* transparent background */
+  background-color: @background; 
   border-radius: 0px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgba(26, 27, 38, 0); /* transparent border */
+  border-color: rgba(26, 27, 38, 0); 
   color: @foreground;
 }
 
@@ -31,11 +31,11 @@ tooltip {
   margin-right: 0px;
   color: mix(@foreground, @background, 0.4);
   border-radius: 10px;
-  background-color: @background; /* transparent background */
+  background-color: @background; 
 }
 
 #workspaces button.active {
-  color: @color6;
+  color: @color4;
 }
 
 #workspaces button.focused {
@@ -44,7 +44,7 @@ tooltip {
 
 #workspaces button.urgent {
   color: @foreground;
-  background-color: @background; /* transparent background */
+  background-color: @background;  
 }
 
 #workspaces button:hover {
@@ -60,7 +60,7 @@ tooltip {
 }
 
 #backlight {
-  color: mix(@BANANA, @foreground, 0.5);
+    color:@color6;
 }
 
 #workspaces {
@@ -69,7 +69,7 @@ tooltip {
 }
 
 #mpris {
-  color: mix(@color7, @foreground, 0.5);
+  color: @color4;
 }
 
 #custom-cava {
@@ -95,7 +95,7 @@ tooltip {
 #workspaces,
 #light,
 #audio {
-  background-color: @background; /* transparent background */
+  background-color: @background; 
 }
 
 #custom-arch {
@@ -123,11 +123,11 @@ tooltip {
 }
 
 #network {
-  color: mix(@BANANA, @foreground, 0.4);
+  color:@color1;
 }
 
 #bluetooth {
-  color: mix(@color6, @foreground, 0.3);
+  color:@color3;
 }
 
 #pulseaudio:not(.microphone) {
@@ -170,12 +170,12 @@ window#waybar > box > box > widget > *,
 window#waybar > box > box > box {
   margin: 0 5px;
   border-radius: 10px;
-  background-color: @background; /* transparent background */
+  background-color: @background; 
 }
 
 widget > * {
   padding: 0 10px;
-  background-color: @background; /* transparent background */
+  background-color: @background; 
 }
 
 slider {
@@ -185,23 +185,23 @@ slider {
   background-image: none;
   border: none;
   box-shadow: none;
-  background-color: rgba(26, 27, 38, 0); /* transparent background */
+  background-color: rgba(26, 27, 38, 0); 
 }
 
 trough {
   min-height: 20px;
   min-width: 80px;
   border-radius: 10px;
-  background-color: @background; /* transparent background */
+  background-color: @background; 
 }
 
 highlight {
   min-height: 10px;
   border-radius: 10px;
-  background-color: @background; /* transparent background */
+  background-color: @background; 
 }
 
 #light {
   border-radius: 10px;
-  background-color: @background; /* transparent background */
+  background-color: @background; 
 }
