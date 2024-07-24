@@ -30,4 +30,31 @@ local function clear_all_recorded_registers()
 	vim.fn.execute('let @*=""') -- Clipboard register
 end
 clear_all_recorded_registers()
+vim.keymap.set("n", "<leader>ct", "", {
+	noremap = true,
+	silent = true,
+	callback = function()
+		newtag = vim.fn.input("Enter new tag name: ")
+		local return_position = vim.api.nvim_win_get_cursor(0)
 
+		vim.cmd([[execute "normal T<"]])
+
+		local col = vim.api.nvim_win_get_cursor(0)[2]
+		local char = vim.api.nvim_get_current_line():sub(col + 1, col + 1)
+
+		if char == "/" then
+			vim.cmd([[execute "normal %"]])
+		end
+
+		local current_position = vim.api.nvim_win_get_cursor(0)
+
+		vim.cmd([[execute "normal %l"]])
+
+		vim.cmd('execute "normal \\"_ciw' .. newtag .. '"')
+		vim.api.nvim_win_set_cursor(0, current_position)
+
+		vim.cmd('execute "normal \\"_ciw' .. newtag .. '"')
+
+		vim.api.nvim_win_set_cursor(0, return_position)
+	end
+})
