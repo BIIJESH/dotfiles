@@ -28,6 +28,7 @@ alias push='git push'
 alias stats='git status'
 alias fsb='~/tmux/fsb.sh'
 alias fshow='~/tmux/fshow.sh'
+alias cd='z'
 
 alias cat="bat --theme tokyonight_night"
 alias un='sudo pacman -Rns'
@@ -124,4 +125,9 @@ pomodoro() {
 
 if [[ ! -d ~/.zsh-autopair ]]; then
   git clone https://github.com/hlissner/zsh-autopair ~/.zsh-autopair
+fi
+
+
+if [ "$(tty)" = "/dev/tty1" ];then
+  exec Hyprland
 fi
