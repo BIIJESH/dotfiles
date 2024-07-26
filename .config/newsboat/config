@@ -1,7 +1,9 @@
-#show-read-feeds no
+# General settings
+show-read-feeds no
 auto-reload no
 external-url-viewer "urlscan -dc -r 'linkhandler {}'"
 
+# Key bindings
 bind-key j down
 bind-key k up
 bind-key j next articlelist
@@ -21,13 +23,15 @@ bind-key D pb-download
 bind-key U show-urls
 bind-key x pb-delete
 
+# Color settings
 color listnormal cyan default
-color listfocus black yellow standout bold
+color listfocus black white standout bold
 color listnormal_unread blue default
-color listfocus_unread yellow default bold
+color listfocus_unread black white bold
 color info red black bold
 color article white default bold
 
+# External browser settings and macros
 browser linkhandler
 macro , open-in-browser
 macro t set browser "qndl" ; open-in-browser ; set browser linkhandler
@@ -40,6 +44,7 @@ macro C set browser "youtube-viewer --comments=%u" ; open-in-browser ; set brows
 macro p set browser "peertubetorrent %u 480" ; open-in-browser ; set browser linkhandler
 macro P set browser "peertubetorrent %u 1080" ; open-in-browser ; set browser linkhandler
 
+# Highlight settings
 highlight all "---.*---" yellow
 highlight feedlist ".*(0/0))" black
 highlight article "(^Feed:.*|^Title:.*|^Author:.*)" cyan default bold
