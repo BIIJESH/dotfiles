@@ -1,3 +1,4 @@
+
 return {
 	{
 		"williamboman/mason.nvim",
@@ -14,24 +15,56 @@ return {
 		},
 		opts = {
 			servers = {
-				pyright = {
-					completion = "Replace",
-				},
+				pyright = {},
 				tsserver = {
+					root_dir = function(...)
+						return require("lspconfig.util").root_pattern(".git")(...)
+					end,
+					single_file_support = false,
+					settings = {
+						typescript = {
+							inlayHints = {
+								includeInlayParameterNameHints = "literal",
+								includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+								includeInlayFunctionParameterTypeHints = true,
+								includeInlayVariableTypeHints = false,
+								includeInlayPropertyDeclarationTypeHints = true,
+								includeInlayFunctionLikeReturnTypeHints = true,
+								includeInlayEnumMemberValueHints = true,
+							},
+						},
+						javascript = {
+							inlayHints = {
+								includeInlayParameterNameHints = "all",
+								includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+								includeInlayFunctionParameterTypeHints = true,
+								includeInlayVariableTypeHints = true,
+								includeInlayPropertyDeclarationTypeHints = true,
+								includeInlayFunctionLikeReturnTypeHints = true,
+								includeInlayEnumMemberValueHints = true,
+							},
+						},
+					},
 					completion = {
 						callSnippet = "Replace",
 					},
 				},
+				html = {
+					filetypes = { "html", "javascript", "javascriptreact", "typescriptreact" }, -- Enable HTML suggestions in JS/JSX files
+				},
 				lua_ls = {
-					Lua = {
-						completion = {
-							callSnippet = "Replace",
+					settings = {
+						Lua = {
+							completion = {
+								callSnippet = "Replace",
+							},
 						},
 					},
 				},
 			},
 		},
 		config = function(_, opts)
+			local lspconfig = require("lspconfig")
 			local mason_lspconfig = require("mason-lspconfig")
 
 			mason_lspconfig.setup({
@@ -56,9 +89,36 @@ return {
 					require("lspconfig")[server_name].setup({
 						on_attach = on_attach,
 						capabilities = capabilities,
-						settings = opts.servers[server_name],
+						settings = opts.servers[server_name] and opts.servers[server_name].settings or nil,
 					})
 				end,
+			})
+
+			-- Emmet Language Server Setup
+			lspconfig.emmet_language_server.setup({
+				filetypes = {
+					"css",
+					"eruby",
+					"html",
+					"javascript",
+					"javascriptreact",
+					"less",
+					"sass",
+					"scss",
+					"pug",
+					"typescriptreact",
+				},
+				init_options = {
+					includeLanguages = {},
+					excludeLanguages = {},
+					extensionsPath = {},
+					preferences = {},
+					showAbbreviationSuggestions = true,
+					showExpandedAbbreviation = "always",
+					showSuggestionsAsSnippets = false,
+					syntaxProfiles = {},
+					variables = {},
+				},
 			})
 		end,
 	},
