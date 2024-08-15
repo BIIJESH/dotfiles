@@ -1,4 +1,4 @@
-
+-- Ensure the necessary plugins are set up
 return {
 	{
 		"williamboman/mason.nvim",
@@ -50,7 +50,7 @@ return {
 					},
 				},
 				html = {
-					filetypes = { "html", "javascript", "javascriptreact", "typescriptreact" }, -- Enable HTML suggestions in JS/JSX files
+					filetypes = { "html", "javascript", "javascriptreact", "typescriptreact" },
 				},
 				lua_ls = {
 					settings = {
@@ -93,31 +93,30 @@ return {
 					})
 				end,
 			})
-
-			-- Emmet Language Server Setup
-			lspconfig.emmet_language_server.setup({
+			-- Setup Emmet LSP
+			lspconfig.emmet_ls.setup({
+				capabilities = capabilities,
+				-- on_attach = on_attach,
 				filetypes = {
 					"css",
 					"eruby",
 					"html",
+					"less",
 					"javascript",
 					"javascriptreact",
-					"less",
 					"sass",
 					"scss",
+					"svelte",
 					"pug",
 					"typescriptreact",
+					"vue",
 				},
 				init_options = {
-					includeLanguages = {},
-					excludeLanguages = {},
-					extensionsPath = {},
-					preferences = {},
-					showAbbreviationSuggestions = true,
-					showExpandedAbbreviation = "always",
-					showSuggestionsAsSnippets = false,
-					syntaxProfiles = {},
-					variables = {},
+					html = {
+						options = {
+							["bem.enabled"] = true,
+						},
+					},
 				},
 			})
 		end,

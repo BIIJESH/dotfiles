@@ -133,7 +133,29 @@ return {
 	{
 		"windwp/nvim-ts-autotag",
 		event = "InsertEnter",
-		opts = {},
+		dependencies = "nvim-treesitter",
+		config = function()
+			require("nvim-ts-autotag").setup({
+				filetypes = {
+					"html",
+					"javascript",
+					"typescript",
+					"javascriptreact",
+					"typescriptreact",
+					"svelte",
+					"vue",
+					"tsx",
+					"jsx",
+					"rescript",
+					"xml",
+					"php",
+					"markdown",
+					"glimmer",
+					"handlebars",
+					"hbs",
+				},
+			})
+		end,
 	},
 	{
 		"smjonas/inc-rename.nvim",
@@ -146,11 +168,17 @@ return {
 			end, { expr = true, desc = "Rename" })
 		end,
 	},
+	-- {
+	-- 	"olrtg/nvim-emmet",
+	-- 	event = "InsertEnter",
+	-- 	config = function()
+	-- 		vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
+	-- 	end,
+	-- },
 	{
-		"olrtg/nvim-emmet",
-		event = "InsertEnter",
-		config = function()
-			vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
-		end,
+		"vyfor/cord.nvim",
+		build = "./build",
+		event = "VeryLazy",
+		opts = {},
 	},
 }

@@ -1,3 +1,5 @@
+vim.cmd([[colorscheme tokyonight]])
+vim.cmd([[colorscheme pywal]])
 vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = "*",
 	command = "set fo-=c fo-=r fo-=o",
@@ -56,5 +58,9 @@ vim.keymap.set("n", "<leader>ct", "", {
 		vim.cmd('execute "normal \\"_ciw' .. newtag .. '"')
 
 		vim.api.nvim_win_set_cursor(0, return_position)
-	end
+	end,
 })
+   vim.api.nvim_create_autocmd("BufEnter", {
+     pattern = { "*.js", "*.jsx" },
+     command = "set filetype=javascriptreact",
+   })
