@@ -138,6 +138,7 @@ return {
 			require("nvim-ts-autotag").setup({
 				filetypes = {
 					"html",
+					"ejs",
 					"javascript",
 					"typescript",
 					"javascriptreact",
@@ -168,13 +169,13 @@ return {
 			end, { expr = true, desc = "Rename" })
 		end,
 	},
-	-- {
-	-- 	"olrtg/nvim-emmet",
-	-- 	event = "InsertEnter",
-	-- 	config = function()
-	-- 		vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
-	-- 	end,
-	-- },
+	{
+		"olrtg/nvim-emmet",
+		event = "InsertEnter",
+		config = function()
+			vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
+		end,
+	},
 	{
 		"vyfor/cord.nvim",
 		build = "./build",

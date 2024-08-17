@@ -1,6 +1,9 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
 
+vim.filetype.add({ extension = { ejs = "ejs" } })
+luasnip.filetype_set("ejs", { "html", "javascript", "ejs" })
+
 cmp.setup({
 	completion = {
 		completeopt = "menu,menuone,noinsert",

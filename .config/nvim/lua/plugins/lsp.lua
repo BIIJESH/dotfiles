@@ -49,9 +49,6 @@ return {
 						callSnippet = "Replace",
 					},
 				},
-				html = {
-					filetypes = { "html", "javascript", "javascriptreact", "typescriptreact" },
-				},
 				lua_ls = {
 					settings = {
 						Lua = {
@@ -70,7 +67,9 @@ return {
 			mason_lspconfig.setup({
 				ensure_installed = vim.tbl_keys(opts.servers),
 			})
-
+			lspconfig.html.setup({
+				filetypes = { "html", "ejs" },
+			})
 			local on_attach = function(_, _)
 				vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 				vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
@@ -102,7 +101,6 @@ return {
 					"eruby",
 					"html",
 					"less",
-					"javascript",
 					"javascriptreact",
 					"sass",
 					"scss",

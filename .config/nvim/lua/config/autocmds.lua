@@ -60,10 +60,10 @@ vim.keymap.set("n", "<leader>ct", "", {
 		vim.api.nvim_win_set_cursor(0, return_position)
 	end,
 })
-   -- vim.api.nvim_create_autocmd("BufEnter", {
-   --   pattern = { "*.js", "*.jsx" },
-   --   command = "set filetype=javascriptreact",
-   -- })
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = { "*.ejs" },
+	command = "set filetype=html",
+})
 vim.cmd([[
 highlight NeoTreeNormal guifg=#D4D4D4 guibg=NONE
 highlight NeoTreeNormalNC guifg=#D4D4D4 guibg=NONE
