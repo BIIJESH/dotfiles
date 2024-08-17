@@ -13,7 +13,7 @@ sudo sed -i "s/^#ParallelDownloads = 5$/ParallelDownloads = 15\nILoveCandy/" /et
 
 sudo pacman -S --noconfirm npm pipewire pipewire-alsa pipewire-audio pipewire-jack pipewire-media-session ttf-jetbrains-mono-nerd noto-fonts-emoji noto-fonts-cjk ttf-font-awesome polkit-gnome mpv imv ffmpeg hyprland  dunst wofi swaybg grim slurp kitty pamixer brightnessctl waybar xdg-desktop-portal-hyprland  cliphist clang bluez bluez-utils pulseaudio-bluetooth gvfs-mtp btop qbittorrent thunar tumbler unzip file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep perl-image-exiftool duf fzf
 
-paru -S --noconfirm wlsunset mpd-mpris-bin ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout tldr  newsboat xclip urlview  bat sioyek timer-bin yt-dlp pywal-discord-git
+paru -S --noconfirm mongodb-bin mongodb-compass mongodb-tools-bin wlsunset mpd-mpris-bin ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout tldr  newsboat xclip urlview  bat sioyek timer-bin yt-dlp pywal-discord-git
 
 
 echo -e "Copying config files...\n"
