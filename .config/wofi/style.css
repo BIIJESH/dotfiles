@@ -6,12 +6,11 @@
 
 window {
   margin:5px;
-  background-color: @background;
   /* Dynamic background color */
   /* Rounded corners */
   backdrop-filter: blur(10px);
   /* Blur effect for a frosted glass look */
-  border: 1px solid @color2;
+  border:none;
   /* Dynamic foreground color for soft border */
   font-family: JetBrains Mono
 }

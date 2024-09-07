@@ -1,8 +1,8 @@
-width=500
-height=150
+width=700
+height=120
 location=top
 show=drun
-prompt=Search...
+prompt=Search
 filter_rate=100
 allow_markup=true
 no_actions=true
