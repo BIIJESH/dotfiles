@@ -1,66 +1,71 @@
 @import "/home/papa/.cache/wal/colors-waybar.css";
+
+* {
+  font-family: "JetBrainsMono Nerd Font ";
+}
+
 window {
-  margin: 0px;
+  margin:5px;
   background-color: @background;
-  border-radius: 0;
-  background: transparent;
+  /* Dynamic background color */
+  /* Rounded corners */
+  backdrop-filter: blur(10px);
+  /* Blur effect for a frosted glass look */
+  border: 1px solid @color2;
+  /* Dynamic foreground color for soft border */
+  font-family: JetBrains Mono
 }
 
 #input {
   all: unset;
-  min-height: 36px;
-  padding: 4px 10px;
-  margin: 4px;
+  min-height: 40px;
   border: none;
-  color: #c0caf5;
-  font-weight: bold;
-  background-color: @background;
+  color: @color2;
+  /* Dynamic foreground color for input text */
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent background for input field */
   outline: none;
-  border-radius: 15px;
-  margin: 10px;
-  margin-bottom: 2px;
 }
 
 #inner-box {
   margin: 4px;
   padding: 10px;
-  font-weight: bold;
-  border-radius: 0px;
+  font-weight: normal;
 }
 
 #outer-box {
   margin: 0px;
-  padding: 3px;
+  padding: 10px;
   border: none;
-  border-radius: 0px;
-  border: @foreground;
-  background-color: @background;
+  background-color: transparent;
 }
 
 #scroll {
   margin-top: 4px;
   border: none;
   border-radius: 15px;
-  margin-bottom: 0px;
-}
-
-#text:selected {
-  color: #c0caf5;
-  margin: 0px 0px;
-  border: none;
-  border-radius: 15px;
-}
-
-#entry {
-  margin: 0px 0px;
-  border: none;
-  border-radius: 0px;
   background-color: transparent;
 }
 
-#entry:selected {
-  margin: 0px 0px;
+#text:selected {
+  color: @foreground;
+  /* Dynamic foreground color for selected text */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Light background for selected items */
+}
+
+#entry {
+  margin: 0px;
   border: none;
-  border-radius: 0px;
-  background: @background;
+  background-color: transparent;
+  font-size: 14px;
+  /* Dynamic foreground color for entries */
+}
+
+#entry:selected {
+  margin: 0px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  /* Subtle highlight for selected entries */
 }
