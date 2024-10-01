@@ -1,5 +1,5 @@
 vim.cmd([[colorscheme tokyonight]])
-vim.cmd([[colorscheme pywal]])
+vim.cmd([[colorscheme pywal16]])
 vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = "*",
 	command = "set fo-=c fo-=r fo-=o",

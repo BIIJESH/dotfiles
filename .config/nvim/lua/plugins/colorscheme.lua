@@ -11,6 +11,6 @@ return {
 	},
 
 	{
-		"AlphaTechnolog/pywal.nvim",
+		"uZer/pywal16.nvim",
 	},
 }
