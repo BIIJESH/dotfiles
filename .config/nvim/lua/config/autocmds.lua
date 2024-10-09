@@ -1,5 +1,4 @@
 vim.cmd([[colorscheme tokyonight]])
-vim.cmd([[colorscheme pywal16]])
 vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = "*",
 	command = "set fo-=c fo-=r fo-=o",
@@ -64,7 +63,3 @@ vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = { "*.ejs" },
 	command = "set filetype=html",
 })
-vim.cmd([[
-highlight NeoTreeNormal guifg=#D4D4D4 guibg=NONE
-highlight NeoTreeNormalNC guifg=#D4D4D4 guibg=NONE
-]])

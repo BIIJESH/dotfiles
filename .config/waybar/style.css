@@ -1,4 +1,4 @@
-@import "/home/papa/.cache/wal/colors-waybar.css";
+
 
 * {
   border: none;
@@ -9,8 +9,8 @@
 }
 
 window#waybar {
-  background-color: @background;
-  color: @foreground;
+  background-color: #1a1b26; /* Tokyo Night background */
+  color: #c0caf5;           /* Tokyo Night foreground */
   border-radius: 10px;
   padding: 0px;
   transition-duration: 1s;
@@ -19,147 +19,141 @@ window#waybar {
 }
 
 tooltip {
-  background-color: @background; 
+  background-color: #1a1b26;
   border-radius: 0px;
   border-width: 2px;
   border-style: solid;
   border-color: rgba(26, 27, 38, 0); 
-  color: @foreground;
+  color: #c0caf5;
 }
 
 #workspaces button {
   margin-right: 0px;
-  color: mix(@foreground, @background, 0.4);
+  color: mix(#c0caf5, #1a1b26, 0.4); /* Slightly lighter Tokyo Night foreground */
   border-radius: 10px;
-  background-color: @background; 
+  background-color: #1a1b26; 
 }
 
 #workspaces button.active {
-  color: @color4;
+  color: #bb9af7; /* Tokyo Night Purple */
 }
 
 #workspaces button.focused {
-  color: @color6;
+  color: #7dcfff; /* Tokyo Night Cyan */
 }
 
 #workspaces button.urgent {
-  color: @foreground;
-  background-color: @background;  
+  color: #c0caf5;
+  background-color: #1a1b26;  
 }
 
 #workspaces button:hover {
-  color: @color3;
+  color: #9ece6a; /* Tokyo Night Green */
 }
 
 #temperature {
-  color: mix(@color5, @foreground, 0.8);
+  color: mix(#f7768e, #c0caf5, 0.8); /* Tokyo Night Red */
 }
 
 #temperature.critical {
-  color: @color5;
+  color: #f7768e; /* Tokyo Night Red */
 }
 
 #backlight {
-    color:@color6;
+  color: #7dcfff; /* Tokyo Night Cyan */
 }
 
 #workspaces {
   padding: 0px;
-  background-color: @foreground;
+  background-color: #c0caf5;
 }
 
 #mpris {
-  color: @color4;
+  color: #bb9af7; /* Tokyo Night Purple */
 }
 
-#custom-cava {
-  color: @color4;
-}
-
-#custom-euro {
-  color: @color4;
+#custom-cava, #custom-euro {
+  color: #bb9af7; /* Tokyo Night Purple */
 }
 
 #custom-power_profile {
-  color: mix(@color2, @foreground, 0.5);
+  color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
 }
 
 #window {
-  color: @foreground;
+  color: #c0caf5; /* Tokyo Night Foreground */
 }
 
 #clock {
-  color: @color4;
+  color: #bb9af7; /* Tokyo Night Purple */
 }
 
-#workspaces,
-#light,
-#audio {
-  background-color: @background; 
+#workspaces, #light, #audio {
+  background-color: #1a1b26; /* Tokyo Night Background */
 }
 
 #custom-arch {
-  color: #1793d1;
+  color: #7aa2f7; /* Tokyo Night Blue */
 }
 
 #custom-quit {
-  color: mix(@BANANA, @foreground, 0.6);
+  color: mix(#ff9e64, #c0caf5, 0.6); /* Tokyo Night Orange */
 }
 
 #custom-lock {
-  color: mix(@color2, @foreground, 0.6);
+  color: mix(#9ece6a, #c0caf5, 0.6); /* Tokyo Night Green */
 }
 
 #custom-sleep {
-  color: mix(@color6, @foreground, 0.6);
+  color: mix(#7dcfff, #c0caf5, 0.6); /* Tokyo Night Cyan */
 }
 
 #custom-reboot {
-  color: mix(@ORANGE, @foreground, 0.6);
+  color: mix(#ff9e64, #c0caf5, 0.6); /* Tokyo Night Orange */
 }
 
 #custom-shutdown {
-  color: mix(@color5, @foreground, 0.6);
+  color: mix(#f7768e, #c0caf5, 0.6); /* Tokyo Night Red */
 }
 
 #network {
-  color:@color1;
+  color: #7aa2f7; /* Tokyo Night Blue */
 }
 
 #bluetooth {
-  color:@color3;
+  color: #7dcfff; /* Tokyo Night Cyan */
 }
 
 #pulseaudio:not(.microphone) {
-  color: mix(@BANANA, @foreground, 0.5);
+  color: mix(#ff9e64, #c0caf5, 0.5); /* Tokyo Night Orange */
 }
 
 #pulseaudio.microphone {
-  color: mix(@color2, @foreground, 0.5);
+  color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
 }
 
 #pulseaudio.bluetooth:not(.microphone) {
-  color: mix(@color6, @foreground, 0.5);
+  color: mix(#7dcfff, #c0caf5, 0.5); /* Tokyo Night Cyan */
 }
 
 #pulseaudio.muted:not(.microphone) {
-  color: mix(@color5, @foreground, 0.5);
+  color: mix(#f7768e, #c0caf5, 0.5); /* Tokyo Night Red */
 }
 
 #pulseaudio.microphone.source-muted {
-  color: mix(@color5, @foreground, 0.5);
+  color: mix(#f7768e, #c0caf5, 0.5); /* Tokyo Night Red */
 }
 
 #battery {
-  color: mix(@color2, @foreground, 0.5);
+  color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
 }
 
 battery.bat2 {
-  color: mix(@color2, @foreground, 0.5);
+  color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
 }
 
 #custom-weather {
-  color: mix(@ORANGE, @foreground, 0.5);
+  color: mix(#ff9e64, #c0caf5, 0.5); /* Tokyo Night Orange */
 }
 
 #tray {
@@ -170,12 +164,12 @@ window#waybar > box > box > widget > *,
 window#waybar > box > box > box {
   margin: 0 5px;
   border-radius: 10px;
-  background-color: @background; 
+  background-color: #1a1b26; /* Tokyo Night Background */
 }
 
 widget > * {
   padding: 0 10px;
-  background-color: @background; 
+  background-color: #1a1b26; 
 }
 
 slider {
@@ -192,16 +186,16 @@ trough {
   min-height: 20px;
   min-width: 80px;
   border-radius: 10px;
-  background-color: @background; 
+  background-color: #1a1b26; /* Tokyo Night Background */
 }
 
 highlight {
   min-height: 10px;
   border-radius: 10px;
-  background-color: @background; 
+  background-color: #1a1b26;
 }
 
 #light {
   border-radius: 10px;
-  background-color: @background; 
+  background-color: #1a1b26; /* Tokyo Night Background */
 }

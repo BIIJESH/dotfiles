@@ -1,62 +1,26 @@
 [
-    {
-        "output": ["DP-1"],
-        "position": "top",
-        "group/system": {
-            "orientation": "inherit",
-            "modules": [
-                "tray",
-                "temperature",
-                "network",
-                "bluetooth"
-            ]
-        },
-        "modules-left": [
-            "group/power",
-            "clock",
-            "hyprland/workspaces"
-        ],
-        "modules-center": [
-            "hyprland/window"
-        ],
-        "modules-right": [
-            "mpris",
-            "group/audio",
-            "group/system"
-        ],
-        "include": [
-            "~/.config/waybar/default-modules.jsonc"
-        ]
+  {
+    "output": ["DP-1"],
+    "position": "top",
+    "group/system": {
+      "orientation": "inherit",
+      "modules": ["tray", "temperature", "network", "bluetooth"],
     },
-    {
-        "output": ["eDP-1"],
-        "position": "top",
-        "group/system": {
-            "orientation": "inherit",
-            "modules": [
-                "group/light",
-                "tray",
-                "battery",
-                "network",
-                "bluetooth"
-            ]
-        },
-        "modules-left": [
-            "group/power",
-            "clock",
-            "hyprland/workspaces"
-        ],
-        "modules-center": [
-
-        ],
-        "modules-right": [
-            "mpris",
-            "group/audio",
-            "group/system"
-        ],
-        "include": [
-            "~/.config/waybar/default-modules.jsonc"
-        ]
-    }
+    "modules-left": ["group/power", "clock", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["mpris", "group/audio", "group/system"],
+    "include": ["~/.config/waybar/default-modules.jsonc"],
+  },
+  {
+    "output": ["eDP-1"],
+    "position": "top",
+    "persist": true,
+    "group/system": {
+      "orientation": "inherit",
+      "modules": ["group/light", "tray", "battery", "network", "bluetooth"],
+    },
+    "modules-left": ["group/power", "clock", "hyprland/workspaces"],
+    "modules-right": ["mpris", "group/audio", "group/system"],
+    "include": ["~/.config/waybar/default-modules.jsonc"],
+  },
 ]
-

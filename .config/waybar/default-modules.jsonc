@@ -17,16 +17,23 @@
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
     "all-outputs": true,
+    "active-only": false,
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
       "1": " ",
-      "2": " ",
+      "2": " ",
       "3": " ",
       "4": " ",
-
       "5": " ",
       "6": "\ue217 ",
+    },
+    "persistent_workspaces": {
+      "1:": [],
+      "2:": [],
+      "3:": [],
+      "4:": [],
+      "5:": [],
     },
   },
   "hyprland/language": {
@@ -143,10 +150,10 @@
   },
   "network": {
     "format-wifi": " {signalStrength}%",
-    "format-ethernet": "󰈀 {ipaddr}",
+    "format-ethernet": "󰈀 ",
     "tooltip-format": "{essid} - {ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
-    "format-disconnected": "⚠ Disconnected",
+    "format-disconnected": "⚠",
     "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}",
   },
   "bluetooth": {
