@@ -1,0 +1,48 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+window {
+    background-color: transparent; /* Transparent background */
+    border-radius: 20px;
+}
+
+#main {
+    background: transparent; /* Main container background is transparent */
+}
+
+#main entry {
+    padding: 10px;
+    background-color: #1a1b26; /* Non-transparent input field background */
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+#main list {
+    background: transparent; /* Transparent background for list */
+}
+
+#main list > #plugin,
+#main list > #plugin:hover {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    background-color: #24283b; /* Deeper blue from TokyoNight palette */
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid #3b4261;
+}
+
+#main list > #plugin list {
+    padding: 10px;
+}
+
+list > #match {
+    margin: 4px 0px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: transparent; /* Transparent match background */
+    border: 1px solid transparent;
+}
+
+list > #match:selected {
+    background-color: #414868; /* Bluish-gray shade for selection */
+    border: 1px solid #7aa2f7;
+}
