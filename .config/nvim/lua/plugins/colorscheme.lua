@@ -10,7 +10,4 @@ return {
 		end,
 	},
 
-	{
-		"uZer/pywal16.nvim",
-	},
 }

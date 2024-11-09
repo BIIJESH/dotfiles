@@ -63,3 +63,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = { "*.ejs" },
 	command = "set filetype=html",
 })
+
+vim.api.nvim_set_keymap('n', '<leader>bb', ':Gitsigns blame<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>lb', ':Gitsigns blame_line<CR>', { noremap = true, silent = true })
