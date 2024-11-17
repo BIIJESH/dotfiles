@@ -47,7 +47,15 @@ return {
 				},
 				sections = {
 					lualine_a = { "mode" },
-					lualine_b = { "diff", "diagnostics" },
+					lualine_b = {
+						"diff",
+						"diagnostics",
+						{
+							"filename",
+							file_status = true, -- displays file status (readonly status, modified status)
+							path = 1, -- 0 = just filename, 1 = relative path, 2 = absolute path
+						},
+					},
 					lualine_c = { -- Bottom section
 						get_recording_key, -- Include the custom function directly
 					},
