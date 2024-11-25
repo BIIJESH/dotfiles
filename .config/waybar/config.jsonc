@@ -1,13 +1,12 @@
 [
   {
-    "output": ["DP-1"],
+    "output": ["HDMI-A-2"],
     "position": "top",
     "group/system": {
       "orientation": "inherit",
       "modules": ["tray", "temperature", "network", "bluetooth"],
     },
     "modules-left": ["group/power", "clock", "hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
     "modules-right": ["mpris", "group/audio", "group/system"],
     "include": ["~/.config/waybar/default-modules.jsonc"],
   },

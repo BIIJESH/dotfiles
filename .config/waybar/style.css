@@ -1,5 +1,3 @@
-
-
 * {
   border: none;
   font-family: "JetBrainsMono Nerd Font";
@@ -9,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: #1a1b26; /* Tokyo Night background */
+  background-color: rgba(26, 27, 38, 0.8); 
   color: #c0caf5;           /* Tokyo Night foreground */
   border-radius: 10px;
   padding: 0px;
@@ -17,6 +15,7 @@ window#waybar {
   box-shadow: none; 
   background: transparent;
 }
+
 
 tooltip {
   background-color: #1a1b26;
