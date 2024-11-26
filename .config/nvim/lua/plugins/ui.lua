@@ -50,6 +50,7 @@ return {
 					lualine_b = {
 						"diff",
 						"diagnostics",
+            "branch",
 						{
 							"filename",
 							file_status = true, -- displays file status (readonly status, modified status)

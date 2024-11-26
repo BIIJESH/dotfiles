@@ -125,7 +125,6 @@ return {
 		dependencies = {
 			"neovim/nvim-lspconfig",
 			"nvim-lua/plenary.nvim",
-			{ "AstroNvim/astrolsp", opts = {} }, -- Added AstroLSP dependency
 		},
 		opts = function()
 			local null_ls = require("null-ls")
@@ -135,7 +134,6 @@ return {
 					null_ls.builtins.formatting.prettier,
 					null_ls.builtins.formatting.stylua,
 				},
-				on_attach = require("astrolsp").on_attach, -- Added AstroLSP on_attach
 			}
 		end,
 		keys = {
