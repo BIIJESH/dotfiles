@@ -117,15 +117,6 @@ return {
 		end,
 	},
 	{
-		"numToStr/Comment.nvim",
-		event = { "BufReadPre", "BufNewFile" },
-		opts = function()
-			return {
-				pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
-			}
-		end,
-	},
-	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
 		opts = {},
@@ -159,17 +150,6 @@ return {
 		end,
 	},
 	{
-		"smjonas/inc-rename.nvim",
-		event = "LspAttach",
-		opts = {},
-		config = function(_, opts)
-			require("inc_rename").setup(opts)
-			vim.keymap.set("n", "<leader>cn", function()
-				return ":IncRename " .. vim.fn.expand("<cword>")
-			end, { expr = true, desc = "Rename" })
-		end,
-	},
-	{
 		"olrtg/nvim-emmet",
 		event = "InsertEnter",
 		config = function()
@@ -177,14 +157,17 @@ return {
 		end,
 	},
 	{
-		"vyfor/cord.nvim",
-		build = "./build",
-		event = "VeryLazy",
-		opts = {},
-	},
-	{
 		"felpafel/inlay-hint.nvim",
 		event = "LspAttach",
 		config = true,
+	},
+	{
+		"numToStr/Comment.nvim",
+		event = { "BufReadPre", "BufNewFile" },
+		opts = function()
+			return {
+				pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
+			}
+		end,
 	},
 }

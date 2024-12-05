@@ -1,6 +1,9 @@
 local opts = { silent = true }
-vim.api.nvim_set_keymap('n', '<C-h>', ':wincmd h<CR>', opts)
-vim.api.nvim_set_keymap('n', '<C-l>', ':wincmd l<CR>', opts)
+
+vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
+vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
+vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
+vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 vim.keymap.set("n", "<Esc>", "<cmd>noh<CR>", { desc = "No highlight" })
 vim.keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Delete buffer" })

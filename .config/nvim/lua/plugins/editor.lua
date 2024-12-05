@@ -7,14 +7,14 @@ return {
 			{
 				"]h",
 				function()
-					require("gitsigns").next_hunk()
+					require("gitsigns").nav_hunk("next")
 				end,
 				desc = "Next hunk",
 			},
 			{
 				"[h",
 				function()
-					require("gitsigns").prev_hunk()
+					require("gitsigns").nav_hunk("prev")
 				end,
 				desc = "Previous hunk",
 			},
@@ -34,7 +34,6 @@ return {
 				"lazy",
 				"mason",
 				"neo-tree",
-				"noice",
 				"Outline",
 				"spectre_panel",
 				"TelescopePrompt",
@@ -45,21 +44,6 @@ return {
 		config = function(_, opts)
 			require("illuminate").configure(opts)
 		end,
-	},
-	{
-		"mbbill/undotree",
-		cmd = "UndotreeToggle",
-		keys = {
-			{ "<leader>tu", "<cmd>UndotreeToggle<CR>", desc = "Undo tree" },
-		},
-	},
-	{
-		"hedyhli/outline.nvim",
-		cmd = "Outline",
-		opts = {},
-		keys = {
-			{ "<leader>to", "<cmd>Outline<CR>", desc = "Outline" },
-		},
 	},
 	{
 		"nvim-pack/nvim-spectre",
@@ -81,7 +65,7 @@ return {
 		cmd = { "Trouble", "TroubleToggle" },
 		opts = {},
 		keys = {
-			{ "<leader>xx", "<cmd>Trouble diagnostics toggle <CR>", desc = "Diagnostics (Trouble)" },
+			{ "<leader>xx", "<cmd>Trouble diagnostics<CR>", desc = "Diagnostics (Trouble)" },
 			{
 				"<leader>xw",
 				"<cmd>Trouble diagnostics toggle filter.buf =0<CR>",

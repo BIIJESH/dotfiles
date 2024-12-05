@@ -1,4 +1,3 @@
--- Ensure the necessary plugins are set up
 return {
 	{
 		"williamboman/mason.nvim",
