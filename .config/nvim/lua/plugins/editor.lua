@@ -1,7 +1,7 @@
 return {
 	{
 		"lewis6991/gitsigns.nvim",
-		event = { "BufReadPre", "BufNewFile" },
+		event = { "BufReadPost" },
 		opts = {},
 		keys = {
 			{
@@ -173,6 +173,16 @@ return {
 		event = "InsertEnter",
 		config = function()
 			require("nvim-surround").setup({})
+		end,
+	},
+	{
+		"folke/tokyonight.nvim",
+		opts = {
+			style = "night",
+		},
+		config = function(_, opts)
+			require("tokyonight").setup(opts)
+      vim.cmd("colorscheme tokyonight")
 		end,
 	},
 }
