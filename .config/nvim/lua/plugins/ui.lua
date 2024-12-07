@@ -1,7 +1,7 @@
 return {
 	{
 		"akinsho/bufferline.nvim",
-		event = "BufRead",
+		event = "VeryLazy",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = {
 			highlights = {
@@ -25,17 +25,12 @@ return {
 	},
 	{
 		"nvim-lualine/lualine.nvim",
-		event = "BufEnter",
+		event = "VeryLazy",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
-			local function get_recording_key()
-				local recording_register = vim.fn.reg_recording()
-				return recording_register ~= "" and ("Recording:@" .. recording_register) or ""
-			end
-
 			require("lualine").setup({
 				options = {
-					theme = "moonfly",
+					theme = "tokyonight",
 					disabled_filetypes = {
 						"alpha",
 						"neo-tree",
@@ -50,16 +45,12 @@ return {
 					lualine_b = {
 						"diff",
 						"diagnostics",
-            "branch",
-						{
-							"filename",
-							file_status = true, -- displays file status (readonly status, modified status)
-							path = 1, -- 0 = just filename, 1 = relative path, 2 = absolute path
-						},
+						"branch",
 					},
-					lualine_c = { -- Bottom section
-						get_recording_key, -- Include the custom function directly
-					},
+					lualine_c = { {
+						"filename",
+						path = 1,
+					} },
 				},
 			})
 		end,

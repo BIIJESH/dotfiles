@@ -1,7 +1,6 @@
 return {
 	{
-		"lewis6991/gitsigns.nvim",
-		event = { "BufReadPost" },
+		"lewis6991/gitsigns.nvim", --TODO: need to check this
 		opts = {},
 		keys = {
 			{
@@ -182,7 +181,7 @@ return {
 		},
 		config = function(_, opts)
 			require("tokyonight").setup(opts)
-      vim.cmd("colorscheme tokyonight")
+			vim.cmd("colorscheme tokyonight")
 		end,
 	},
 }

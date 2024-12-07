@@ -1,43 +1,63 @@
+-- Snippets configuration
 require("config.snippets")
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-vim.opt.scrolloff = 4
-vim.opt.autoread = true
-vim.opt.autowriteall = false
-vim.opt.showcmd = false
-vim.opt.laststatus = 2
-vim.opt.formatoptions:remove({ "c", "r", "o" })
-vim.opt.cursorline = true
-vim.opt.number = true
-vim.opt.title = true
-vim.opt.backspace = "2"
--- Lazy mapping to convert JSON to Go struct
-vim.opt.hlsearch = true
-vim.opt.ignorecase = false
 
-vim.opt.backup = false
-vim.opt.writebackup = false
-vim.opt.swapfile = false
+-- Use locals for better organization
+local opt = vim.opt
+local g = vim.g
 
-vim.opt.splitbelow = true
-vim.opt.splitright = true
-vim.opt.splitkeep = "cursor"
+-- Leader keys
+g.mapleader = " "
+g.maplocalleader = " "
 
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.smartindent = true
-vim.opt.shiftround = true
-vim.opt.expandtab = true
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-vim.g.neo_window_position = "right"
-vim.opt.clipboard:append("unnamedplus")
--- Enable word wrapping
-vim.opt.wrap = true
-vim.opt.linebreak = true
+-- General settings
+opt.scrolloff = 4
+opt.autoread = true
+opt.autowriteall = false
+opt.showcmd = false
+opt.laststatus = 2
+opt.formatoptions:remove({ "c", "r", "o" })
+opt.cursorline = true
+opt.number = true
+opt.title = true
+opt.backspace = "2"
+opt.hlsearch = true
+opt.ignorecase = false
 
-vim.opt.relativenumber = true
--- vim.opt.showbreak = "↩"
+-- Backup and swapfile settings
+opt.backup = false
+opt.writebackup = false
+opt.swapfile = false
+
+-- Split window behavior
+opt.splitbelow = true
+opt.splitright = true
+opt.splitkeep = "cursor"
+
+-- Indentation settings
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.smartindent = true
+opt.shiftround = true
+opt.expandtab = true
+
+-- Netrw settings
+g.loaded_netrw = 1
+g.loaded_netrwPlugin = 1
+
+-- Neo-tree settings
+g.neo_window_position = "right"
+
+-- Clipboard settings
+opt.clipboard:append("unnamedplus")
+
+-- Word wrapping settings
+opt.wrap = true
+opt.linebreak = true
+
+-- Relative line numbers
+opt.relativenumber = true
+
+-- Filetype customization
 vim.filetype.add({
-	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })

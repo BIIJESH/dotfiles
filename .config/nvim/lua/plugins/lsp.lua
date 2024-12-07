@@ -6,7 +6,7 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
-		event = { "BufReadPre", "BufNewFile" },
+		event = { "BufReadPre" },
 		dependencies = {
 			"williamboman/mason-lspconfig.nvim",
 			"hrsh7th/cmp-nvim-lsp",
@@ -147,7 +147,7 @@ return {
 			"nvimtools/none-ls.nvim",
 		},
 		opts = {
-			ensure_installed = { "black", "prettier", "stylua" },
+			ensure_installed = { "black", "prettier", "stylua", "shfmt" },
 		},
 	},
 }
