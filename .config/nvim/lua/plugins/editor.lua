@@ -1,6 +1,7 @@
 return {
 	{
 		"lewis6991/gitsigns.nvim", --TODO: need to check this
+		event = "BufReadPre",
 		opts = {},
 		keys = {
 			{
@@ -43,20 +44,6 @@ return {
 		config = function(_, opts)
 			require("illuminate").configure(opts)
 		end,
-	},
-	{
-		"nvim-pack/nvim-spectre",
-		cmd = "Spectre",
-		opts = {},
-		keys = {
-			{
-				"<leader>ts",
-				function()
-					require("spectre").toggle()
-				end,
-				desc = "Spectre",
-			},
-		},
 	},
 	{
 		"folke/trouble.nvim",
@@ -126,7 +113,7 @@ return {
 	},
 	{
 		"folke/which-key.nvim",
-		event = "VeryLazy",
+		event = "VimEnter",
 		dependencies = {
 			"echasnovski/mini.icons",
 		},
@@ -184,4 +171,5 @@ return {
 			vim.cmd("colorscheme tokyonight")
 		end,
 	},
+	{ "ThePrimeagen/vim-be-good" },
 }

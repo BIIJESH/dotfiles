@@ -1,9 +1,45 @@
 -- Snippets configuration
 require("config.snippets")
-
 -- Use locals for better organization
+local api = vim.api
 local opt = vim.opt
 local g = vim.g
+local api = vim.api
+local fn = vim.fn
+local cmd = vim.cmd
+local filetype = vim.filetype
+-- Always show the statusline
+opt.laststatus = 2
+-- Disable mode display (since we include it in the custom statusline)
+opt.showmode = false
+
+-- Lua function to display the Git branch
+_G.statusline_branch = function()
+  local branch = fn.systemlist("git branch --show-current 2>/dev/null")[1]
+  return branch and " " .. branch or ""
+end
+
+
+-- Close the empty buffer when opening a directory
+api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    local buf_count = #api.nvim_list_bufs()
+    local dir = fn.isdirectory(fn.expand("%"))
+    if dir == 1 and buf_count == 1 then
+      cmd("bd") -- Close the empty buffer
+    end
+  end,
+})
+
+-- Define the custom statusline
+opt.statusline = table.concat({
+  "%#Mode# %{v:lua.statusline_branch()} |", -- Git branch (left)
+  " %<%f",                               -- Filename, truncated if necessary
+  " %m",                                 -- Modified flag
+  " %r",                                 -- Read-only flag
+  "%=",                                  -- Right-align the following sections
+  " %l:%c ",                             -- Line and column number
+})
 
 -- Leader keys
 g.mapleader = " "
@@ -11,6 +47,7 @@ g.maplocalleader = " "
 
 -- General settings
 opt.scrolloff = 4
+g.vim_be_good_log_file = 1
 opt.autoread = true
 opt.autowriteall = false
 opt.showcmd = false
@@ -42,10 +79,7 @@ opt.expandtab = true
 
 -- Netrw settings
 g.loaded_netrw = 1
-g.loaded_netrwPlugin = 1
 
--- Neo-tree settings
-g.neo_window_position = "right"
 
 -- Clipboard settings
 opt.clipboard:append("unnamedplus")
@@ -56,8 +90,8 @@ opt.linebreak = true
 
 -- Relative line numbers
 opt.relativenumber = true
-
+g.netrw_syntax_highlight = 1
 -- Filetype customization
-vim.filetype.add({
-  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+filetype.add({
+	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
