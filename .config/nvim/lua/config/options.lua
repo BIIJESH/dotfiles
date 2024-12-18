@@ -95,3 +95,6 @@ g.netrw_syntax_highlight = 1
 filetype.add({
 	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  border = "rounded", -- You can use "single", "double", "solid", "shadow", etc.
+})
