@@ -17,8 +17,5 @@ set("n", "<leader>hh", ":help ", { desc = "Open help window" })
 set("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })
 set("n", "<S-Tab>", ":bprevious<CR>", { noremap = true, silent = true })
 
--- Optional: Show active buffers
-set("n", "<leader>ls", ":ls<CR>", { noremap = true, silent = true })
-
 -- vim.keymap.set("n", "-", "<cmd>Oil<cr>", { desc = "Open parent dir" })
 -- vim.keymap.set("n", "<leader>of", require("oil").toggle_float, { desc = "Toggle Oil Float" })

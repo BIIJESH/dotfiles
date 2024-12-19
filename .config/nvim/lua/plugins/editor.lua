@@ -36,7 +36,6 @@ return {
 				"neo-tree",
 				"Outline",
 				"spectre_panel",
-				"TelescopePrompt",
 				"Trouble",
 				"undotree",
 			},
@@ -82,9 +81,9 @@ return {
 				end,
 				desc = "Previous todo comment",
 			},
-			{ "<leader>ft", "<cmd>TodoTrouble keywords=TODO,FIX,FIXME<CR>", desc = "Todo/Fix/Fixme (Trouble)" },
+			{ "<leader>xt", "<cmd>TodoTrouble keywords=TODO,FIX,FIXME<CR>", desc = "Todo/Fix/Fixme (Trouble)" },
 			{ "<leader>xT", "<cmd>TodoTrouble toggle<CR>", desc = "Todo (Trouble)" },
-			{ "<leader>xt", "<cmd>TodoTelescope<CR>", desc = "Todo" },
+			{ "<leader>ft", "<cmd>TodoFzfLua<CR>", desc = "Todo (fzf-lua)" },
 			{ "<leader>fT", "<cmd>TodoTelescope keywords=TODO,FIX,FIXME<CR>", desc = "Todo/Fix/Fixme" },
 		},
 	},
@@ -171,5 +170,6 @@ return {
 			vim.cmd("colorscheme tokyonight")
 		end,
 	},
+	--TODO:checking this
 	{ "ThePrimeagen/vim-be-good" },
 }

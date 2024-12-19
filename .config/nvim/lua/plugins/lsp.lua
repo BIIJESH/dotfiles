@@ -74,7 +74,7 @@ return {
 				vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Actions" })
 				vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Definition" })
 				vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Implementation" })
-				vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, { desc = "References" })
+				vim.keymap.set("n", "gr", require("fzf-lua").lsp_references, { desc = "References" })
 				vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
 				vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, { desc = "Signature help" })
 			end
