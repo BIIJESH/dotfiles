@@ -170,6 +170,5 @@ return {
 			vim.cmd("colorscheme tokyonight")
 		end,
 	},
-	--TODO:checking this
 	{ "ThePrimeagen/vim-be-good" },
 }

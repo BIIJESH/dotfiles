@@ -1,0 +1,10 @@
+[font]
+size = 11.5
+
+builtin_box_drawing = true
+
+normal = { family = "JetBrainsMono NF", style = "Bold" }
+bold = { family = "JetBrainsMono NF", style = "ExtraBold" }
+italic = { family = "JetBrainsMono NF", style = "Italic" }
+bold_italic = { family = "JetBrainsMono NF", style = "Bold Italic" }
+
