@@ -162,13 +162,8 @@ return {
 	},
 	{
 		"folke/tokyonight.nvim",
-		opts = {
-			style = "night",
-		},
-		config = function(_, opts)
-			require("tokyonight").setup(opts)
-			vim.cmd("colorscheme tokyonight")
-		end,
+		lazy = false,
+		priority = 1000,
+		opts = {},
 	},
-	{ "ThePrimeagen/vim-be-good" },
 }

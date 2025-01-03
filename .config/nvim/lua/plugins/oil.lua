@@ -14,12 +14,24 @@ return {
 				view_options = {
 					show_hidden = true,
 				},
+				persistent = true,
+				float = {
+					padding = 2,
+					max_width = 60,
+					max_height = 16,
+					border = "rounded",
+					win_options = {
+						winblend = 0,
+					},
+					get_win_title = nil,
+					preview_split = "auto",
+				},
 			})
 			-- Define the toggle float keymap within the config
-			vim.keymap.set("n", "-", "<cmd>Oil<cr>", { desc = "Open parent dir" })
-			vim.keymap.set("n", "<leader>of", require("oil").toggle_float, { desc = "Toggle Oil Float" })
+			vim.keymap.set("n", "<leader>of", "<cmd>Oil<cr>", { desc = "Open parent dir" })
+			vim.keymap.set("n", "-", require("oil").toggle_float, { desc = "Toggle Oil Float" })
 		end,
-		dependencies = { { "echasnovski/mini.icons", opts = {} } },
+		-- dependencies = { { "echasnovski/mini.icons", opts = {} } },
 	},
 	{
 		"ibhagwan/fzf-lua",

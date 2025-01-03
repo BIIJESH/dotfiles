@@ -9,11 +9,12 @@ return {
 		event = { "BufReadPre" },
 		dependencies = {
 			"williamboman/mason-lspconfig.nvim",
-			"hrsh7th/cmp-nvim-lsp",
+			"saghen/blink.cmp",
 		},
 		opts = {
 			servers = {
 				pyright = {},
+				zls = {},
 				ts_ls = {
 					root_dir = function(...)
 						return require("lspconfig.util").root_pattern(".git")(...)
@@ -26,7 +27,6 @@ return {
 								includeInlayParameterNameHintsWhenArgumentMatchesName = false,
 								includeInlayFunctionParameterTypeHints = true,
 								includeInlayVariableTypeHints = false,
-								includeInlayPropertyDeclarationTypeHints = true,
 								includeInlayFunctionLikeReturnTypeHints = true,
 								includeInlayEnumMemberValueHints = true,
 							},
@@ -59,9 +59,10 @@ return {
 			},
 		},
 		config = function(_, opts)
+			local capabilities = require("blink.cmp").get_lsp_capabilities()
 			local lspconfig = require("lspconfig")
+			lspconfig.lua_ls.setup({ capabilites = capabilites })
 			local mason_lspconfig = require("mason-lspconfig")
-
 			mason_lspconfig.setup({
 				ensure_installed = vim.tbl_keys(opts.servers),
 			})
@@ -71,16 +72,13 @@ return {
 			local on_attach = function(_, _)
 				vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 				vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
-				vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Actions" })
+				vim.keymap.set("n", "<leader>ca", require("fzf-lua").lsp_code_actions, { desc = "Code Actions" })
 				vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Definition" })
 				vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Implementation" })
 				vim.keymap.set("n", "gr", require("fzf-lua").lsp_references, { desc = "References" })
 				vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
 				vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, { desc = "Signature help" })
 			end
-
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 			mason_lspconfig.setup_handlers({
 				function(server_name)
 					require("lspconfig")[server_name].setup({
@@ -90,10 +88,10 @@ return {
 					})
 				end,
 			})
+
 			-- Setup Emmet LSP
 			lspconfig.emmet_ls.setup({
 				capabilities = capabilities,
-				-- on_attach = on_attach,
 				filetypes = {
 					"css",
 					"eruby",
@@ -123,6 +121,7 @@ return {
 		dependencies = {
 			"neovim/nvim-lspconfig",
 			"nvim-lua/plenary.nvim",
+			"saghen/blink.cmp", -- Add Blink CMP dependency here
 		},
 		opts = function()
 			local null_ls = require("null-ls")
@@ -147,6 +146,47 @@ return {
 		},
 		opts = {
 			ensure_installed = { "black", "prettier", "stylua", "shfmt" },
+		},
+	},
+	{
+		"saghen/blink.cmp",
+		event = "BufReadPre",
+		dependencies = { "rafamadriz/friendly-snippets" },
+		version = "0.7.6",
+		opts = {
+			appearance = {
+				use_nvim_cmp_as_default = false,
+				nerd_font_variant = "mono",
+			},
+			keymap = {
+				preset = "default",
+				["<Enter>"] = { "accept", "fallback" },
+				["<Tab>"] = { "select_next" },
+				["<S-Tab>"] = { "select_prev" },
+			},
+			completion = {
+				menu = { border = "single" },
+				documentation = {
+					window = {
+						border = "single",
+					},
+					auto_show = true,
+				},
+				trigger = {
+					show_in_snippet = true,
+					show_on_trigger_character = true,
+				},
+				-- ghost_text = { enabled = true },
+			},
+			signature = {
+				window = {
+					border = "single",
+				},
+			},
+			sources = {
+				default = { "lsp", "path", "snippets", "buffer" },
+				cmdline = {},
+			},
 		},
 	},
 }

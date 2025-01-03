@@ -9,24 +9,13 @@ local fn = vim.fn
 local cmd = vim.cmd
 local filetype = vim.filetype
 -- Always show the statusline
-opt.laststatus = 2
--- Disable mode display (since we include it in the custom statusline)
-opt.showmode = false
-
--- Close the empty buffer when opening a directory
-api.nvim_create_autocmd("VimEnter", {
-	callback = function()
-		local buf_count = #api.nvim_list_bufs()
-		local dir = fn.isdirectory(fn.expand("%"))
-		if dir == 1 and buf_count == 1 then
-			cmd("bd") -- Close the empty buffer
-		end
-	end,
-})
+opt.showmode = true
 
 -- Leader keys
 g.mapleader = " "
 g.maplocalleader = " "
+vim.cmd("autocmd BufEnter * set formatoptions-=cro")
+vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
 
 -- General settings
 opt.scrolloff = 4

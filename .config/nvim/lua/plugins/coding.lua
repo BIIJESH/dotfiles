@@ -65,59 +65,6 @@ return {
 		},
 	},
 	{
-		"hrsh7th/nvim-cmp",
-		event = "InsertEnter",
-		dependencies = {
-			"hrsh7th/cmp-nvim-lsp",
-			"hrsh7th/cmp-buffer",
-			"hrsh7th/cmp-path",
-			{
-				"L3MON4D3/LuaSnip",
-				build = "make install_jsregexp",
-				dependencies = {
-					{
-						"rafamadriz/friendly-snippets",
-						config = function()
-							require("luasnip.loaders.from_vscode").lazy_load()
-							require("config.cmp")
-						end,
-					},
-				},
-				opts = {},
-			},
-			"saadparwaiz1/cmp_luasnip",
-			"onsails/lspkind.nvim",
-		},
-		opts = function()
-			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-			local cmp = require("cmp")
-			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
-			return {
-				snippet = {
-					expand = function(args)
-						require("luasnip").lsp_expand(args.body)
-					end,
-				},
-				mapping = cmp.mapping.preset.insert({
-					["<C-b>"] = cmp.mapping.scroll_docs(-4),
-					["<C-f>"] = cmp.mapping.scroll_docs(4),
-					["<C-Space>"] = cmp.mapping.complete(),
-					["<C-e>"] = cmp.mapping.abort(),
-					["<CR>"] = cmp.mapping.confirm({ select = true }),
-				}),
-				formatting = {
-					format = require("lspkind").cmp_format({
-						maxwidth = 50,
-						ellipsis_char = "...",
-					}),
-				},
-			}
-		end,
-		config = function(_, opts)
-			require("cmp").setup(opts)
-		end,
-	},
-	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
 		opts = {},
@@ -156,11 +103,6 @@ return {
 		config = function()
 			vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
 		end,
-	},
-	{
-		"felpafel/inlay-hint.nvim",
-		event = "LspAttach",
-		config = true,
 	},
 	{
 		"numToStr/Comment.nvim",
