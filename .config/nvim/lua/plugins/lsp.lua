@@ -61,14 +61,15 @@ return {
 		config = function(_, opts)
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
 			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({ capabilites = capabilites })
+			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			local mason_lspconfig = require("mason-lspconfig")
 			mason_lspconfig.setup({
 				ensure_installed = vim.tbl_keys(opts.servers),
 			})
-			lspconfig.html.setup({
-				filetypes = { "html", "ejs" },
-			})
+			-- lspconfig.html.setup({
+			-- 	capabilities = capabilities,
+			-- 	filetypes = { "html", "ejs" },
+			-- })
 			local on_attach = function(_, _)
 				vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 				vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
@@ -104,13 +105,6 @@ return {
 					"pug",
 					"typescriptreact",
 					"vue",
-				},
-				init_options = {
-					html = {
-						options = {
-							["bem.enabled"] = true,
-						},
-					},
 				},
 			})
 		end,
@@ -184,9 +178,16 @@ return {
 				},
 			},
 			sources = {
-				default = { "lsp", "path", "snippets", "buffer" },
+				default = { "lsp", "path", "snippets", "buffer" ,"nvim_lsp" },
 				cmdline = {},
 			},
 		},
+	},
+	{
+		"olrtg/nvim-emmet",
+		event = "InsertEnter",
+		config = function()
+			vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
+		end,
 	},
 }

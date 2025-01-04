@@ -2,7 +2,7 @@ return {
 	{
 		"stevearc/oil.nvim",
 		lazy = true,
-		event = "VimEnter",
+		event = "BufWinEnter",
 		config = function()
 			local oil = require("oil")
 			oil.setup({
@@ -14,7 +14,6 @@ return {
 				view_options = {
 					show_hidden = true,
 				},
-				persistent = true,
 				float = {
 					padding = 2,
 					max_width = 60,
@@ -27,11 +26,8 @@ return {
 					preview_split = "auto",
 				},
 			})
-			-- Define the toggle float keymap within the config
-			vim.keymap.set("n", "<leader>of", "<cmd>Oil<cr>", { desc = "Open parent dir" })
 			vim.keymap.set("n", "-", require("oil").toggle_float, { desc = "Toggle Oil Float" })
 		end,
-		-- dependencies = { { "echasnovski/mini.icons", opts = {} } },
 	},
 	{
 		"ibhagwan/fzf-lua",
