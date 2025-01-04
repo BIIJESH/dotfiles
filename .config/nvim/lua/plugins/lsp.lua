@@ -6,7 +6,7 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
-		event = { "BufReadPre" },
+		event = { "BufReadPost", "BufNewFile" },
 		dependencies = {
 			"williamboman/mason-lspconfig.nvim",
 			"saghen/blink.cmp",
@@ -16,9 +16,6 @@ return {
 				pyright = {},
 				zls = {},
 				ts_ls = {
-					root_dir = function(...)
-						return require("lspconfig.util").root_pattern(".git")(...)
-					end,
 					single_file_support = false,
 					settings = {
 						typescript = {
@@ -45,6 +42,7 @@ return {
 					},
 					completion = {
 						callSnippet = "Replace",
+						completeFunctionCalls = true,
 					},
 				},
 				lua_ls = {
@@ -66,10 +64,6 @@ return {
 			mason_lspconfig.setup({
 				ensure_installed = vim.tbl_keys(opts.servers),
 			})
-			-- lspconfig.html.setup({
-			-- 	capabilities = capabilities,
-			-- 	filetypes = { "html", "ejs" },
-			-- })
 			local on_attach = function(_, _)
 				vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
 				vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
@@ -115,7 +109,7 @@ return {
 		dependencies = {
 			"neovim/nvim-lspconfig",
 			"nvim-lua/plenary.nvim",
-			"saghen/blink.cmp", -- Add Blink CMP dependency here
+			"saghen/blink.cmp",
 		},
 		opts = function()
 			local null_ls = require("null-ls")
@@ -144,16 +138,16 @@ return {
 	},
 	{
 		"saghen/blink.cmp",
-		event = "BufReadPre",
+		version = "*",
+		event = "LspAttach",
 		dependencies = { "rafamadriz/friendly-snippets" },
-		version = "0.7.6",
 		opts = {
 			appearance = {
-				use_nvim_cmp_as_default = false,
+				use_nvim_cmp_as_default = true,
 				nerd_font_variant = "mono",
 			},
 			keymap = {
-				preset = "default",
+				preset = "enter",
 				["<Enter>"] = { "accept", "fallback" },
 				["<Tab>"] = { "select_next" },
 				["<S-Tab>"] = { "select_prev" },
@@ -161,6 +155,7 @@ return {
 			completion = {
 				menu = { border = "single" },
 				documentation = {
+					auto_show_delay_ms = 0,
 					window = {
 						border = "single",
 					},
@@ -170,7 +165,6 @@ return {
 					show_in_snippet = true,
 					show_on_trigger_character = true,
 				},
-				-- ghost_text = { enabled = true },
 			},
 			signature = {
 				window = {
@@ -178,8 +172,8 @@ return {
 				},
 			},
 			sources = {
-				default = { "lsp", "path", "snippets", "buffer" ,"nvim_lsp" },
-				cmdline = {},
+				default = { "path", "snippets", "buffer" }, --removing lsp from here the snippets were faster
+				cmdline = { enabled = false },
 			},
 		},
 	},
