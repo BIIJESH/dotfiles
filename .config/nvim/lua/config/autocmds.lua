@@ -13,4 +13,3 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 -- 	pattern = { "*.ejs" },
 -- 	command = "set filetype=html",
 -- })
-

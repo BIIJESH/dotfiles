@@ -64,8 +64,8 @@ opt.relativenumber = true
 g.netrw_syntax_highlight = 1
 -- Filetype customization
 filetype.add({
-	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-	border = "single", -- You can use "single", "double", "solid", "shadow", etc.
+  border = "single", -- You can use "single", "double", "solid", "shadow", etc.
 })
