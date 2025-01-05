@@ -41,7 +41,7 @@ return {
   },
   {
     "saghen/blink.cmp",
-    version = "*",
+    version = "v0.*",
     dependencies = 'rafamadriz/friendly-snippets',
     event = "LspAttach",
     opts = {
@@ -69,12 +69,18 @@ return {
         },
       },
       signature = {
+        enabled = true,
         window = {
           border = "single",
         },
       },
       sources = {
-        default = { "path", "snippets", "buffer", "lsp" },--BUG:with lsp as source ts_ls is so slow 
+        providers = {
+          lsp = {
+            async = true
+          },
+        },
+        default = { "lsp", "path", "snippets", "buffer" }, --BUG:with lsp as source ts_ls is so slow
         cmdline = { enabled = false },
       },
     },
