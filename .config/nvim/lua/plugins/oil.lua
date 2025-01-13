@@ -31,8 +31,8 @@ return {
   },
   {
     "ibhagwan/fzf-lua",
+    lazy = true,
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    event = "BufReadPre",
     cmd = "FzfLua",
     opts = {},
     config = function(_, opts)
