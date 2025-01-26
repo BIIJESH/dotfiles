@@ -3,6 +3,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --tmux bottom,40% --layout reverse --border top'
+export PATH=$PATH:$HOME/go/bin
 export FZF_DEFAULT_OPTS="--bind=tab:up,shift-tab:down"
 export PATH="$HOME/.nix-profile/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -59,6 +60,7 @@ alias br="pomodoro 'break'"
 # alias pgadmin='source pgadmin4/bin/activate'
 alias pmq='pacman -Q | fzf | wl-copy'
 alias em='emacsclient -t'
+
 alias record='wf-recorder --file=screen.mp4'
 
 eval "$(zoxide init zsh)"
@@ -67,20 +69,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
-
-fzf_preview() {
-  local current_dir=$(pwd)
-  local selected_file
-#
-selected_file=$(find "$current_dir" -type f \( ! -iname "*.jpg" -a ! -iname "*.jpeg" -a ! -iname "*.png" -a ! -iname "*.webp" \) -not -path '*/.git/*' | fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")
-  if [[ -n "$selected_file" ]]; then
-    local selected_dir=$(dirname "$selected_file")
-    cd "$selected_dir"
-    nvim "$(basename "$selected_file")"
-  fi
-}
-zle -N fzf_preview
-bindkey '^F' fzf_preview
 
 
 if [ -e /home/papa/.nix-profile/etc/profile.d/nix.sh ]; then . /home/papa/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
