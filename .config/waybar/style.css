@@ -2,14 +2,14 @@
   border: none;
   font-family: "JetBrainsMono Nerd Font";
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   min-height: 0;
 }
 
 window#waybar {
   background-color: rgba(26, 27, 38, 0.8); 
   color: #c0caf5;           /* Tokyo Night foreground */
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0px;
   transition-duration: 1s;
   box-shadow: none; 
@@ -29,7 +29,7 @@ tooltip {
 #workspaces button {
   margin-right: 0px;
   color: mix(#c0caf5, #1a1b26, 0.4); /* Slightly lighter Tokyo Night foreground */
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #1a1b26; 
 }
 
@@ -162,7 +162,7 @@ battery.bat2 {
 window#waybar > box > box > widget > *,
 window#waybar > box > box > box {
   margin: 0 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #1a1b26; /* Tokyo Night Background */
 }
 
@@ -184,17 +184,17 @@ slider {
 trough {
   min-height: 20px;
   min-width: 80px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #1a1b26; /* Tokyo Night Background */
 }
 
 highlight {
   min-height: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #1a1b26;
 }
 
 #light {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #1a1b26; /* Tokyo Night Background */
 }

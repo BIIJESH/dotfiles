@@ -3,14 +3,14 @@
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
-  "height": 40,
-  "margin-top": 10,
-  "margin-left": 10,
-  "margin-right": 10,
+  "height": 30,
+  "margin-top": 5,
+  "margin-left": 5,
+  "margin-right": 5,
   "hyprland/window": {
     "format": "{}",
     "on-click-right": "hyprctl dispatch killactive",
-    "max-length": 200,
+    "max-length": 200
   },
   "hyprland/workspaces": {
     "disable-scroll": false,
@@ -21,35 +21,35 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "1": " ",
+      "1": " ",
       "2": " ",
-      "3": " ",
+      "3": " ",
       "4": " ",
       "5": " ",
-      "6": "\ue217 ",
+      "6": "\ue217 "
     },
     "persistent_workspaces": {
       "1:": [],
       "2:": [],
       "3:": [],
       "4:": [],
-      "5:": [],
-    },
+      "5:": []
+    }
   },
   "hyprland/language": {
     "format": " {}",
     "format-en": "en",
-    "format-es": "es",
+    "format-es": "es"
   },
   "custom/cava": {
     "format": "{}",
     "tooltip": false,
     "exec": "~/.config/waybar/scripts/waybar-cava.sh",
-    "return-type": "text",
+    "return-type": "text"
   },
   "tray": {
     "icon-size": 18,
-    "spacing": 0,
+    "spacing": 0
   },
   "mpris": {
     "interval": 1,
@@ -61,9 +61,9 @@
     "tooltip": false,
     "status-icons": {
       "playing": "󰎈",
-      "paused": "󰏥",
+      "paused": "󰏥"
     },
-    "max-length": 30,
+    "max-length": 30
   },
   "clock": {
     "format": "  {:%I:%M %p}  ",
@@ -78,41 +78,57 @@
         "days": "<span color='#ecc6d9'><b>{}</b></span>",
         "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
-      },
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
     },
     "actions": {
       "on-click-right": "mode",
       "on-click-forward": "tz_up",
       "on-click-backward": "tz_down",
       "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down",
-    },
+      "on-scroll-down": "shift_down"
+    }
   },
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
     "on-scroll-up": "brightnessctl set 1%+",
     "on-scroll-down": "brightnessctl set 1%-",
     "min-length": 6,
-    "tooltip": false,
+    "tooltip": false
   },
   "battery": {
     "bat": "BAT1",
     "states": {
       "good": 95,
       "warning": 30,
-      "critical": 20,
+      "critical": 20
     },
     "battery#bat2": {
-      "bat": "BAT2",
+      "bat": "BAT2"
     },
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ]
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -130,8 +146,12 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""],
-    },
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
@@ -140,13 +160,13 @@
     "on-click": "pamixer --default-source -t",
     "on-scroll-up": "pamixer --default-source -i 5",
     "on-scroll-down": "pamixer --default-source -d 5",
-    "scroll-step": 5,
+    "scroll-step": 5
   },
   "temperature": {
     "thermal-zone": 2,
     "format": " {temperatureC}°C",
     "critical-threshold": 80,
-    "format-critical": " {temperatureC}°C",
+    "format-critical": " {temperatureC}°C"
   },
   "network": {
     "format-wifi": " {signalStrength}%",
@@ -154,7 +174,7 @@
     "tooltip-format": "{essid} - {ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "⚠",
-    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}",
+    "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
   },
   "bluetooth": {
     "format": " on",
@@ -162,78 +182,87 @@
     "format-connected": " {num_connections}",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}",
+    "tooltip-format-enumerate-connected": "{device_alias}"
   },
   "pulseaudio/slider": {
     "min": 0,
     "max": 100,
-    "orientation": "horizontal",
+    "orientation": "horizontal"
   },
   "backlight/slider": {
     "min": 0,
     "max": 100,
     "orientation": "horizontal",
-    "device": "intel_backlight",
+    "device": "intel_backlight"
   },
   "group/light": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 500,
-      "transition-left-to-right": false,
+      "transition-left-to-right": false
     },
-    "modules": ["backlight", "backlight/slider"],
+    "modules": [
+      "backlight",
+      "backlight/slider"
+    ]
   },
   //FOR POWER GROUP
   "custom/arch": {
     "format": "󰣇",
     "tooltip": false,
-    "on-click": "wofi",
+    "on-click": "anyrun"
   },
   "custom/quit": {
     "format": "󰍃",
     "tooltip": false,
-    "on-click": "hyprctl dispatch exit",
+    "on-click": "hyprctl dispatch exit"
   },
   "custom/lock": {
     "format": "󰌾",
     "tooltip": false,
-    "on-click": "gtklock",
+    "on-click": "gtklock"
   },
   "custom/reboot": {
     "format": "󰜉",
     "tooltip": false,
     "on-click": "(sleep 10 && reboot) & (notify-send --urgency=critical --expire-time=20000 --wait 'System Reboot' 'The system will reboot in 10 seconds, click to cancel' && pkill sleep)",
-    "on-click-right": "reboot",
+    "on-click-right": "reboot"
   },
   "custom/shutdown": {
     "format": "󰐥",
     "tooltip": false,
     "on-click": "(sleep 10 && shutdown now) & (notify-send --urgency=critical --expire-time=20000 --wait 'System Shutdown' 'The system will shutdown in 10 seconds, click to cancel' && pkill sleep)",
-    "on-click-right": "shutdown now",
+    "on-click-right": "shutdown now"
   },
   "custom/sleep": {
     "format": "󰒲",
     "tooltip": false,
-    "on-click": "systemctl suspend",
+    "on-click": "systemctl suspend"
   },
   //GROUP CONFIGURATIONS
   "group/audioSpeaker": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 500,
-      "transition-left-to-right": false,
+      "transition-left-to-right": false
     },
-    "modules": ["pulseaudio", "pulseaudio/slider"],
+    "modules": [
+      "pulseaudio",
+      "pulseaudio/slider"
+    ]
   },
   "group/audio": {
     "orientation": "inherit",
-    "modules": ["group/audioSpeaker", "pulseaudio#microphone"],
+    "modules": [
+      "group/audioSpeaker",
+      "pulseaudio#microphone"
+    ]
   },
   "group/power": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 500,
-      "transition-left-to-right": true,
+      "transition-left-to-right": true
     },
     "modules": [
       "custom/arch",
@@ -241,7 +270,7 @@
       "custom/lock",
       "custom/sleep",
       "custom/reboot",
-      "custom/shutdown",
-    ],
-  },
+      "custom/shutdown"
+    ]
+  }
 }
