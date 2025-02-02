@@ -31,7 +31,7 @@ alias fsb='~/tmux/fsb.sh'
 alias fshow='~/tmux/fshow.sh'
 alias cd='z'
 
-alias cat="bat --theme tokyonight_night"
+alias cat="bat --style=plain --theme tokyonight_night"
 alias un='sudo pacman -Rns'
 alias nb='newsboat'
 alias dbl='bluetoothctl disconnect'
