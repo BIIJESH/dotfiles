@@ -1,5 +1,5 @@
 export VISUAL=nvim
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --tmux bottom,40% --layout reverse --border top'
@@ -49,9 +49,9 @@ alias ts='tmuxsession'
 alias tks='tmux kill-session'
 alias fm='thunar &'
 alias cls='clear'
-alias ls='exa --icons --color=always --group-directories-first'
-alias la='exa -a --icons --color=always --group-directories-first'
-alias ll='exa -l --icons --color=always --group-directories-first'
+alias ls='exa --color=always --group-directories-first'
+alias la='exa -a --color=always --group-directories-first'
+alias ll='exa -l --color=always --group-directories-first'
 alias :q='exit'
 alias xam='sudo /opt/lampp/lampp start'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
@@ -110,14 +110,21 @@ pomodoro() {
   fi
 }
 
-
 if [[ ! -d ~/.zsh-autopair ]]; then
   git clone https://github.com/hlissner/zsh-autopair ~/.zsh-autopair
 fi
 
-
 if [ "$(tty)" = "/dev/tty1" ];then
   exec Hyprland
 fi
-
 export MOZ_ENABLE_WAYLAND=1
+function parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+
+COLOR_DEF=$'\e[0m'
+COLOR_USR=$'\e[38;5;243m'
+COLOR_DIR=$'\e[38;5;197m'
+COLOR_GIT=$'\e[38;5;39m'
+setopt PROMPT_SUBST
+export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
