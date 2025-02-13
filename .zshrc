@@ -10,9 +10,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export BAT_THEME=tokyonight_night
 export BROWSER="/usr/bin/firefox"
 export EDITOR=nvim
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$PATH:/home/papa/.local/share/bob/nvim-bin"
 source ~/.zsh-autopair/autopair.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 setopt autocd	
 
 # Aliases
@@ -59,6 +59,7 @@ alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
 # alias pgadmin='source pgadmin4/bin/activate'
 alias pmq='pacman -Q | fzf | wl-copy'
+alias cd='z'
 alias em='emacsclient -t'
 
 alias record='wf-recorder --file=screen.mp4'
@@ -118,13 +119,20 @@ if [ "$(tty)" = "/dev/tty1" ];then
   exec Hyprland
 fi
 export MOZ_ENABLE_WAYLAND=1
-function parse_git_branch() {
-    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+function git_branch_name()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo '-['$branch'] '
+  fi
 }
+# Enable substitution in the prompt.
+setopt prompt_subst
+# Config for prompt. PS1 synonym.
+PS1='%~ $: $(git_branch_name)'
 
-COLOR_DEF=$'\e[0m'
-COLOR_USR=$'\e[38;5;243m'
-COLOR_DIR=$'\e[38;5;197m'
-COLOR_GIT=$'\e[38;5;39m'
-setopt PROMPT_SUBST
-export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
+
+source /home/papa/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
