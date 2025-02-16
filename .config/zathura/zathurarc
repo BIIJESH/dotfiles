@@ -1,0 +1,53 @@
+set window-title-basename "true"
+set selection-clipboard "clipboard"
+
+# Tokyo Night color theme for Zathura
+
+set notification-error-bg       rgba(203,65,84,1)     # Red
+set notification-error-fg       rgba(192,202,245,1)   # Foreground
+set notification-warning-bg     rgba(255,184,108,1)   # Orange
+set notification-warning-fg     rgba(108,112,134,1)   # Selection
+set notification-bg             rgba(26,27,38,1)      # Background
+set notification-fg             rgba(192,202,245,1)   # Foreground
+
+set completion-bg               rgba(26,27,38,1)      # Background
+set completion-fg               rgba(152,165,225,1)   # Comment
+set completion-group-bg         rgba(26,27,38,1)      # Background
+set completion-group-fg         rgba(152,165,225,1)   # Comment
+set completion-highlight-bg     rgba(50,54,76,1)      # Selection
+set completion-highlight-fg     rgba(192,202,245,1)   # Foreground
+
+set index-bg                    rgba(26,27,38,1)      # Background
+set index-fg                    rgba(192,202,245,1)   # Foreground
+set index-active-bg             rgba(50,54,76,1)      # Current Line
+set index-active-fg             rgba(192,202,245,1)   # Foreground
+
+set inputbar-bg                 rgba(26,27,38,1)      # Background
+set inputbar-fg                 rgba(192,202,245,1)   # Foreground
+set statusbar-bg                rgba(26,27,38,1)      # Background
+set statusbar-fg                rgba(192,202,245,1)   # Foreground
+
+set highlight-color             rgba(250,179,135,0.5) # Orange
+set highlight-active-color      rgba(198,160,246,0.5) # Pink
+
+set default-bg                  rgba(26,27,38,1)      # Background
+set default-fg                  rgba(192,202,245,1)   # Foreground
+
+set render-loading              true
+set render-loading-fg           rgba(26,27,38,1)      # Background
+set render-loading-bg           rgba(192,202,245,1)   # Foreground
+
+#
+# Recolor mode settings
+#
+
+set recolor-lightcolor          rgba(26,27,38,1)      # Background
+set recolor-darkcolor           rgba(192,202,245,1)   # Foreground
+
+#
+# Startup options
+#
+set adjust-open width
+set recolor true
+set synctex true
+set save-position true
