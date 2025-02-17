@@ -25,7 +25,7 @@ sudo pacman -S --noconfirm npm pipewire pipewire-alsa pipewire-audio pipewire-ja
     file-roller android-tools xdg-user-dirs ranger python-pillow firewalld neovim exa ripgrep perl-image-exiftool \
     duf fzf 
 
-paru -S --noconfirm mpd-mpris-bin ncmpcpp mpd nwg-displays nwg-look-bin zoxide hyprlock wlogout tldr newsboat \
+paru -S --noconfirm mpd-mpris-bin ncmpcpp mpd nwg-look zoxide hyprlock wlogout tldr newsboat \
     xclip urlview bat yt-dlp alacritty anyrun-git
 
 echo -e "Copying config files...\n"
@@ -41,6 +41,7 @@ cp -R .config/qbittorrent ~/.config/
 cp -R tmux/.tmux-cht-command ~/tmux/
 cp -R .config/zathura ~/.config/
 cp -R .config/btop ~/.config/
+cp -R .config/anyrun ~/.config/
 cp -R tmux/.tmux-cht-languages ~/tmux/
 cp -R tmux/.tmux.conf ~/
 cp -R tmux/fshow.sh ~/tmux/

@@ -135,4 +135,4 @@ setopt prompt_subst
 PS1='%~ $: $(git_branch_name)'
 
 
-source /home/papa/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/$USER/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
