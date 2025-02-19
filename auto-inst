@@ -26,7 +26,7 @@ sudo pacman -S --noconfirm npm pipewire pipewire-alsa pipewire-audio pipewire-ja
     duf fzf 
 
 paru -S --noconfirm mpd-mpris-bin ncmpcpp mpd nwg-look zoxide hyprlock wlogout tldr newsboat \
-    xclip urlview bat yt-dlp alacritty anyrun-git
+    xclip urlview bat yt-dlp alacritty anyrun-git banana-cursor-bin
 
 echo -e "Copying config files...\n"
 
