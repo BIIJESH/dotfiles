@@ -132,7 +132,23 @@ function git_branch_name()
 # Enable substitution in the prompt.
 setopt prompt_subst
 # Config for prompt. PS1 synonym.
-PS1='%~ $: $(git_branch_name)'
+function dir_icon {
+  if [[ "$PWD" == "$HOME" ]]; then
+    echo "%B%F{cyan}%f%b"
+  else
+    echo "%B%F{cyan}%f%b"
+  fi
+}
+
+function git_branch {
+  branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+  if [[ -n "$branch" ]]; then
+    echo "%B%F{yellow} $branch%f%b"
+  fi
+}
+
+PS1='%B%F{blue}%f%b  %B%F{magenta}%n%f%b $(dir_icon)  %B%F{red}%~%f%b %(?.%B%F{green}.%F{red})%f%b '
+RPROMPT='$(git_branch)'
 
 
-source /home/$USER/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/papa/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
