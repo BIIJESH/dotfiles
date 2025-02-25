@@ -57,6 +57,7 @@ alias xam='sudo /opt/lampp/lampp start'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
+alias tree="tree -a -C --prune -I 'node_modules|venv|.git|.cache|dist|build'"
 # alias pgadmin='source pgadmin4/bin/activate'
 alias pmq='pacman -Q | fzf | wl-copy'
 alias cd='z'
