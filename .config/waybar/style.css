@@ -7,7 +7,6 @@
 }
 
 window#waybar {
-  background-color: rgba(26, 27, 38, 0.8); 
   color: #c0caf5;           /* Tokyo Night foreground */
   border-radius: 5px;
   padding: 0px;
@@ -18,7 +17,6 @@ window#waybar {
 
 
 tooltip {
-  background-color: #1a1b26;
   border-radius: 0px;
   border-width: 2px;
   border-style: solid;
@@ -30,7 +28,6 @@ tooltip {
   margin-right: 0px;
   color: mix(#c0caf5, #1a1b26, 0.4); /* Slightly lighter Tokyo Night foreground */
   border-radius: 5px;
-  background-color: #1a1b26; 
 }
 
 #workspaces button.active {
@@ -43,7 +40,6 @@ tooltip {
 
 #workspaces button.urgent {
   color: #c0caf5;
-  background-color: #1a1b26;  
 }
 
 #workspaces button:hover {
@@ -64,7 +60,6 @@ tooltip {
 
 #workspaces {
   padding: 0px;
-  background-color: #c0caf5;
 }
 
 #mpris {
@@ -88,7 +83,6 @@ tooltip {
 }
 
 #workspaces, #light, #audio {
-  background-color: #1a1b26; /* Tokyo Night Background */
 }
 
 #custom-arch {
@@ -163,12 +157,11 @@ window#waybar > box > box > widget > *,
 window#waybar > box > box > box {
   margin: 0 5px;
   border-radius: 5px;
-  background-color: #1a1b26; /* Tokyo Night Background */
+  background-color: rgba(26, 27, 38, 0.6);
 }
 
 widget > * {
   padding: 0 10px;
-  background-color: #1a1b26; 
 }
 
 slider {
@@ -178,23 +171,19 @@ slider {
   background-image: none;
   border: none;
   box-shadow: none;
-  background-color: rgba(26, 27, 38, 0); 
 }
 
 trough {
   min-height: 20px;
   min-width: 80px;
   border-radius: 5px;
-  background-color: #1a1b26; /* Tokyo Night Background */
 }
 
 highlight {
   min-height: 10px;
   border-radius: 5px;
-  background-color: #1a1b26;
 }
 
 #light {
   border-radius: 5px;
-  background-color: #1a1b26; /* Tokyo Night Background */
 }
