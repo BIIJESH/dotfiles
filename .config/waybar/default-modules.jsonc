@@ -220,7 +220,7 @@
   "custom/lock": {
     "format": "󰌾",
     "tooltip": false,
-    "on-click": "gtklock"
+    "on-click": "hyprlock"
   },
   "custom/reboot": {
     "format": "󰜉",
