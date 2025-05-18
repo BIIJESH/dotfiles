@@ -839,3 +839,5 @@ May 19 16:52 : exception: Failed to create /home/papa/.mpd/mpdstate: No such fil
 2025-05-15T17:15:11 config: option "device" on line 14 was not recognized
 2025-05-16T16:46:40 config: option "device" on line 14 was not recognized
 2025-05-17T20:23:18 config: option "device" on line 14 was not recognized
+2025-05-17T20:46:35 config: option "device" on line 14 was not recognized
+2025-05-18T11:44:02 config: option "device" on line 14 was not recognized

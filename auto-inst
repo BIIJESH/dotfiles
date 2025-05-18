@@ -37,33 +37,6 @@ cp -r .config/hypr/scripts/linkhandler /usr/local/bin
 cp -r .config/ncmpcpp/bindings /usr/share/doc/ncmpcpp/
 cp -r .config/hypr/scripts/tmuxsession /usr/local/bin/
 cp -r .config/hypr/scripts/tmuxcht.sh /usr/local/bin
-cp -R .config/qbittorrent ~/.config/
-cp -R tmux/.tmux-cht-command ~/tmux/
-cp -R .config/zathura ~/.config/
-cp -R .config/btop ~/.config/
-cp -R .config/anyrun ~/.config/
-cp -R tmux/.tmux-cht-languages ~/tmux/
-cp -R tmux/.tmux.conf ~/
-cp -R tmux/fshow.sh ~/tmux/
-cp -R tmux/fsb.sh ~/tmux/
-cp -R .config/dunst ~/.config/
-cp -R .config/xfce4 ~/.config/
-cp -R .config/hypr ~/.config/
-cp -R .config/alacritty ~/.config/
-cp -R .config/mpv ~/.config/
-cp -R .config/neofetch ~/.config/
-cp -R .config/ranger ~/.config/
-cp -R .config/waybar ~/.config/
-cp -R .config/wofi ~/.config/
-cp -R .config/Thunar ~/.config/
-cp -R .config/nvim ~/.config/
-cp -R .config/sioyek ~/.config/
-cp -R .config/ncmpcpp ~/.config/
-cp -R .config/mpd ~/.config/
-cp -R .config/yazi ~/.config/
-cp -R .config/bat ~/.config/
-cp -R .config/newsboat ~/.config/
-cp -R .zshrc ~/
 
 chmod +x ~/.config/hypr/scripts/linkhandler
 chmod +x ~/.config/hypr/scripts/lookup.sh
