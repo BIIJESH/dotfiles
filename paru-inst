@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo pacman -S needed base-devel
+mkdir ~/Clone
+git clone https://aur.archlinux.org/paru-bin.git ~/Clone/paru
+cd ~/Clone/paru
+makepkg -si
+echo "Paru Installed"
+exit 1
