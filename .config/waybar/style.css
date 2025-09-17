@@ -187,3 +187,7 @@ highlight {
 #light {
   border-radius: 5px;
 }
+
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+}

@@ -8,6 +8,7 @@
     },
     "modules-left": ["group/power", "clock", "hyprland/workspaces"],
     "modules-right": ["mpris", "group/audio", "group/system"],
+    "modules-center" : ["custom/attendance","custom/notification"],
     "include": ["~/.config/waybar/default-modules.jsonc"],
   },
   {
@@ -20,6 +21,8 @@
     },
     "modules-left": ["group/power", "clock", "hyprland/workspaces"],
     "modules-right": ["mpris", "group/audio", "group/system"],
+    "modules-center" : ["custom/attendance","custom/notification"],
     "include": ["~/.config/waybar/default-modules.jsonc"],
   },
+  
 ]

@@ -1,16 +1,13 @@
 export VISUAL=nvim
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --tmux bottom,40% --layout reverse --border top'
-export PATH=$PATH:$HOME/go/bin
-export FZF_DEFAULT_OPTS="--bind=tab:up,shift-tab:down"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 export PATH="$HOME/.nix-profile/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export BAT_THEME=tokyonight_night
-export BROWSER="/usr/bin/firefox"
+export BROWSER="/usr/bin/zen-browser"
 export EDITOR=nvim
-export PATH="$PATH:/home/papa/.local/share/bob/nvim-bin"
 source ~/.zsh-autopair/autopair.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 setopt autocd	
@@ -49,9 +46,9 @@ alias ts='tmuxsession'
 alias tks='tmux kill-session'
 alias fm='thunar &'
 alias cls='clear'
-alias ls='exa --color=always --group-directories-first'
-alias la='exa -a --color=always --group-directories-first'
-alias ll='exa -l --color=always --group-directories-first'
+alias ls='ls --color=always --group-directories-first'
+alias la='ls -a --color=always --group-directories-first'
+alias ll='ls -l --color=always --group-directories-first'
 alias :q='exit'
 alias xam='sudo /opt/lampp/lampp start'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
@@ -71,46 +68,6 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
-
-
-if [ -e /home/papa/.nix-profile/etc/profile.d/nix.sh ]; then . /home/papa/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
-declare -A pomo_options
-pomo_options["work"]="45"
-pomo_options["break"]="10"
-
-# Function for work session
-work_session() {
-  echo "Starting work session"
-  timer "${pomo_options["work"]}m"
-  notify-send "'work' session done"
-}
-
-# Function for break session
-break_session() {
-  echo "Starting break session"
-  timer "${pomo_options["break"]}m"
-  notify-send "'break' session done"
-}
-
-# Pomodoro function
-pomodoro() {
-  if [ -n "$1" ] && [ -n "${pomo_options["$1"]}" ]; then
-    local val="$1"
-    case "$val" in
-      "work")
-        work_session
-        break_session  # Start break session after work session
-        ;;
-      "break")
-        break_session
-        ;;
-      *)
-        echo "Invalid session type"
-        ;;
-    esac
-  fi
-}
 
 if [[ ! -d ~/.zsh-autopair ]]; then
   git clone https://github.com/hlissner/zsh-autopair ~/.zsh-autopair
@@ -153,3 +110,8 @@ RPROMPT='$(git_branch)'
 
 
 source /home/papa/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH=$HOME/.local/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

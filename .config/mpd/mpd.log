@@ -841,3 +841,829 @@ May 19 16:52 : exception: Failed to create /home/papa/.mpd/mpdstate: No such fil
 2025-05-17T20:23:18 config: option "device" on line 14 was not recognized
 2025-05-17T20:46:35 config: option "device" on line 14 was not recognized
 2025-05-18T11:44:02 config: option "device" on line 14 was not recognized
+2025-05-21T18:08:05 config: option "device" on line 14 was not recognized
+2025-05-21T20:07:26 config: option "device" on line 14 was not recognized
+2025-05-22T12:42:34 config: option "device" on line 14 was not recognized
+2025-05-22T22:23:37 config: option "device" on line 14 was not recognized
+2025-05-23T19:03:45 config: option "device" on line 14 was not recognized
+2025-05-24T10:42:28 config: option "device" on line 14 was not recognized
+2025-05-24T16:33:48 config: option "device" on line 14 was not recognized
+2025-05-24T18:40:58 config: option "device" on line 14 was not recognized
+2025-05-25T18:15:04 config: option "device" on line 14 was not recognized
+2025-05-26T08:32:10 config: option "device" on line 14 was not recognized
+2025-05-26T16:53:22 config: option "device" on line 14 was not recognized
+2025-05-27T20:34:18 config: option "device" on line 14 was not recognized
+2025-05-27T23:46:36 config: option "device" on line 14 was not recognized
+2025-05-28T11:07:14 config: option "device" on line 14 was not recognized
+2025-05-28T16:23:03 config: option "device" on line 14 was not recognized
+2025-05-28T20:17:42 config: option "device" on line 14 was not recognized
+2025-05-30T20:44:07 config: option "device" on line 14 was not recognized
+2025-05-31T10:41:58 config: option "device" on line 14 was not recognized
+2025-05-31T11:53:57 config: option "device" on line 14 was not recognized
+2025-06-01T12:26:09 config: option "device" on line 14 was not recognized
+2025-06-01T14:23:26 config: option "device" on line 14 was not recognized
+2025-06-02T10:01:41 config: option "device" on line 14 was not recognized
+2025-06-02T10:14:40 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:40 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:40 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:41 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:41 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:41 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:41 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:42 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:42 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:42 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:42 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:42 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:43 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:51 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:52 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:52 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:52 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:52 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:53 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:53 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:53 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:53 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:54 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:54 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:14:55 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:21 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:29 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:29 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:30 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:30 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:30 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:30 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:31 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:31 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:32 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:32 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:32 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:35 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:46 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:15:47 output: Failed to play on "pulse audio" (pulse): suspended
+2025-06-02T10:15:57 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-02T10:16:10 output: Failed to play on "pulse audio" (pulse): suspended
+2025-06-02T10:16:38 output: Failed to play on "pulse audio" (pulse): suspended
+2025-06-02T11:21:39 player: played "Guns N' Roses/Appetite For Destruction/01. Welcome To The Jungle.mp3"
+2025-06-02T11:22:04 config: option "device" on line 14 was not recognized
+2025-06-02T13:39:46 player: played "Guns N' Roses/Appetite For Destruction/01. Welcome To The Jungle.mp3"
+2025-06-02T15:48:17 config: option "device" on line 14 was not recognized
+2025-06-02T17:00:26 player: played "Guns N' Roses/Appetite For Destruction/01. Welcome To The Jungle.mp3"
+2025-06-02T21:18:29 config: option "device" on line 14 was not recognized
+2025-06-02T22:25:30 player: played "Guns N' Roses/Appetite For Destruction/01. Welcome To The Jungle.mp3"
+2025-06-03T10:32:54 config: option "device" on line 14 was not recognized
+2025-06-03T10:39:56 player: played "Guns N' Roses/Appetite For Destruction/01. Welcome To The Jungle.mp3"
+2025-06-03T10:43:19 player: played "Guns N' Roses/Appetite For Destruction/02. It's So Easy.mp3"
+2025-06-03T10:47:47 player: played "Guns N' Roses/Appetite For Destruction/03. Nightrain.mp3"
+2025-06-03T10:52:09 player: played "Guns N' Roses/Appetite For Destruction/04. Out Ta Get Me.mp3"
+2025-06-03T17:02:49 player: played "Guns N' Roses/Appetite For Destruction/05. Mr. Brownstone.mp3"
+2025-06-03T21:01:11 config: option "device" on line 14 was not recognized
+2025-06-03T23:21:42 player: played "Guns N' Roses/Appetite For Destruction/05. Mr. Brownstone.mp3"
+2025-06-04T10:39:34 config: option "device" on line 14 was not recognized
+2025-06-04T10:47:15 player: played "Guns N' Roses/Appetite For Destruction/05. Mr. Brownstone.mp3"
+2025-06-04T10:47:17 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-06-04T16:32:05 player: played "Led Zeppelin/1971 - Led Zeppelin IV/01 - Black Dog.mp3"
+2025-06-05T13:57:05 config: option "device" on line 14 was not recognized
+2025-06-05T13:57:15 player: played "Led Zeppelin/1971 - Led Zeppelin IV/01 - Black Dog.mp3"
+2025-06-05T15:30:35 config: option "device" on line 14 was not recognized
+2025-06-05T16:12:40 player: played "Led Zeppelin/1971 - Led Zeppelin IV/01 - Black Dog.mp3"
+2025-06-06T10:48:40 config: option "device" on line 14 was not recognized
+2025-06-06T11:11:44 player: played "Led Zeppelin/1971 - Led Zeppelin IV/01 - Black Dog.mp3"
+2025-06-07T15:11:01 config: option "device" on line 14 was not recognized
+2025-06-07T16:39:46 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-07T18:01:56 config: option "device" on line 14 was not recognized
+2025-06-07T19:41:56 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-08T08:08:41 config: option "device" on line 14 was not recognized
+2025-06-08T09:07:55 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-08T12:45:25 config: option "device" on line 14 was not recognized
+2025-06-08T13:47:20 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-09T08:45:29 config: option "device" on line 14 was not recognized
+2025-06-09T13:01:12 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-09T13:42:50 config: option "device" on line 14 was not recognized
+2025-06-09T17:29:25 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-10T08:54:45 config: option "device" on line 14 was not recognized
+2025-06-10T11:35:39 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-10T11:36:07 config: option "device" on line 14 was not recognized
+2025-06-10T11:38:41 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-10T11:38:49 config: option "device" on line 14 was not recognized
+2025-06-10T11:39:01 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-10T11:39:43 config: option "device" on line 14 was not recognized
+2025-06-10T11:39:53 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-10T11:40:07 config: option "device" on line 14 was not recognized
+2025-06-10T11:40:37 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-10T11:41:03 config: option "device" on line 14 was not recognized
+2025-06-10T11:47:11 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-10T11:47:40 config: option "device" on line 14 was not recognized
+2025-06-10T17:30:36 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-10T19:53:33 config: option "device" on line 14 was not recognized
+2025-06-10T19:58:24 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-11T08:43:37 config: option "device" on line 14 was not recognized
+2025-06-11T09:44:22 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-11T09:44:48 config: option "device" on line 14 was not recognized
+2025-06-11T11:44:35 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-11T11:46:12 config: option "device" on line 14 was not recognized
+2025-06-11T17:29:32 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-12T08:52:30 config: option "device" on line 14 was not recognized
+2025-06-12T17:30:58 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-13T08:47:35 config: option "device" on line 14 was not recognized
+2025-06-13T17:32:59 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-13T17:36:11 config: option "device" on line 14 was not recognized
+2025-06-13T17:38:37 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-16T08:43:31 config: option "device" on line 14 was not recognized
+2025-06-16T15:10:14 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-16T15:11:09 config: option "device" on line 14 was not recognized
+2025-06-16T17:35:19 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-17T08:44:00 config: option "device" on line 14 was not recognized
+2025-06-17T12:27:15 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-17T12:30:09 config: option "device" on line 14 was not recognized
+2025-06-17T17:28:49 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-18T08:36:12 config: option "device" on line 14 was not recognized
+2025-06-18T17:40:06 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-19T08:42:26 config: option "device" on line 14 was not recognized
+2025-06-19T17:31:19 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-20T08:49:58 config: option "device" on line 14 was not recognized
+2025-06-20T12:12:33 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-20T12:21:59 config: option "device" on line 14 was not recognized
+2025-06-20T17:16:02 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-20T17:16:29 config: option "device" on line 14 was not recognized
+2025-06-20T17:31:49 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-20T19:24:58 config: option "device" on line 14 was not recognized
+2025-06-20T20:08:03 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-21T17:50:36 config: option "device" on line 14 was not recognized
+2025-06-21T17:50:43 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-23T08:43:36 config: option "device" on line 14 was not recognized
+2025-06-23T08:45:57 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-23T08:46:28 config: option "device" on line 14 was not recognized
+2025-06-23T14:04:15 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-23T14:05:01 config: option "device" on line 14 was not recognized
+2025-06-23T17:49:09 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-24T08:46:49 config: option "device" on line 14 was not recognized
+2025-06-24T17:32:10 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-25T08:46:57 config: option "device" on line 14 was not recognized
+2025-06-25T10:44:35 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-25T10:45:18 config: option "device" on line 14 was not recognized
+2025-06-25T17:30:48 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-25T17:32:29 config: option "device" on line 14 was not recognized
+2025-06-25T17:32:48 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-26T08:39:05 config: option "device" on line 14 was not recognized
+2025-06-26T17:39:37 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-27T08:43:34 config: option "device" on line 14 was not recognized
+2025-06-27T17:54:12 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-29T14:05:03 config: option "device" on line 14 was not recognized
+2025-06-29T15:48:30 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-29T16:58:44 config: option "device" on line 14 was not recognized
+2025-06-29T18:20:31 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-30T08:34:31 config: option "device" on line 14 was not recognized
+2025-06-30T09:07:30 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-30T09:08:31 config: option "device" on line 14 was not recognized
+2025-06-30T18:05:33 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-06-30T18:06:05 config: option "device" on line 14 was not recognized
+2025-06-30T18:08:52 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-07-01T08:34:01 config: option "device" on line 14 was not recognized
+2025-07-01T17:32:31 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-07-02T08:39:28 config: option "device" on line 14 was not recognized
+2025-07-02T18:28:29 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-07-03T08:44:26 config: option "device" on line 14 was not recognized
+2025-07-03T16:34:17 config: option "device" on line 14 was not recognized
+2025-07-03T17:26:53 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-07-04T08:40:48 config: option "device" on line 14 was not recognized
+2025-07-04T15:29:49 config: option "device" on line 14 was not recognized
+2025-07-04T17:30:32 player: played "Led Zeppelin/1971 - Led Zeppelin IV/08 - When The Levee Breaks.mp3"
+2025-07-06T09:57:28 config: option "device" on line 14 was not recognized
+2025-07-06T12:38:45 config: option "device" on line 14 was not recognized
+2025-07-06T15:01:40 config: option "device" on line 14 was not recognized
+2025-07-07T08:38:52 config: option "device" on line 14 was not recognized
+2025-07-08T08:43:10 config: option "device" on line 14 was not recognized
+2025-07-09T08:33:59 config: option "device" on line 14 was not recognized
+2025-07-09T10:00:15 config: option "device" on line 14 was not recognized
+2025-07-09T15:02:41 update: updating Led Zeppelin/1971 - Led Zeppelin IV/01 - Black Dog.mp3
+2025-07-09T15:02:43 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-09T15:02:44 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-09T15:02:47 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-09T15:07:39 player: played "Guns N' Roses/Use Your Illusion I/04. Don't Cry.mp3"
+2025-07-09T15:08:19 mixer: Failed to set mixer for "pulse audio": disconnected
+2025-07-09T15:08:19 exception: Failed to set mixer for "pulse audio"; disconnected
+2025-07-09T15:08:19 mixer: Failed to set mixer for "pulse audio": disconnected
+2025-07-09T15:08:19 exception: Failed to set mixer for "pulse audio"; disconnected
+2025-07-09T15:10:55 player: played "Guns N' Roses/Use Your Illusion I/06. You Ain't The First.mp3"
+2025-07-09T15:11:26 mixer: Failed to set mixer for "pulse audio": disconnected
+2025-07-09T15:11:26 exception: Failed to set mixer for "pulse audio"; disconnected
+2025-07-09T15:11:26 mixer: Failed to set mixer for "pulse audio": disconnected
+2025-07-09T15:11:26 exception: Failed to set mixer for "pulse audio"; disconnected
+2025-07-09T15:27:24 player: played "Guns N' Roses/Use Your Illusion I/13. Don't Damn Me.mp3"
+2025-07-10T08:40:08 config: option "device" on line 14 was not recognized
+2025-07-11T08:39:09 config: option "device" on line 14 was not recognized
+2025-07-11T10:20:45 config: option "device" on line 14 was not recognized
+2025-07-12T14:37:59 config: option "device" on line 14 was not recognized
+2025-07-12T20:51:35 config: option "device" on line 14 was not recognized
+2025-07-15T08:42:54 config: option "device" on line 14 was not recognized
+2025-07-16T08:28:41 config: option "device" on line 14 was not recognized
+2025-07-17T08:44:04 config: option "device" on line 14 was not recognized
+2025-07-17T10:40:25 config: option "device" on line 14 was not recognized
+2025-07-18T08:33:09 config: option "device" on line 14 was not recognized
+2025-07-18T09:06:42 config: option "device" on line 14 was not recognized
+2025-07-18T10:40:18 config: option "device" on line 14 was not recognized
+2025-07-18T11:15:50 config: option "device" on line 14 was not recognized
+2025-07-21T08:43:09 config: option "device" on line 14 was not recognized
+2025-07-21T09:58:54 config: option "device" on line 14 was not recognized
+2025-07-21T11:48:25 config: option "device" on line 14 was not recognized
+2025-07-22T08:38:41 config: option "device" on line 14 was not recognized
+2025-07-22T09:20:40 config: option "device" on line 14 was not recognized
+2025-07-22T09:47:00 config: option "device" on line 14 was not recognized
+2025-07-23T08:39:26 config: option "device" on line 14 was not recognized
+2025-07-23T09:07:59 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-23T09:08:04 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-01-TheAdultsAreTalking.mp3
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-02-Selfless.mp3
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-03-BrooklynBridgeToChorus.mp3
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-04-BadDecisions.mp3
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-05-EternalSummer.mp3
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-06-AtTheDoor.mp3
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-07-WhyAreSundaysSoDepressing.mp3
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-08-NotTheSameAnymore.mp3
+2025-07-23T09:08:12 update: added The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3
+2025-07-23T09:08:12 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-23T09:08:17 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+Note: Illegal Audio-MPEG-Header 0xe6654a26 at offset 5358520.
+Note: Trying to resync...
+Note: Skipped 322 bytes in input.
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-01-TheAdultsAreTalking.mp3
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-02-Selfless.mp3
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-03-BrooklynBridgeToChorus.mp3
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-04-BadDecisions.mp3
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-05-EternalSummer.mp3
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-06-AtTheDoor.mp3
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-07-WhyAreSundaysSoDepressing.mp3
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-08-NotTheSameAnymore.mp3
+2025-07-23T09:10:06 update: updating The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3
+2025-07-23T09:16:12 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-07-23T09:21:33 player: played "The Strokes/The New Abnormal/TheStrokes-01-01-TheAdultsAreTalking.mp3"
+2025-07-23T09:21:59 output: Failed to play on "pulse audio" (pulse): suspended
+2025-07-23T09:21:59 player: played "The Strokes/The New Abnormal/TheStrokes-01-02-Selfless.mp3"
+2025-07-23T09:22:29 config: option "device" on line 14 was not recognized
+2025-07-23T09:25:44 player: played "The Strokes/The New Abnormal/TheStrokes-01-02-Selfless.mp3"
+2025-07-23T09:28:27 output: Failed to play on "pulse audio" (pulse): suspended
+2025-07-23T09:28:27 player: played "The Strokes/The New Abnormal/TheStrokes-01-03-BrooklynBridgeToChorus.mp3"
+2025-07-23T09:28:54 config: option "device" on line 14 was not recognized
+2025-07-23T09:30:06 player: played "The Strokes/The New Abnormal/TheStrokes-01-03-BrooklynBridgeToChorus.mp3"
+2025-07-23T09:37:14 player: played "The Strokes/The New Abnormal/TheStrokes-01-04-BadDecisions.mp3"
+2025-07-23T09:43:29 player: played "The Strokes/The New Abnormal/TheStrokes-01-05-EternalSummer.mp3"
+2025-07-23T09:48:40 player: played "The Strokes/The New Abnormal/TheStrokes-01-06-AtTheDoor.mp3"
+2025-07-23T09:53:15 player: played "The Strokes/The New Abnormal/TheStrokes-01-07-WhyAreSundaysSoDepressing.mp3"
+2025-07-23T09:58:53 player: played "The Strokes/The New Abnormal/TheStrokes-01-08-NotTheSameAnymore.mp3"
+2025-07-23T10:04:45 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-07-24T08:46:59 config: option "device" on line 14 was not recognized
+2025-07-24T11:15:26 config: option "device" on line 14 was not recognized
+2025-07-24T14:14:40 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-24T14:14:46 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-24T14:14:49 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-24T14:15:01 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-24T14:15:02 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/aac: Could not update timestamps for skipped samples.
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:15:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:09 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-24T14:44:39 config: option "device" on line 14 was not recognized
+2025-07-24T14:44:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T14:44:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-24T17:27:41 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-25T08:45:46 config: option "device" on line 14 was not recognized
+2025-07-25T08:45:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T08:45:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-25T17:34:34 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-28T08:55:53 config: option "device" on line 14 was not recognized
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T08:55:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:28:46 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-28T11:29:43 config: option "device" on line 14 was not recognized
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T11:29:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:55:35 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-28T16:57:03 config: option "device" on line 14 was not recognized
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T16:57:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-28T17:30:43 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-29T08:41:29 config: option "device" on line 14 was not recognized
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T08:41:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-29T17:27:35 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-30T09:00:48 config: option "device" on line 14 was not recognized
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T09:00:48 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T17:37:25 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-30T19:30:57 config: option "device" on line 14 was not recognized
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:30:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-30T19:52:38 ffmpeg/aac: Could not update timestamps for skipped samples.
+2025-07-30T19:52:38 ffmpeg/aac: Could not update timestamps for skipped samples.
+2025-07-30T19:52:39 ffmpeg/aac: Could not update timestamps for skipped samples.
+2025-07-30T19:52:39 ffmpeg/aac: Could not update timestamps for skipped samples.
+2025-07-30T19:52:39 ffmpeg/aac: Could not update timestamps for skipped samples.
+2025-07-30T20:08:30 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-31T08:33:44 config: option "device" on line 14 was not recognized
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T08:33:44 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:28:34 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-07-31T11:29:40 config: option "device" on line 14 was not recognized
+2025-07-31T11:29:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T11:29:41 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-07-31T17:38:17 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-08-01T09:19:37 config: option "device" on line 14 was not recognized
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:38 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:38 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:38 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:38 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:38 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T09:19:38 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:22 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-08-01T16:31:57 config: option "device" on line 14 was not recognized
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T16:31:57 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-01T17:24:58 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-08-04T10:44:21 config: option "device" on line 14 was not recognized
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-04T10:44:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T00:04:06 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-08-05T19:13:25 config: option "device" on line 14 was not recognized
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:13:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:17:33 player: played "Black Sabbath/13/01 End Of The Beginning.m4a"
+2025-08-05T19:18:00 config: option "device" on line 14 was not recognized
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T19:18:00 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-05T20:49:02 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-05T23:54:02 player: played "Bryan Adams/Reckless (30th Anniversary  Deluxe Edition)/Heaven.mp3"
+2025-08-06T10:40:07 config: option "device" on line 14 was not recognized
+2025-08-06T11:35:38 player: played "Bryan Adams/Reckless (30th Anniversary  Deluxe Edition)/Heaven.mp3"
+2025-08-06T16:18:38 config: option "device" on line 14 was not recognized
+2025-08-06T23:09:27 player: played "Bryan Adams/Reckless (30th Anniversary  Deluxe Edition)/Heaven.mp3"
+2025-08-07T19:41:39 config: option "device" on line 14 was not recognized
+2025-08-08T00:24:24 player: played "Bryan Adams/Reckless (30th Anniversary  Deluxe Edition)/Heaven.mp3"
+2025-08-08T10:24:35 config: option "device" on line 14 was not recognized
+2025-08-08T11:34:04 player: played "Bryan Adams/Reckless (30th Anniversary  Deluxe Edition)/Heaven.mp3"
+2025-08-08T20:12:23 config: option "device" on line 14 was not recognized
+2025-08-08T21:00:59 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-08T21:01:59 player: played "Eric Clapton/The Cream of Clapton/17 - Wonderful Tonight.mp3"
+2025-08-08T21:02:00 exception: Not playing
+Note: Illegal Audio-MPEG-Header 0x00000011 at offset 7246587.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+2025-08-08T21:05:24 player: played "Eric Clapton/The Cream of Clapton/17 - Wonderful Tonight.mp3"
+2025-08-08T21:05:26 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-08T21:05:39 mixer: Failed to set mixer for "pulse audio": disconnected
+2025-08-08T21:05:39 exception: Failed to set mixer for "pulse audio"; disconnected
+2025-08-08T21:10:15 player: played "Eric Clapton/1992 - Unplugged/04 - Tears In Heaven.mp3"
+2025-08-09T13:23:36 config: option "device" on line 14 was not recognized
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T13:23:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:23 config: option "device" on line 14 was not recognized
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-09T17:11:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 config: option "device" on line 14 was not recognized
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T12:32:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:00 config: option "device" on line 14 was not recognized
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-10T18:07:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:25 config: option "device" on line 14 was not recognized
+2025-08-11T19:27:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:25 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-11T19:27:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 config: option "device" on line 14 was not recognized
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:45 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T10:43:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 config: option "device" on line 14 was not recognized
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T19:16:39 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2025-08-12T20:44:16 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-12T20:44:22 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-12T20:44:30 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-12T20:45:13 player: played "Iron Maiden/Powerslave/01 aces high.mp3"
+2025-08-12T20:45:14 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-12T20:50:20 player: played "Led Zeppelin/1971 - Led Zeppelin IV/01 - Black Dog.mp3"
+2025-08-12T20:54:01 player: played "Led Zeppelin/1971 - Led Zeppelin IV/02 - Rock And Roll.mp3"
+2025-08-12T20:59:53 player: played "Led Zeppelin/1971 - Led Zeppelin IV/03 - The Battle Of Evermore.mp3"
+2025-08-12T21:07:56 player: played "Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3"
+2025-08-12T21:12:35 player: played "Led Zeppelin/1971 - Led Zeppelin IV/05 - Misty Mountain Hop.mp3"
+2025-08-12T21:17:20 player: played "Led Zeppelin/1971 - Led Zeppelin IV/06 - Four Sticks.mp3"
+2025-08-12T21:20:52 player: played "Led Zeppelin/1971 - Led Zeppelin IV/07 - Going To California.mp3"
+2025-08-12T22:44:13 player: played "Led Zeppelin/1971 - Led Zeppelin IV/08 - When The Levee Breaks.mp3"
+2025-08-13T18:18:24 config: option "device" on line 14 was not recognized
+2025-08-13T20:29:06 player: played "Led Zeppelin/1971 - Led Zeppelin IV/08 - When The Levee Breaks.mp3"
+2025-08-13T20:29:06 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-13T20:29:24 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-13T20:29:31 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-13T20:29:32 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-13T20:29:37 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-13T20:50:53 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-14T12:02:18 config: option "device" on line 14 was not recognized
+2025-08-14T14:33:09 config: option "device" on line 14 was not recognized
+2025-08-14T18:49:35 config: option "device" on line 14 was not recognized
+2025-08-16T15:29:52 config: option "device" on line 14 was not recognized
+2025-08-16T15:50:45 config: option "device" on line 14 was not recognized
+2025-08-16T20:10:33 config: option "device" on line 14 was not recognized
+2025-08-18T08:58:01 config: option "device" on line 14 was not recognized
+2025-08-18T09:32:04 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T09:32:47 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-18T09:32:48 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-18T09:32:48 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-18T09:32:49 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-18T09:32:49 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-18T09:38:30 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T09:44:22 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T09:50:14 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T09:56:06 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T10:01:57 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T10:04:18 output: Failed to play on "pulse audio" (pulse): suspended
+2025-08-18T10:04:19 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T10:04:52 config: option "device" on line 14 was not recognized
+2025-08-18T10:08:25 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T10:14:17 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T10:20:09 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-18T17:33:26 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-19T08:36:58 config: option "device" on line 14 was not recognized
+2025-08-19T13:33:55 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-19T13:33:59 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-19T13:34:01 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-19T13:34:03 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-19T13:34:08 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-19T13:38:28 config: option "device" on line 14 was not recognized
+2025-08-20T19:11:39 config: option "device" on line 14 was not recognized
+2025-08-20T21:39:11 config: option "device" on line 14 was not recognized
+2025-08-21T19:14:19 config: option "device" on line 14 was not recognized
+2025-08-21T23:05:13 config: option "device" on line 14 was not recognized
+2025-08-22T16:11:18 config: option "device" on line 14 was not recognized
+2025-08-23T19:36:19 config: option "device" on line 14 was not recognized
+2025-08-24T15:56:05 config: option "device" on line 14 was not recognized
+2025-08-25T10:07:03 config: option "device" on line 14 was not recognized
+2025-08-25T12:15:25 config: option "device" on line 14 was not recognized
+2025-08-25T15:36:17 config: option "device" on line 14 was not recognized
+2025-08-25T16:00:21 config: option "device" on line 14 was not recognized
+2025-08-25T21:36:49 config: option "device" on line 14 was not recognized
+2025-08-26T11:14:39 config: option "device" on line 14 was not recognized
+2025-08-27T08:43:32 config: option "device" on line 14 was not recognized
+2025-08-28T08:52:44 config: option "device" on line 14 was not recognized
+2025-08-28T12:58:50 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-28T13:04:19 player: played "Black Sabbath/1971 Master of Reality/02 After forever.mp3"
+2025-08-28T17:40:22 player: played "Black Sabbath/1971 Master of Reality/02 After forever.mp3"
+2025-08-28T18:27:14 config: option "device" on line 14 was not recognized
+2025-08-28T18:36:01 player: played "Black Sabbath/1971 Master of Reality/02 After forever.mp3"
+2025-08-29T08:52:02 config: option "device" on line 14 was not recognized
+2025-08-29T13:51:29 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-08-29T13:57:31 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-29T17:10:48 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-29T17:16:40 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-29T17:22:32 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-29T17:28:23 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-29T17:31:02 output: Failed to play on "pulse audio" (pulse): suspended
+2025-08-29T17:31:02 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-30T12:08:42 config: option "device" on line 14 was not recognized
+2025-08-30T16:52:13 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-30T19:06:07 config: option "device" on line 14 was not recognized
+2025-08-30T19:09:25 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-08-31T16:23:54 config: option "device" on line 14 was not recognized
+2025-08-31T16:30:02 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-01T08:44:09 config: option "device" on line 14 was not recognized
+2025-09-01T17:32:05 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-02T08:52:36 config: option "device" on line 14 was not recognized
+2025-09-02T17:32:42 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-03T09:02:52 config: option "device" on line 14 was not recognized
+2025-09-03T09:36:43 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-03T09:42:35 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-03T09:48:27 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-03T09:54:19 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-03T17:30:00 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-04T08:48:37 config: option "device" on line 14 was not recognized
+2025-09-04T09:39:16 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-04T09:44:40 config: option "device" on line 14 was not recognized
+2025-09-04T12:21:02 player: played "The Strokes/The New Abnormal/TheStrokes-01-09-OdeToTheMets.mp3"
+2025-09-04T12:21:02 exception: Failed to open /home/papa/.config/mpd/playlists: No such file or directory
+2025-09-04T12:26:33 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-04T12:31:56 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-04T21:07:28 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-05T08:29:48 config: option "device" on line 14 was not recognized
+2025-09-05T17:30:29 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-07T09:17:48 config: option "device" on line 14 was not recognized
+2025-09-07T10:19:28 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-07T17:31:03 config: option "device" on line 14 was not recognized
+2025-09-07T20:32:07 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-08T08:45:14 config: option "device" on line 14 was not recognized
+2025-09-08T17:46:29 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-09T08:46:42 config: option "device" on line 14 was not recognized
+2025-09-09T08:49:30 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-09T08:52:41 config: option "device" on line 14 was not recognized
+2025-09-09T09:19:35 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-09T10:01:44 config: option "device" on line 14 was not recognized
+2025-09-09T21:21:29 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-10T10:39:46 config: option "device" on line 14 was not recognized
+2025-09-10T19:08:16 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-11T10:29:33 config: option "device" on line 14 was not recognized
+2025-09-11T16:30:43 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-11T16:32:40 config: option "device" on line 14 was not recognized
+2025-09-11T19:22:32 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-12T09:01:46 config: option "device" on line 14 was not recognized
+2025-09-12T09:23:29 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-12T11:05:27 config: option "device" on line 14 was not recognized
+2025-09-12T20:04:33 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-13T09:36:41 config: option "device" on line 14 was not recognized
+2025-09-13T09:36:47 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-14T14:17:17 config: option "device" on line 14 was not recognized
+2025-09-14T14:21:20 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-15T08:26:40 config: option "device" on line 14 was not recognized
+2025-09-15T09:54:38 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-15T09:55:45 config: option "device" on line 14 was not recognized
+2025-09-15T17:55:36 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-16T08:41:51 config: option "device" on line 14 was not recognized
+2025-09-16T18:31:52 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-17T09:04:01 config: option "device" on line 14 was not recognized
+2025-09-17T10:02:48 player: played "Megadeth/Rust in Peace/07 Tornado of Souls.mp3"
+2025-09-17T10:03:33 config: option "device" on line 14 was not recognized
