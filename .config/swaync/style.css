@@ -1,0 +1,98 @@
+:root {
+  /* TokyoNight palette */
+  --cc-bg: rgba(26, 27, 38, 0.85); /* Darker main background */
+  --noti-border-color: rgba(169, 177, 214, 0.15); /* Subtle border */
+  --noti-bg: 36, 40, 59; /* Notification background */
+  --noti-bg-alpha: 0.9;
+  --noti-bg-darker: rgb(26, 27, 38);
+  --noti-bg-hover: rgb(41, 46, 66);
+  --noti-bg-focus: rgba(64, 73, 104, 0.6);
+  --noti-close-bg: rgb(52, 59, 88);
+  --noti-close-bg-hover: rgb(64, 73, 104);
+
+  --text-color: rgb(192, 202, 245); /* Foreground text */
+  --text-color-disabled: rgb(92, 99, 135);
+  --bg-selected: rgb(122, 162, 247); /* Accent blue */
+
+  --notification-icon-size: 64px;
+  --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
+  --notification-group-icon-size: 32px;
+
+  --border: 1px solid var(--noti-border-color);
+  --border-radius: 12px;
+
+  --notification-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3),
+    0 1px 3px 1px rgba(0, 0, 0, 0.7), 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+
+  --font-size-body: 15px;
+  --font-size-summary: 16px;
+
+  /* Animation */
+  --hover-transition: background 0.15s ease-in-out;
+  --group-collapse-transition: opacity 400ms ease-in-out;
+}
+
+/* Fallbacks for GTK older themes */
+@define-color cc-bg rgba(26, 27, 38, 0.85);
+@define-color noti-border-color rgba(169, 177, 214, 0.15);
+@define-color noti-bg rgba(36, 40, 59, 0.9);
+@define-color noti-bg-opaque rgb(36, 40, 59);
+@define-color noti-bg-darker rgb(26, 27, 38);
+@define-color noti-bg-hover rgb(41, 46, 66);
+@define-color noti-bg-focus rgba(64, 73, 104, 0.6);
+@define-color noti-close-bg rgb(52, 59, 88);
+@define-color noti-close-bg-hover rgb(64, 73, 104);
+@define-color text-color rgb(192, 202, 245);
+@define-color text-color-disabled rgb(92, 99, 135);
+@define-color bg-selected rgb(122, 162, 247);
+
+/* Example tweaks for accents */
+.close-button {
+  background: var(--noti-close-bg);
+  color: var(--text-color);
+}
+
+.close-button:hover {
+  background: var(--noti-close-bg-hover);
+  transition: var(--hover-transition);
+}
+
+.notification-row .notification-background .notification {
+  background: rgba(var(--noti-bg), var(--noti-bg-alpha));
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.notification-row .notification-background .notification .notification-default-action:hover {
+  background: var(--noti-bg-hover);
+}
+
+/* Control Center */
+.control-center {
+  background: var(--cc-bg);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+}
+
+.control-center .control-center-list .notification {
+  box-shadow: var(--notification-shadow);
+  border: var(--border);
+}
+
+/* Widgets */
+.widget-title > label {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.widget-dnd label {
+  color: var(--text-color);
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay {
+  background-color: rgba(26, 27, 38, 0.75);
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay button:hover {
+  background: var(--noti-bg-hover);
+}
