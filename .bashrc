@@ -85,3 +85,4 @@ if [ "$(tty)" = "/dev/tty1" ];then
 fi
 
 eval "$(zoxide init bash)"
+eval "$(direnv hook bash)"

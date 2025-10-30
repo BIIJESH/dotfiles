@@ -7,55 +7,54 @@
 }
 
 window#waybar {
-  color: #c0caf5;           /* Tokyo Night foreground */
+  color: #e0e0e0;           /* Light gray foreground */
   border-radius: 5px;
   padding: 0px;
   transition-duration: 1s;
   box-shadow: none; 
-  background: transparent;
+  background: transparent; /* Pure black background */
 }
-
 
 tooltip {
   border-radius: 0px;
   border-width: 2px;
   border-style: solid;
-  border-color: rgba(26, 27, 38, 0); 
-  color: #c0caf5;
+  border-color: rgba(255, 255, 255, 0.1); 
+  color: #e0e0e0;
 }
 
 #workspaces button {
   margin-right: 0px;
-  color: mix(#c0caf5, #1a1b26, 0.4); /* Slightly lighter Tokyo Night foreground */
+  color: #888888; /* Medium gray */
   border-radius: 5px;
 }
 
 #workspaces button.active {
-  color: #bb9af7; /* Tokyo Night Purple */
+  color: #ffffff; /* White for active */
 }
 
 #workspaces button.focused {
-  color: #7dcfff; /* Tokyo Night Cyan */
+  color: #00ffff; /* Cyan */
 }
 
 #workspaces button.urgent {
-  color: #c0caf5;
+  color: #ff6666; /* Red alert */
 }
 
 #workspaces button:hover {
-  color: #9ece6a; /* Tokyo Night Green */
+  color: #00ff00; /* Green hover */
 }
 
 #temperature {
-  color: mix(#f7768e, #c0caf5, 0.8); /* Tokyo Night Red */
+  color: #ff5555; /* Red */
 }
 
 #temperature.critical {
-  color: #f7768e; /* Tokyo Night Red */
+  color: #ff0000; /* Bright red */
 }
 
 #backlight {
-  color: #7dcfff; /* Tokyo Night Cyan */
+  color: #00ffff; /* Cyan */
 }
 
 #workspaces {
@@ -63,90 +62,87 @@ tooltip {
 }
 
 #mpris {
-  color: #bb9af7; /* Tokyo Night Purple */
+  color: #ff99ff; /* Light magenta */
 }
 
 #custom-cava, #custom-euro {
-  color: #bb9af7; /* Tokyo Night Purple */
+  color: #ff99ff; /* Magenta */
 }
 
 #custom-power_profile {
-  color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
+  color: #00ff00; /* Green */
 }
 
 #window {
-  color: #c0caf5; /* Tokyo Night Foreground */
+  color: #e0e0e0; /* Foreground */
 }
 
 #clock {
-  color: #bb9af7; /* Tokyo Night Purple */
-}
-
-#workspaces, #light, #audio {
+  color: #ff99ff; /* Magenta */
 }
 
 #custom-arch {
-  color: #7aa2f7; /* Tokyo Night Blue */
+  color: #3399ff; /* Blue */
 }
 
 #custom-quit {
-  color: mix(#ff9e64, #c0caf5, 0.6); /* Tokyo Night Orange */
+  color: #ffaa00; /* Orange */
 }
 
 #custom-lock {
-  color: mix(#9ece6a, #c0caf5, 0.6); /* Tokyo Night Green */
+  color: #00ff00; /* Green */
 }
 
 #custom-sleep {
-  color: mix(#7dcfff, #c0caf5, 0.6); /* Tokyo Night Cyan */
+  color: #00ffff; /* Cyan */
 }
 
 #custom-reboot {
-  color: mix(#ff9e64, #c0caf5, 0.6); /* Tokyo Night Orange */
+  color: #ffaa00; /* Orange */
 }
 
 #custom-shutdown {
-  color: mix(#f7768e, #c0caf5, 0.6); /* Tokyo Night Red */
+  color: #ff5555; /* Red */
 }
 
 #network {
-  color: #7aa2f7; /* Tokyo Night Blue */
+  color: #3399ff; /* Blue */
 }
 
 #bluetooth {
-  color: #7dcfff; /* Tokyo Night Cyan */
+  color: #00ffff; /* Cyan */
 }
 
 #pulseaudio:not(.microphone) {
-  color: mix(#ff9e64, #c0caf5, 0.5); /* Tokyo Night Orange */
+  color: #ffaa00; /* Orange */
 }
 
 #pulseaudio.microphone {
-  color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
+  color: #00ff00; /* Green */
 }
 
 #pulseaudio.bluetooth:not(.microphone) {
-  color: mix(#7dcfff, #c0caf5, 0.5); /* Tokyo Night Cyan */
+  color: #00ffff; /* Cyan */
 }
 
 #pulseaudio.muted:not(.microphone) {
-  color: mix(#f7768e, #c0caf5, 0.5); /* Tokyo Night Red */
+  color: #ff5555; /* Red */
 }
 
 #pulseaudio.microphone.source-muted {
-  color: mix(#f7768e, #c0caf5, 0.5); /* Tokyo Night Red */
+  color: #ff5555; /* Red */
 }
 
 #battery {
-  color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
+  color: #00ff00; /* Green */
 }
 
 battery.bat2 {
-  color: mix(#9ece6a, #c0caf5, 0.5); /* Tokyo Night Green */
+  color: #00ff00; /* Green */
 }
 
 #custom-weather {
-  color: mix(#ff9e64, #c0caf5, 0.5); /* Tokyo Night Orange */
+  color: #ffaa00; /* Orange */
 }
 
 #tray {
@@ -157,7 +153,7 @@ window#waybar > box > box > widget > *,
 window#waybar > box > box > box {
   margin: 0 5px;
   border-radius: 5px;
-  background-color: rgba(26, 27, 38, 0.6);
+  background-color: rgba(0, 0, 0, 0.6); /* Dark transparent */
 }
 
 widget > * {

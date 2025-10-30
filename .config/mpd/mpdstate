@@ -1,11 +1,11 @@
-sw_volume: 100
+sw_volume: 26
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: pause
-current: 0
-time: 1.893
+state: play
+current: 3
+time: 69.461
 random: 0
-repeat: 1
+repeat: 0
 single: 0
 consume: 0
 crossfade: 0
@@ -13,5 +13,8 @@ mixrampdb: 0
 mixrampdelay: -1
 lastloadedplaylist: 
 playlist_begin
-0:Megadeth/Rust in Peace/07 Tornado of Souls.mp3
+0:Billy Joel/02 - Piano Man.flac
+1:Billy Joel/05 Vienna.mp3
+2:Billy Joel/Billy Joel - Uptown Girl.mp3
+3:Led Zeppelin/1971 - Led Zeppelin IV/04 - Stairway To Heaven.mp3
 playlist_end
